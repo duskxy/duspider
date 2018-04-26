@@ -8,8 +8,9 @@
 import scrapy
 
 
-class BsjItem(scrapy.Item):
+class BishijieItem(scrapy.Item):
     title = scrapy.Field()
     create_time = scrapy.Field()
     content = scrapy.Field()
     crawl_time = scrapy.Field()
+
