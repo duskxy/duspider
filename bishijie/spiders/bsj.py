@@ -15,6 +15,6 @@ class BsjSpider(scrapy.Spider):
         for bitem in kx:
             Bsj['title'] = bitem.xpath('li/h2/text()').extract()[0]
             Bsj['create_time'] = bitem.xpath('span/text()').extract()[0]
-            Bsj['content'] = bitem.xpath('li/div/text()').extract()[0].replace('\r\n','')
+            Bsj['content'] = bitem.xpath('li/div/text()').extract()[0].replace('\r\n','').replace(' ','')
             yield Bsj
             
