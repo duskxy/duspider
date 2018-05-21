@@ -6,7 +6,7 @@ from bishijie.items import BishijieItem
 
 class BsjSpider(scrapy.Spider):
     name = 'bsj'
-    allowed_domains = ['http://www.bishijie.com/kuaixun/']
+    allowed_domains = ['www.bishijie.com']
     start_urls = ['http://www.bishijie.com/kuaixun/']
 
     def parse(self, response):
