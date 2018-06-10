@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 import pymysql
+from scrapy.exceptions import DropItem
+import redis
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
@@ -22,3 +24,12 @@ class BishijiePipeline(object):
         cursor.execute(sql,(item['title'],item['create_time'],item['content']))
         self.conn.commit()
         return item
+class DuplicatesPipeline(object):
+    def __init__(self):
+        self.Redis = redis.StrictRedis(host='127.0.0.1',password='a05370385a',port=6379,db=0)
+    def process_item(self,item,spider):
+        if self.Redis.exists('title:{}'.format(item['title'])):
+            raise DropItem("Duplicate item found: {}".format(item))
+        else:
+            self.Redis.set('title:{}'.format(item['title']),1)
+            return item

@@ -68,7 +68,7 @@ ROBOTSTXT_OBEY = True
 #    'bishijie.pipelines.BishijiePipeline': 300,
 #}
 ITEM_PIPELINES = {
-
+     'bishijie.pipelines.DuplicatesPipeline': 200,
      'bishijie.pipelines.BishijiePipeline': 300,
    }
 

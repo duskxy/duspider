@@ -13,8 +13,8 @@ class BsjSpider(scrapy.Spider):
         Bsj = BishijieItem()
         kx = response.xpath('//div[@class="kuaixun_list"]/div/ul')
         for bitem in kx:
-            Bsj['title'] = bitem.xpath('li/h2/text()').extract()[0]
+            Bsj['title'] = bitem.xpath('li/h2/a/text()').extract()[0]
             Bsj['create_time'] = bitem.xpath('span/text()').extract()[0]
-            Bsj['content'] = bitem.xpath('li/div/text()').extract()[0].replace('\r\n','').replace(' ','')
+            Bsj['content'] = bitem.xpath('li/div/a/text()').extract()[0].replace('\r\n','').replace(' ','')
             yield Bsj
             
