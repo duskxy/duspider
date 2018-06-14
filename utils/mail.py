@@ -8,12 +8,12 @@ import logging
 import os
 
 now = datetime.datetime.now().strftime('%Y-%m-%d')
-alert = ["黑客攻击","黑客窃取"]
+alert = ["黑客攻击","黑客窃取","被盗","上线"]
 Blog = os.path.dirname((os.path.abspath(__file__)))
 logpath = Blog+"/log/bsjalert.log"
 print(logpath)    
 
-logging.basicConfig(filename=logpath,filemode="w+",level=logging.INFO,
+logging.basicConfig(filename=logpath,filemode="w",level=logging.INFO,
         format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S'
                )
@@ -21,8 +21,11 @@ logging.basicConfig(filename=logpath,filemode="w+",level=logging.INFO,
 
 class Bsjmail:
     def __init__(self):
-        self.smtpobj = smtplib.SMTP_SSL(bmail['mail_host'],465)
-        self.smtpobj.login(bmail['mail_user'],bmail['mail_pass'])
+        try:
+            self.smtpobj = smtplib.SMTP_SSL(bmail['mail_host'],465)
+            self.smtpobj.login(bmail['mail_user'],bmail['mail_pass'])
+        except smtplib.SMTPException as e:
+            logging.error("邮箱登录异常{}".format(e))
     def Sendemail(self,title,content):
         message = MIMEText(content,'plain','utf-8')
         message['From'] = bmail['sender']
@@ -41,7 +44,7 @@ for i,j,v in result:
         if a in i:
             if Redis.exists('altit:{}'.format(i)):
                 print("已告警")
-                logging.info("已告警")
+                logging.info("{}已告警".format(i))
             else:
                 print(i,j,v)
                 Bemail.Sendemail(i,"{}{}".format(j,v))

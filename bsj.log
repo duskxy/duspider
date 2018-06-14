@@ -1,13 +1,13 @@
-2018-06-13-20:30:02
-2018-06-13 20:30:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: bishijie)
-2018-06-13 20:30:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.1.0, Python 3.5.1 (default, Apr 18 2018, 11:47:34) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-514.26.2.el7.x86_64-x86_64-with-centos-7.2.1511-Core
-2018-06-13 20:30:03 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['bishijie.spiders'], 'BOT_NAME': 'bishijie', 'FEED_EXPORT_ENCODING': 'utf-8', 'ROBOTSTXT_OBEY': True, 'NEWSPIDER_MODULE': 'bishijie.spiders'}
-2018-06-13 20:30:03 [scrapy.middleware] INFO: Enabled extensions:
+2018-06-14-15:55:02
+2018-06-14 15:55:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: bishijie)
+2018-06-14 15:55:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.1.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.1.0, Python 3.5.1 (default, Apr 18 2018, 11:47:34) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-514.26.2.el7.x86_64-x86_64-with-centos-7.2.1511-Core
+2018-06-14 15:55:03 [scrapy.crawler] INFO: Overridden settings: {'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'bishijie.spiders', 'BOT_NAME': 'bishijie', 'SPIDER_MODULES': ['bishijie.spiders'], 'ROBOTSTXT_OBEY': True}
+2018-06-14 15:55:03 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.corestats.CoreStats',
- 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.logstats.LogStats']
-2018-06-13 20:30:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-06-14 15:55:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
@@ -20,800 +20,814 @@
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-06-13 20:30:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-06-14 15:55:03 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-06-13 20:30:04 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-06-14 15:55:04 [scrapy.middleware] INFO: Enabled item pipelines:
 ['bishijie.pipelines.DuplicatesPipeline', 'bishijie.pipelines.BishijiePipeline']
-2018-06-13 20:30:04 [scrapy.core.engine] INFO: Spider opened
-2018-06-13 20:30:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-06-13 20:30:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2018-06-13 20:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/robots.txt> (referer: None)
-2018-06-13 20:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/kuaixun/> (referer: None)
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，HORMANCAPITAL（霍曼资本）宣布参加EON超级节点竞选，并透露其持有约2800万枚EON。EON于昨日宣布开启全球超级节点竞选，将分5个批次选出分布在全球各地区的101个超级节点。EON现价3.739元，24h上涨4.06%，24h交易额约2587万。',
- 'create_time': '20:26',
- 'title': 'HORMAN CAPITAL（霍曼资本）宣布参选EON超级节点'}
+2018-06-14 15:55:04 [scrapy.core.engine] INFO: Spider opened
+2018-06-14 15:55:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-06-14 15:55:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-06-14 15:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/robots.txt> (referer: None)
+2018-06-14 15:55:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/kuaixun/> (referer: None)
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据Coindesk分析，BTC暂时走低，4小时线RSI现牛市信号，可能在6200-6600美元区间盘整一至两天。',
+ 'create_time': '15:53',
+ 'title': 'Coindesk分析：BTC可能在6200-6600美元区间盘整一至两天'}
+{'content': '\n据Coindesk分析，BTC暂时走低，4小时线RSI现牛市信号，可能在6200-6600美元区间盘整一至两天。',
+ 'create_time': '15:53',
+ 'title': 'Coindesk分析：BTC可能在6200-6600美元区间盘整一至两天'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日，SOC官方宣布，阿根廷巨星阿奎罗正式加盟SOC，出任其官方顾问和全球代言人。同时，阿奎罗也在其Twitter发出确认公告。阿奎罗现效力英超冠军曼城俱乐部，是俱乐部队史射手王、阿根廷国家队主力前锋，曾获2008奥运会男足冠军，并随曼城荣获3届英超冠军，今夏将随阿根廷冲击俄罗斯世界杯冠军。据足球转会网显示，阿奎罗身价达8000万欧元。',
+ 'create_time': '15:29',
+ 'title': '足球巨星阿奎罗出任SOC官方顾问及全球代言人'}
 {'content': '\n'
-            '今日，HORMANCAPITAL（霍曼资本）宣布参加EON超级节点竞选，并透露其持有约2800万枚EON。EON于昨日宣布开启全球超级节点竞选，将分5个批次选出分布在全球各地区的101个超级节点。EON现价3.739元，24h上涨4.06%，24h交易额约2587万。',
- 'create_time': '20:26',
- 'title': 'HORMAN CAPITAL（霍曼资本）宣布参选EON超级节点'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'EOS节点投票进入胶着状态，目前，中国节点EOS引力区、佳能社区、EOSBeijing得票数位列中国区前3，分列全球第5、6、13位。此外，EOSStore、EOSMars、HelloEOS、EOSAsia等进入前21。',
- 'create_time': '20:25',
- 'title': 'EOS引力区、佳能社区、EOS Beijing暂列节点得票数中国区前3'}
+            '今日，SOC官方宣布，阿根廷巨星阿奎罗正式加盟SOC，出任其官方顾问和全球代言人。同时，阿奎罗也在其Twitter发出确认公告。阿奎罗现效力英超冠军曼城俱乐部，是俱乐部队史射手王、阿根廷国家队主力前锋，曾获2008奥运会男足冠军，并随曼城荣获3届英超冠军，今夏将随阿根廷冲击俄罗斯世界杯冠军。据足球转会网显示，阿奎罗身价达8000万欧元。',
+ 'create_time': '15:29',
+ 'title': '足球巨星阿奎罗出任SOC官方顾问及全球代言人'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '赛贝CYBEX交易所联合QUANTBALL（量子足球）今日上线了其首个DApp，即世界杯竞猜应用。该应用基于区块链技术，可实现用户自定赔率。赛贝CYBEX官方表示，这是推动CYBEX主链生态的第一步，而QUANTBALL近三年深耕在足球大数据和彩票行业，拥有大量用户基础，对行业痛点有深刻理解。',
+ 'create_time': '15:15',
+ 'title': '赛贝CYBEX上线首个DApp世界杯竞猜应用'}
 {'content': '\n'
-            'EOS节点投票进入胶着状态，目前，中国节点EOS引力区、佳能社区、EOSBeijing得票数位列中国区前3，分列全球第5、6、13位。此外，EOSStore、EOSMars、HelloEOS、EOSAsia等进入前21。',
- 'create_time': '20:25',
- 'title': 'EOS引力区、佳能社区、EOS Beijing暂列节点得票数中国区前3'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据360安全卫士文章，360安全中心近期监控到一类虚拟货币类木马非常活跃，该木马不断监控用户的剪贴板内容，判断是否为比特币、以太坊等虚拟货币地址，然后在用户交易的时候将目标地址修改成自己的地址，悄悄实施盗窃，360安全中心团队将其命名为“剪贴板幽灵”。该木马通过感染性病毒，木马下载器，垃圾邮件在全球范围传播，国内也有大量用户受到影响。',
- 'create_time': '20:20',
- 'title': '360安全卫士：“剪贴板幽灵”将魔爪伸向虚拟货币'}
+            '赛贝CYBEX交易所联合QUANTBALL（量子足球）今日上线了其首个DApp，即世界杯竞猜应用。该应用基于区块链技术，可实现用户自定赔率。赛贝CYBEX官方表示，这是推动CYBEX主链生态的第一步，而QUANTBALL近三年深耕在足球大数据和彩票行业，拥有大量用户基础，对行业痛点有深刻理解。',
+ 'create_time': '15:15',
+ 'title': '赛贝CYBEX上线首个DApp世界杯竞猜应用'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'OKEx发布公告：将于将于6月15日16:00上线WavesWaves/BTC，Waves/ETH，Waves/USDT，Waves/OKB的市场交易；今日16：00开放充值；6月18日18:00可提现。Waves是用于资产/自定义代币发行、转账和交易的密码学货币平台。',
+ 'create_time': '15:04',
+ 'title': 'OKEx将于6月15日16:00上线Waves'}
 {'content': '\n'
-            '据360安全卫士文章，360安全中心近期监控到一类虚拟货币类木马非常活跃，该木马不断监控用户的剪贴板内容，判断是否为比特币、以太坊等虚拟货币地址，然后在用户交易的时候将目标地址修改成自己的地址，悄悄实施盗窃，360安全中心团队将其命名为“剪贴板幽灵”。该木马通过感染性病毒，木马下载器，垃圾邮件在全球范围传播，国内也有大量用户受到影响。',
- 'create_time': '20:20',
- 'title': '360安全卫士：“剪贴板幽灵”将魔爪伸向虚拟货币'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC五分钟内上涨1.01%，上涨金额为64美元，其中火币PRO上现价为$6469.85，请密切关注行情走向，注意控制风险。',
- 'create_time': '20:19',
- 'title': 'BTC五分钟内上涨1.01%'}
-{'content': '\nBTC五分钟内上涨1.01%，上涨金额为64美元，其中火币PRO上现价为$6469.85，请密切关注行情走向，注意控制风险。',
- 'create_time': '20:19',
- 'title': 'BTC五分钟内上涨1.01%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据统计数据，目前BTC的24小时资金净流出高达22.1亿元，为最大净流出。排名第二为LTC，24小时资金净流出15.29亿元。另有7个币种资金净流出超亿元，分别是：BCH（-9.42亿元）、EOS（-6.69亿元）、ICX（-4.88亿元）、ETC（-4.85亿元）、ETH（-3.31亿元）、OMG（-2.73亿元）、ZIP（-1.78亿元）。同时，24小时资金净流入最多为TRX，资金净流入1.54亿元。',
- 'create_time': '20:16',
- 'title': 'BTC的24小时资金净流出超22亿元'}
+            'OKEx发布公告：将于将于6月15日16:00上线WavesWaves/BTC，Waves/ETH，Waves/USDT，Waves/OKB的市场交易；今日16：00开放充值；6月18日18:00可提现。Waves是用于资产/自定义代币发行、转账和交易的密码学货币平台。',
+ 'create_time': '15:04',
+ 'title': 'OKEx将于6月15日16:00上线Waves'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日A股区块链板块高开低走，收跌0.62%。81只概念股中，30只收涨，45只收跌，2只平盘，4只停牌。其中科蓝软件涨停，涨幅前三为：科蓝软件（+10.02%），恒宝股份（+3.71%），第一创业（+2.64%）；神州泰岳和嘉泽新能跌停，传化智联紧随其后（-9.98%）。',
+ 'create_time': '15:02',
+ 'title': 'A股收盘：区块链板块收跌0.62% 科蓝软件涨停'}
 {'content': '\n'
-            '据统计数据，目前BTC的24小时资金净流出高达22.1亿元，为最大净流出。排名第二为LTC，24小时资金净流出15.29亿元。另有7个币种资金净流出超亿元，分别是：BCH（-9.42亿元）、EOS（-6.69亿元）、ICX（-4.88亿元）、ETC（-4.85亿元）、ETH（-3.31亿元）、OMG（-2.73亿元）、ZIP（-1.78亿元）。同时，24小时资金净流入最多为TRX，资金净流入1.54亿元。',
- 'create_time': '20:16',
- 'title': 'BTC的24小时资金净流出超22亿元'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'Lindacoin官方发布消息称Reddcoin已经加入其移动平台。据《币世界》行情，Reddcoin（RDD）现均价0.0047美元，今日跌幅14.13%；Lindacoin（LINDA）现均价0.002美元，今日跌幅23.89%。',
- 'create_time': '20:14',
- 'title': 'Reddcoin已加入Lindacoin移动平台'}
+            '今日A股区块链板块高开低走，收跌0.62%。81只概念股中，30只收涨，45只收跌，2只平盘，4只停牌。其中科蓝软件涨停，涨幅前三为：科蓝软件（+10.02%），恒宝股份（+3.71%），第一创业（+2.64%）；神州泰岳和嘉泽新能跌停，传化智联紧随其后（-9.98%）。',
+ 'create_time': '15:02',
+ 'title': 'A股收盘：区块链板块收跌0.62% 科蓝软件涨停'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币HADAX将定于6月15日14:00在HADAX开放ZJLT/BTC和ZJLT/ETH交易。6月16日14:00开放ZJLT提现业务。`',
+ 'create_time': '14:40',
+ 'title': 'HADAX6月15日上线ZJLT'}
 {'content': '\n'
-            'Lindacoin官方发布消息称Reddcoin已经加入其移动平台。据《币世界》行情，Reddcoin（RDD）现均价0.0047美元，今日跌幅14.13%；Lindacoin（LINDA）现均价0.002美元，今日跌幅23.89%。',
- 'create_time': '20:14',
- 'title': 'Reddcoin已加入Lindacoin移动平台'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '创业软件(300451.SZ)公告称，公司与浙江蚂蚁小微金融服务集团股份有限公司就共同打造结合互联网、人工智能等创新技术的，开展长期、紧密、深度的合作并签署了《合作框架协议》。本次合作双方主要在大数据、区块链等领域开展深度合作。',
- 'create_time': '20:11',
- 'title': '创业软件与蚂蚁金服在区块链等领域开展深度合作'}
+            '火币HADAX将定于6月15日14:00在HADAX开放ZJLT/BTC和ZJLT/ETH交易。6月16日14:00开放ZJLT提现业务。`',
+ 'create_time': '14:40',
+ 'title': 'HADAX6月15日上线ZJLT'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '昨晚，百度绿洲于百度钱包app内进行内测，该应用似乎是对标网易星球、京东哈希庄园等区块链小游戏，玩法十分相似。与此同时，度宇宙上线时间却一再推迟，百度于8日推出区块链产品“度宇宙”产品官网，承诺将于13日上线相关app，13日晚，度宇宙百度贴吧有消息爆出，度宇宙将推迟至14日凌晨4时上线，不过截至发文，度宇宙官网中仅更新了安卓下载码，用户依旧无法通过下载码提供的地址下载度宇宙app。',
+ 'create_time': '14:32',
+ 'title': '百度内测区块链应用绿洲，度宇宙上线推迟'}
 {'content': '\n'
-            '创业软件(300451.SZ)公告称，公司与浙江蚂蚁小微金融服务集团股份有限公司就共同打造结合互联网、人工智能等创新技术的，开展长期、紧密、深度的合作并签署了《合作框架协议》。本次合作双方主要在大数据、区块链等领域开展深度合作。',
- 'create_time': '20:11',
- 'title': '创业软件与蚂蚁金服在区块链等领域开展深度合作'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n工信部赛迪研究院公链评估第二期：EOS和NAS入选；360团队：有黑客已盗走价值2000万美元的ETH……（点击“查看详情”）',
- 'create_time': '20:11',
- 'title': '6月13日币种利好、利空一览表'}
-{'content': '\n工信部赛迪研究院公链评估第二期：EOS和NAS入选；360团队：有黑客已盗走价值2000万美元的ETH……（点击“查看详情”）',
- 'create_time': '20:11',
- 'title': '6月13日币种利好、利空一览表'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据techrepublic报道，BostonPrivate公司执行副总裁PrasannaGopalakrishnan表示，区块链不会取代现有的业务，它会创建全新的商业模式。',
- 'create_time': '20:00',
- 'title': 'Boston Private公司执行副总裁：区块链会创造全新的商业模式'}
+            '昨晚，百度绿洲于百度钱包app内进行内测，该应用似乎是对标网易星球、京东哈希庄园等区块链小游戏，玩法十分相似。与此同时，度宇宙上线时间却一再推迟，百度于8日推出区块链产品“度宇宙”产品官网，承诺将于13日上线相关app，13日晚，度宇宙百度贴吧有消息爆出，度宇宙将推迟至14日凌晨4时上线，不过截至发文，度宇宙官网中仅更新了安卓下载码，用户依旧无法通过下载码提供的地址下载度宇宙app。',
+ 'create_time': '14:32',
+ 'title': '百度内测区块链应用绿洲，度宇宙上线推迟'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据BlockchainNews消息，近日一项论文研究指出Bitfinex或Tether存在市场操纵的行为。对此，Coinbase英国首席执行官ZeeshanFerozI在MJAC区块链峰会上发表讲话时表示，针对研究的具体内容不做评论，但保证Coinbase已经执行了检查以防止人为的操作，将尽可能的监控，交易监控与纳斯达克等公司的工具不相上下，目前正在研究如何将交易所受到的操纵最小化。',
+ 'create_time': '14:27',
+ 'title': 'Coinbase高管评论Bitfinex涉嫌操纵市场事件：尽力监控，确保交易所受到的操纵最小化'}
 {'content': '\n'
-            '据techrepublic报道，BostonPrivate公司执行副总裁PrasannaGopalakrishnan表示，区块链不会取代现有的业务，它会创建全新的商业模式。',
- 'create_time': '20:00',
- 'title': 'Boston Private公司执行副总裁：区块链会创造全新的商业模式'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据标准共识发布报告，NEO（原小蚁股Antshares）风险等级定义为“B”。给出的主要原因是：项目有一定创新性且有实际进展，接入DApp已超过50。投资者基础较好，但目前存在流通性风险。共识机制存在一定中心化风险，团队成员信息披露不够完善。据币世界行情，NEO现全球均价40.39美元，跌幅9.99%。',
- 'create_time': '19:55',
- 'title': '接入DApp超50、存在一定中心化风险 评级机构将NEO风险等级定为B'}
+            '据BlockchainNews消息，近日一项论文研究指出Bitfinex或Tether存在市场操纵的行为。对此，Coinbase英国首席执行官ZeeshanFerozI在MJAC区块链峰会上发表讲话时表示，针对研究的具体内容不做评论，但保证Coinbase已经执行了检查以防止人为的操作，将尽可能的监控，交易监控与纳斯达克等公司的工具不相上下，目前正在研究如何将交易所受到的操纵最小化。',
+ 'create_time': '14:27',
+ 'title': 'Coinbase高管评论Bitfinex涉嫌操纵市场事件：尽力监控，确保交易所受到的操纵最小化'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日，WECC线上“世界杯竞猜”活动已正式上线芬果财经应用，竞猜日期为6月14日10：00-7月15日24：00。参与者可使用芬果财经官方指定TokenWECC在其官网或App上进行竞猜。即日起，凡首次登录芬果财经“世界杯竞猜”活动页面的用户，均可得到500枚WECC。',
+ 'create_time': '14:18',
+ 'title': 'WECC“世界杯竞猜”活动今日上线'}
 {'content': '\n'
-            '据标准共识发布报告，NEO（原小蚁股Antshares）风险等级定义为“B”。给出的主要原因是：项目有一定创新性且有实际进展，接入DApp已超过50。投资者基础较好，但目前存在流通性风险。共识机制存在一定中心化风险，团队成员信息披露不够完善。据币世界行情，NEO现全球均价40.39美元，跌幅9.99%。',
- 'create_time': '19:55',
- 'title': '接入DApp超50、存在一定中心化风险 评级机构将NEO风险等级定为B'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，太阳能联盟能源公司宣布，它已经在伊利诺伊州Murphysboro收购了一个16.5万平方英尺的仓库设施，作为太阳能联盟与MurphysboroCity合作的“通过绿色能源工作更新Murphysboro社区”计划的一部分。该公司也高兴地宣布，它已与顶级太阳能电池板制造商签署了谅解备忘录（“MOU”），用于开发多个太阳能设施，托管加密货币开采业务。',
- 'create_time': '19:32',
- 'title': '太阳能联盟开发太阳能加密货币开采设施'}
+            '今日，WECC线上“世界杯竞猜”活动已正式上线芬果财经应用，竞猜日期为6月14日10：00-7月15日24：00。参与者可使用芬果财经官方指定TokenWECC在其官网或App上进行竞猜。即日起，凡首次登录芬果财经“世界杯竞猜”活动页面的用户，均可得到500枚WECC。',
+ 'create_time': '14:18',
+ 'title': 'WECC“世界杯竞猜”活动今日上线'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '日本经济新闻发表文章表示，6月13日虚拟货币交易所以“技术上困难”为由，未对法院命令冻结虚拟货币账户的资金一事做出相应措施，从这一事件来看，数字货币是无法被强制冻结的。丽泽大学的中岛真志教授指出：“没有管理者的虚拟货币不应该被公共权力机构查封，技术上也不能保证其被强制执行”。他表示，这可能会成为洗钱和资产隐藏等的温床，“目前的情况下，它不适用于健全的金融交易，必须通过制定法律和规则来允许交易所能够冻结存款等问题，这是必不可少的”。',
+ 'create_time': '14:14',
+ 'title': '日本经济新闻：数字货币无法被强制冻结'}
 {'content': '\n'
-            '今日，太阳能联盟能源公司宣布，它已经在伊利诺伊州Murphysboro收购了一个16.5万平方英尺的仓库设施，作为太阳能联盟与MurphysboroCity合作的“通过绿色能源工作更新Murphysboro社区”计划的一部分。该公司也高兴地宣布，它已与顶级太阳能电池板制造商签署了谅解备忘录（“MOU”），用于开发多个太阳能设施，托管加密货币开采业务。',
- 'create_time': '19:32',
- 'title': '太阳能联盟开发太阳能加密货币开采设施'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Bitnovosti消息，阿布哈兹共和国经济部长Ardzinba在新闻发布会上称，创建国家的数字货币是不能错过的机会。他指出，在2017年，阿布哈兹宣布计划建立一个国家数字货币，但还没有把它引入到经济中。但是今天，一些国家已经实现了这个想法，并从中获利。',
- 'create_time': '19:20',
- 'title': '阿布哈兹共和国经济部长：不应错过发展国家数字货币的机会'}
+            '日本经济新闻发表文章表示，6月13日虚拟货币交易所以“技术上困难”为由，未对法院命令冻结虚拟货币账户的资金一事做出相应措施，从这一事件来看，数字货币是无法被强制冻结的。丽泽大学的中岛真志教授指出：“没有管理者的虚拟货币不应该被公共权力机构查封，技术上也不能保证其被强制执行”。他表示，这可能会成为洗钱和资产隐藏等的温床，“目前的情况下，它不适用于健全的金融交易，必须通过制定法律和规则来允许交易所能够冻结存款等问题，这是必不可少的”。',
+ 'create_time': '14:14',
+ 'title': '日本经济新闻：数字货币无法被强制冻结'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据bitcoin消息，泰国金融监管机构预计将在本月新的监管框架生效后批准五个ICO项目。在该国50个ICO项目中，只有5个符合监管机构本周推出的注册要求。据悉，监管机构大约需要两个月审核ICO项目，预计下一批获批准项目将于今年第三季度公布。',
+ 'create_time': '14:08',
+ 'title': '泰国金融监管机构预计批准5个ICO项目 占当地ICO项目总数的十分之一'}
 {'content': '\n'
-            '据Bitnovosti消息，阿布哈兹共和国经济部长Ardzinba在新闻发布会上称，创建国家的数字货币是不能错过的机会。他指出，在2017年，阿布哈兹宣布计划建立一个国家数字货币，但还没有把它引入到经济中。但是今天，一些国家已经实现了这个想法，并从中获利。',
- 'create_time': '19:20',
- 'title': '阿布哈兹共和国经济部长：不应错过发展国家数字货币的机会'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'Coindesk分析师发文表示：长期而言，在市场普遍看跌的情况下，BTC仍有可能降至6000美元；在未来48小时，看跌势头可能会减弱，价格可能会重新站上5日均线（暂报6800美元）；只有每日收盘价高于10日均线（暂报7214美元），才会中止看跌观点。币世界行情显示，BTC暂报6484.45美元，今日跌幅5.04%。（点击“查看详情”）',
- 'create_time': '19:17',
- 'title': 'Coindesk分析师：未来48小时，BTC有望反弹至6800美元'}
+            '据bitcoin消息，泰国金融监管机构预计将在本月新的监管框架生效后批准五个ICO项目。在该国50个ICO项目中，只有5个符合监管机构本周推出的注册要求。据悉，监管机构大约需要两个月审核ICO项目，预计下一批获批准项目将于今年第三季度公布。',
+ 'create_time': '14:08',
+ 'title': '泰国金融监管机构预计批准5个ICO项目 占当地ICO项目总数的十分之一'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '炒币网将于6月15日起开通交易送平台币cbs的活动。cbs发行量总量为3600万枚，每个cbs可以享受炒币网永久发展福利分成，并可在平台兑换相应的BTC。',
+ 'create_time': '13:38',
+ 'title': '炒币网6月15日开启交易送平台币活动（推广）'}
 {'content': '\n'
-            'Coindesk分析师发文表示：长期而言，在市场普遍看跌的情况下，BTC仍有可能降至6000美元；在未来48小时，看跌势头可能会减弱，价格可能会重新站上5日均线（暂报6800美元）；只有每日收盘价高于10日均线（暂报7214美元），才会中止看跌观点。币世界行情显示，BTC暂报6484.45美元，今日跌幅5.04%。（点击“查看详情”）',
- 'create_time': '19:17',
- 'title': 'Coindesk分析师：未来48小时，BTC有望反弹至6800美元'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据financemagnates报道，财务咨询公司FundstratGlobalAdvisors推出的基准数字货币市场表现周报显示，BNB排名第一，BTC排在第10名，ETH排在13名，XRP排在第4名。',
- 'create_time': '19:16',
- 'title': 'Fundstrat周报：BNB市场表现排名第一'}
+            '炒币网将于6月15日起开通交易送平台币cbs的活动。cbs发行量总量为3600万枚，每个cbs可以享受炒币网永久发展福利分成，并可在平台兑换相应的BTC。',
+ 'create_time': '13:38',
+ 'title': '炒币网6月15日开启交易送平台币活动（推广）'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日14:00，FAIR世界杯竞猜活动“邀约FAIR世界杯，百万激情等你来”将正式上线，玩家可使用FAIRToken参与竞猜。火币HADAX也将同时开启FAIR交易赛。',
+ 'create_time': '13:37',
+ 'title': 'FAIR世界杯竞猜活动今日14：00上线'}
 {'content': '\n'
-            '据financemagnates报道，财务咨询公司FundstratGlobalAdvisors推出的基准数字货币市场表现周报显示，BNB排名第一，BTC排在第10名，ETH排在13名，XRP排在第4名。',
- 'create_time': '19:16',
- 'title': 'Fundstrat周报：BNB市场表现排名第一'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '以太坊联合创始人JosephLubin近日详细说明了区块链技术的颠覆性潜力，他在都柏林的MoneyConf大会中发表了自己对区块链的看法。在谈到区块链的未来时，他说：“这项技术影响深远，将为全球经济、社会和政治系统带来很多惊喜……我们真的不用担心这一系统或者这项技术存在风险。”',
- 'create_time': '19:15',
- 'title': '以太坊联合创始人：区块链比互联网泡沫更具穿透力'}
-{'content': '\n'
-            '以太坊联合创始人JosephLubin近日详细说明了区块链技术的颠覆性潜力，他在都柏林的MoneyConf大会中发表了自己对区块链的看法。在谈到区块链的未来时，他说：“这项技术影响深远，将为全球经济、社会和政治系统带来很多惊喜……我们真的不用担心这一系统或者这项技术存在风险。”',
- 'create_time': '19:15',
- 'title': '以太坊联合创始人：区块链比互联网泡沫更具穿透力'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n今日，慢雾科技联合创始人余弦宣布参选HuobiChain领袖招募。',
- 'create_time': '19:09',
- 'title': '慢雾科技联合创始人余弦报名火币公链领袖招募'}
-{'content': '\n今日，慢雾科技联合创始人余弦宣布参选HuobiChain领袖招募。',
- 'create_time': '19:09',
- 'title': '慢雾科技联合创始人余弦报名火币公链领袖招募'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据HyperPay官方消息，其将在6月14日至29日期间举办“2018世界杯预测赛”，活动设置58个BTC作为奖金，且竞猜免费。具体规则为：活动期间下载HyperPay钱包并注册成功可获得竞猜机会；持有Hpy代币或其它等值代币，以及邀请好友注册可增加竞猜机会；每场比赛设置1个BTC奖池，成功预测最后比分与上半场比分，或最终比分与上半场总进球数的用户可均分1BTC；48场比赛中，猜中40场以上者可瓜分额外的10BTC。',
- 'create_time': '19:09',
- 'title': 'HyperPay将举办“2018世界杯预测赛”，设58个BTC奖金'}
-{'content': '\n'
-            '据HyperPay官方消息，其将在6月14日至29日期间举办“2018世界杯预测赛”，活动设置58个BTC作为奖金，且竞猜免费。具体规则为：活动期间下载HyperPay钱包并注册成功可获得竞猜机会；持有Hpy代币或其它等值代币，以及邀请好友注册可增加竞猜机会；每场比赛设置1个BTC奖池，成功预测最后比分与上半场比分，或最终比分与上半场总进球数的用户可均分1BTC；48场比赛中，猜中40场以上者可瓜分额外的10BTC。',
- 'create_time': '19:09',
- 'title': 'HyperPay将举办“2018世界杯预测赛”，设58个BTC奖金'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n德国金融监管机构主管FelixHufeld表示，区块链技术具有革命性，可能颠覆整个金融机构。',
- 'create_time': '19:09',
- 'title': '德国金融监管机构主管：区块链技术可能颠覆整个金融机构'}
-{'content': '\n德国金融监管机构主管FelixHufeld表示，区块链技术具有革命性，可能颠覆整个金融机构。',
- 'create_time': '19:09',
- 'title': '德国金融监管机构主管：区块链技术可能颠覆整个金融机构'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n区块链小白学习平台“羊驼区块链”于近日获得了火币生态基金的投资，该平台主要通过漫画和短视频形式帮助用户轻松学习区块链知识。',
- 'create_time': '19:01',
- 'title': '“羊驼区块链”获火币生态基金投资（推广）'}
-{'content': '\n区块链小白学习平台“羊驼区块链”于近日获得了火币生态基金的投资，该平台主要通过漫画和短视频形式帮助用户轻松学习区块链知识。',
- 'create_time': '19:01',
- 'title': '“羊驼区块链”获火币生态基金投资（推广）'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'OKEx发布公告：由于钱包维护，OKEx将于6月13日19:00-24:00期间暂停USDT的充值，USDT的提现不受影响。暂停期间的USDT充值将会延迟到账。',
- 'create_time': '18:55',
- 'title': 'OKEx今晚19:00-24:00期间暂停USDT充值'}
-{'content': '\n'
-            'OKEx发布公告：由于钱包维护，OKEx将于6月13日19:00-24:00期间暂停USDT的充值，USDT的提现不受影响。暂停期间的USDT充值将会延迟到账。',
- 'create_time': '18:55',
- 'title': 'OKEx今晚19:00-24:00期间暂停USDT充值'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'OCN/USDT交易对已上线火币，开盘价为0.0097美元，最高涨至0.0115美元，开盘涨幅逾10%。火币Pro现报0.0107美元，涨幅10.39%。ODYSSEY（OCN）是东南亚和欧洲共享单车公司OBIKE创始团队发起的基于共享经济的区块链项目。',
- 'create_time': '18:53',
- 'title': 'OCN/USDT交易对上线火币 开盘涨幅逾10%'}
-{'content': '\n'
-            'OCN/USDT交易对已上线火币，开盘价为0.0097美元，最高涨至0.0115美元，开盘涨幅逾10%。火币Pro现报0.0107美元，涨幅10.39%。ODYSSEY（OCN）是东南亚和欧洲共享单车公司OBIKE创始团队发起的基于共享经济的区块链项目。',
- 'create_time': '18:53',
- 'title': 'OCN/USDT交易对上线火币 开盘涨幅逾10%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据fxstreet报道，分析师TomasSalles称，BTC买家活跃度目前处于极低水平，自2015年以来只出现过三次，从技术指标MACD上看，BTC正在为牛市构建有利格局，BTC最后一个重要支撑位是2月低点5864美元。如果BTC多头上攻，第一个压力位在6644美元，短期突破7090美元则显示看涨信号。',
- 'create_time': '18:52',
- 'title': '分析师：BTC买家目前极不活跃 自2015年以来只出现过三次'}
-{'content': '\n'
-            '据fxstreet报道，分析师TomasSalles称，BTC买家活跃度目前处于极低水平，自2015年以来只出现过三次，从技术指标MACD上看，BTC正在为牛市构建有利格局，BTC最后一个重要支撑位是2月低点5864美元。如果BTC多头上攻，第一个压力位在6644美元，短期突破7090美元则显示看涨信号。',
- 'create_time': '18:52',
- 'title': '分析师：BTC买家目前极不活跃 自2015年以来只出现过三次'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，Delphy天算DApp已登陆imToken数字钱包，成为国内首家入驻imToken的以太坊预测市场应用，用户可通过imToken直接充值、转账，体验天算DApp并参与话题预测。天算官方表示，双方将利用各自在产品端的优势，加强彼此用户的活跃度及内容深度，为用户提供真正优质的生态体验。',
- 'create_time': '18:49',
- 'title': 'Delphy天算DApp登陆imToken'}
-{'content': '\n'
-            '今日，Delphy天算DApp已登陆imToken数字钱包，成为国内首家入驻imToken的以太坊预测市场应用，用户可通过imToken直接充值、转账，体验天算DApp并参与话题预测。天算官方表示，双方将利用各自在产品端的优势，加强彼此用户的活跃度及内容深度，为用户提供真正优质的生态体验。',
- 'create_time': '18:49',
- 'title': 'Delphy天算DApp登陆imToken'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '火币官方发布公告：火币已根据6月1日12:00:00全站EOS资产（不含借贷部分）快照持仓数据按照1:1比例分发了EON糖果（包括持仓小于100EOS的用户）；火币已根据6月3日6:00:00全站EOS资产（不含借贷部分）快照持仓数据按照1:1比例分发了EOP糖果（包括持仓小于100EOS的用户），两者均可至HADAX账户中查看。',
- 'create_time': '18:42',
- 'title': '火币已完成EON和EOP糖果发放'}
-{'content': '\n'
-            '火币官方发布公告：火币已根据6月1日12:00:00全站EOS资产（不含借贷部分）快照持仓数据按照1:1比例分发了EON糖果（包括持仓小于100EOS的用户）；火币已根据6月3日6:00:00全站EOS资产（不含借贷部分）快照持仓数据按照1:1比例分发了EOP糖果（包括持仓小于100EOS的用户），两者均可至HADAX账户中查看。',
- 'create_time': '18:42',
- 'title': '火币已完成EON和EOP糖果发放'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '美国证券交易委员会（SEC）官网显示，SEC将于6月14日凌晨在位于亚特兰大的乔治亚州立大学法学院举行一次投资者互动活动，就比特币和ICO等投资者关心的问题与投资者展开讨论。届时SEC的五人委员会和其他工作人员将出席。',
- 'create_time': '18:32',
- 'title': '美国SEC将举行投资者互动活动，与投资者讨论比特币和ICO等话题'}
-{'content': '\n'
-            '美国证券交易委员会（SEC）官网显示，SEC将于6月14日凌晨在位于亚特兰大的乔治亚州立大学法学院举行一次投资者互动活动，就比特币和ICO等投资者关心的问题与投资者展开讨论。届时SEC的五人委员会和其他工作人员将出席。',
- 'create_time': '18:32',
- 'title': '美国SEC将举行投资者互动活动，与投资者讨论比特币和ICO等话题'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据FXstreet消息，6月11日至12日在华盛顿举行的首席财务官会议上，美国证券交易委员会主席JayClayton称，他希望获得所有数字货币的监管。并表示“让我感到很不高兴的是，人们认为通过称它为token以某种方式免除监管，我要澄清的是，事实并非如此。”',
- 'create_time': '18:30',
- 'title': '美国证券交易委员会主席希望获得所有数字货币监管'}
-{'content': '\n'
-            '据FXstreet消息，6月11日至12日在华盛顿举行的首席财务官会议上，美国证券交易委员会主席JayClayton称，他希望获得所有数字货币的监管。并表示“让我感到很不高兴的是，人们认为通过称它为token以某种方式免除监管，我要澄清的是，事实并非如此。”',
- 'create_time': '18:30',
- 'title': '美国证券交易委员会主席希望获得所有数字货币监管'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据SmartMesh基金会称，有欺诈网站模仿SmartMeshAPP、团队logo、项目介绍、进度更新等，并诱导用户进入钓鱼网站。SmartMesh项目是一个基于区块链的物联网底层协议，SMT现价0.033美元，跌幅9.04%。',
- 'create_time': '18:25',
- 'title': 'SmartMesh基金会称有团队开发钓鱼网站欺诈用户'}
-{'content': '\n'
-            '据SmartMesh基金会称，有欺诈网站模仿SmartMeshAPP、团队logo、项目介绍、进度更新等，并诱导用户进入钓鱼网站。SmartMesh项目是一个基于区块链的物联网底层协议，SMT现价0.033美元，跌幅9.04%。',
- 'create_time': '18:25',
- 'title': 'SmartMesh基金会称有团队开发钓鱼网站欺诈用户'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '币安发布公告：将于6月20日8:00暂停ICX充值、提现业务，以支持ICX主网升级，请用户在此之前完成充值、提现。ICX主网稳定运行后即开放充值、提现。同时，币安已于今日16:00上线ICX/USDT交易市场，币安暂报1.88美元，开盘两小时以来下跌3.48%。',
- 'create_time': '18:24',
- 'title': '币安支持ICX主网切换 今日16:00已上线ICX/USDT交易市场'}
-{'content': '\n'
-            '币安发布公告：将于6月20日8:00暂停ICX充值、提现业务，以支持ICX主网升级，请用户在此之前完成充值、提现。ICX主网稳定运行后即开放充值、提现。同时，币安已于今日16:00上线ICX/USDT交易市场，币安暂报1.88美元，开盘两小时以来下跌3.48%。',
- 'create_time': '18:24',
- 'title': '币安支持ICX主网切换 今日16:00已上线ICX/USDT交易市场'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据《币世界》行情，近日数字货币市场持续下行，LTC、ETC、DASH、NEO、QTUM等多个老牌币种纷纷创年内新低。LTC现价94.76美元，跌幅10%；ETC现价13.4美元，跌幅13.44%；DASH现价249.74美元，跌幅8.91%；NEO现价39.21美元，跌幅10.6%；QTUM现价10.61美元，跌幅8.29%。',
- 'create_time': '18:07',
- 'title': 'LTC、ETC、NEO等老牌币种纷纷创年内新低'}
-{'content': '\n'
-            '据《币世界》行情，近日数字货币市场持续下行，LTC、ETC、DASH、NEO、QTUM等多个老牌币种纷纷创年内新低。LTC现价94.76美元，跌幅10%；ETC现价13.4美元，跌幅13.44%；DASH现价249.74美元，跌幅8.91%；NEO现价39.21美元，跌幅10.6%；QTUM现价10.61美元，跌幅8.29%。',
- 'create_time': '18:07',
- 'title': 'LTC、ETC、NEO等老牌币种纷纷创年内新低'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据《币世界》行情显示，BTC跌至4月2日以来新低，测试6400美元前期支撑位，BTC现价6419美元，跌幅5.01%。数字货币市场整体跟随BTC下跌，24小时前100币种中96跌4涨，总体市值2728.3亿美元。数字货币板块全部下跌，平台币跌幅最小，下跌0.7%；内容板块、超级算力、侧链概念24小时平均跌幅最大，分别为13.70%、12.77%、12.31%。USDT在火币Pro的法币交易上现价6.58元，溢价2.8%。',
- 'create_time': '18:06',
- 'title': '数字货币市场整体下跌 USDT场外溢价2.8%'}
-{'content': '\n'
-            '据《币世界》行情显示，BTC跌至4月2日以来新低，测试6400美元前期支撑位，BTC现价6419美元，跌幅5.01%。数字货币市场整体跟随BTC下跌，24小时前100币种中96跌4涨，总体市值2728.3亿美元。数字货币板块全部下跌，平台币跌幅最小，下跌0.7%；内容板块、超级算力、侧链概念24小时平均跌幅最大，分别为13.70%、12.77%、12.31%。USDT在火币Pro的法币交易上现价6.58元，溢价2.8%。',
- 'create_time': '18:06',
- 'title': '数字货币市场整体下跌 USDT场外溢价2.8%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '根据EOSAuthority投票统计，目前EOS主网投票率为6.62%。目前EOS区块链正在进行激活，如果没有15%的投票支持，EOS链条仍不能运行。据《币世界》行情，EOS现均价9.86美元，今日跌幅9.65％。',
- 'create_time': '17:46',
- 'title': 'EOS主网激活投票率已达6.62%'}
-{'content': '\n'
-            '根据EOSAuthority投票统计，目前EOS主网投票率为6.62%。目前EOS区块链正在进行激活，如果没有15%的投票支持，EOS链条仍不能运行。据《币世界》行情，EOS现均价9.86美元，今日跌幅9.65％。',
- 'create_time': '17:46',
- 'title': 'EOS主网激活投票率已达6.62%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC五分钟内下跌1.08%，下跌金额为70美元，其中火币PRO上现价为$6420.05，请密切关注行情走向，注意控制风险。',
- 'create_time': '17:40',
- 'title': 'BTC五分钟内下跌1.08%'}
-{'content': '\nBTC五分钟内下跌1.08%，下跌金额为70美元，其中火币PRO上现价为$6420.05，请密切关注行情走向，注意控制风险。',
- 'create_time': '17:40',
- 'title': 'BTC五分钟内下跌1.08%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coinness作者List分析，BTC当前受4月1日低点$6434支撑，暂时止跌，日线依然处于超跌状态，且RSI读数再次低于30。本次下跌后的修正与6月11日大跌后的修正不同，目前在4小时图上，RSI和MACD出现了底背离，均拒绝再创新低。在空方力量较强的情况下，即使不出现反弹，短期继续下跌的风险已经大幅降低。如果出现反弹第一目标仍是$7000关口，如果跌破当前支撑继续向下，BTC将直奔$6000。短期快速测试$6000关口对激进投资者来说，将是初步加仓的机会。',
- 'create_time': '17:38',
- 'title': 'Coinness分析：部分指标显示BTC有止跌迹象'}
-{'content': '\n'
-            '据Coinness作者List分析，BTC当前受4月1日低点$6434支撑，暂时止跌，日线依然处于超跌状态，且RSI读数再次低于30。本次下跌后的修正与6月11日大跌后的修正不同，目前在4小时图上，RSI和MACD出现了底背离，均拒绝再创新低。在空方力量较强的情况下，即使不出现反弹，短期继续下跌的风险已经大幅降低。如果出现反弹第一目标仍是$7000关口，如果跌破当前支撑继续向下，BTC将直奔$6000。短期快速测试$6000关口对激进投资者来说，将是初步加仓的机会。',
- 'create_time': '17:38',
- 'title': 'Coinness分析：部分指标显示BTC有止跌迹象'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'YOUChain（有链）已在旗下有令APP上线由传奇球星马尔蒂尼发起的世界杯竞猜活动“免费猜一猜”。有链官方为此设置了1000万YOU奖励，并表示竞猜全程上链，智能合约可保数据公开透明、不可篡改。',
- 'create_time': '17:34',
- 'title': '有令APP上线世界杯免费竞猜活动'}
-{'content': '\n'
-            'YOUChain（有链）已在旗下有令APP上线由传奇球星马尔蒂尼发起的世界杯竞猜活动“免费猜一猜”。有链官方为此设置了1000万YOU奖励，并表示竞猜全程上链，智能合约可保数据公开透明、不可篡改。',
- 'create_time': '17:34',
- 'title': '有令APP上线世界杯免费竞猜活动'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '刚刚，数字货币市场再度下跌，目前总市值跌至2770亿美元，BTC市值占比升至40.4%，BTC成交量达45.74亿美元，占比31.01%。据币世界行情，BTC现全球均价6567.3美元，跌幅3.83%。',
- 'create_time': '17:30',
- 'title': '数字货币市场继续下跌 BTC占比上升'}
-{'content': '\n'
-            '刚刚，数字货币市场再度下跌，目前总市值跌至2770亿美元，BTC市值占比升至40.4%，BTC成交量达45.74亿美元，占比31.01%。据币世界行情，BTC现全球均价6567.3美元，跌幅3.83%。',
- 'create_time': '17:30',
- 'title': '数字货币市场继续下跌 BTC占比上升'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据《币世界》行情显示，BTC今日继续下跌，跌破6500美元，试探前期低点6450美元，现价6498美元，跌幅3.81%。数字货币市场整体跟随BTC下跌，BCH现价846.13美元，跌幅7.67%，ETH现价473.95美元，跌幅9.66%，LTC现价95.86美元，跌幅9.00%。',
- 'create_time': '17:28',
- 'title': 'BTC跌破6500美元 试探前期低点6450美元'}
-{'content': '\n'
-            '据《币世界》行情显示，BTC今日继续下跌，跌破6500美元，试探前期低点6450美元，现价6498美元，跌幅3.81%。数字货币市场整体跟随BTC下跌，BCH现价846.13美元，跌幅7.67%，ETH现价473.95美元，跌幅9.66%，LTC现价95.86美元，跌幅9.00%。',
- 'create_time': '17:28',
- 'title': 'BTC跌破6500美元 试探前期低点6450美元'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据纽约时报消息，今日，德克萨斯大学的金融学教授JohnGriffin和研究生AminShams发表的一篇论文显示，通过对数百万交易记录的研究分析以及对Tether流向的检查，他们认为去年比特币及其他主流加密货币价格上涨中，其中至少一半的上涨可能是由价格操纵活动推动的。',
- 'create_time': '17:27',
- 'title': '德克萨斯大学金融学论文：在去年加密货币价格的暴涨中至少一半的上涨可能是由价格操纵活动推动的'}
-{'content': '\n'
-            '据纽约时报消息，今日，德克萨斯大学的金融学教授JohnGriffin和研究生AminShams发表的一篇论文显示，通过对数百万交易记录的研究分析以及对Tether流向的检查，他们认为去年比特币及其他主流加密货币价格上涨中，其中至少一半的上涨可能是由价格操纵活动推动的。',
- 'create_time': '17:27',
- 'title': '德克萨斯大学金融学论文：在去年加密货币价格的暴涨中至少一半的上涨可能是由价格操纵活动推动的'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据币为Btcdo行情显示，其平台币BDB自今晨8时起持续、逆势上涨，从0.056美元涨至0.08美元，今日涨幅现已达43.88%。',
- 'create_time': '17:26',
- 'title': '币为Btcdo平台币BDB逆势上涨43.88%'}
-{'content': '\n'
-            '据币为Btcdo行情显示，其平台币BDB自今晨8时起持续、逆势上涨，从0.056美元涨至0.08美元，今日涨幅现已达43.88%。',
- 'create_time': '17:26',
- 'title': '币为Btcdo平台币BDB逆势上涨43.88%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据《币世界》行情显示，今天数字货币市场整体继续下跌，火币Pro的USDT交易区中ETC领跌，现价13.2美元，跌幅14.17%。',
- 'create_time': '17:24',
- 'title': 'ETC跌幅继续扩大 跌幅14.17%'}
-{'content': '\n'
-            '据《币世界》行情显示，今天数字货币市场整体继续下跌，火币Pro的USDT交易区中ETC领跌，现价13.2美元，跌幅14.17%。',
- 'create_time': '17:24',
- 'title': 'ETC跌幅继续扩大 跌幅14.17%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据fxstreet报道，分析师TanyaAbrosimova称，BTC可能重新测试周二低点6450美元，如果跌破，可能下行至6000美元支撑位，最终看跌至5873美元。BTC如果反弹，上方重要阻力位区间在6600-6700美元，最终突破7000美元出现看涨信号。',
- 'create_time': '17:06',
- 'title': '分析师：BTC可能重新测试周二低点6450美元 最终看跌至5873美元'}
-{'content': '\n'
-            '据fxstreet报道，分析师TanyaAbrosimova称，BTC可能重新测试周二低点6450美元，如果跌破，可能下行至6000美元支撑位，最终看跌至5873美元。BTC如果反弹，上方重要阻力位区间在6600-6700美元，最终突破7000美元出现看涨信号。',
- 'create_time': '17:06',
- 'title': '分析师：BTC可能重新测试周二低点6450美元 最终看跌至5873美元'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '比特股官方发布公告称BTS2.0.180612新版本已发布。该版本是一个协议升级（硬分叉）版本，所有节点需在7月19日（周四）晚上22:00前完成升级。据《币世界》行情，BTS现均价0.1545美元，今日跌幅6.08%。',
- 'create_time': '17:00',
- 'title': '比特股新版本BTS 2.0.180612已发布'}
-{'content': '\n'
-            '比特股官方发布公告称BTS2.0.180612新版本已发布。该版本是一个协议升级（硬分叉）版本，所有节点需在7月19日（周四）晚上22:00前完成升级。据《币世界》行情，BTS现均价0.1545美元，今日跌幅6.08%。',
- 'create_time': '17:00',
- 'title': '比特股新版本BTS 2.0.180612已发布'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据阿希链官方消息，阿希链与HyperPay达成战略合作，阿希币（XAS）已正式接入HyperPay钱包。即日起，HyperPay钱包会全面支持XAS的管理和收发。除上币合作外，双方表示将继续探索其他深入合作的可能性，共建区块链生态系统。',
- 'create_time': '16:57',
- 'title': '阿希链与HyperPay达成战略合作  XAS已正式接入HyperPay钱包'}
-{'content': '\n'
-            '据阿希链官方消息，阿希链与HyperPay达成战略合作，阿希币（XAS）已正式接入HyperPay钱包。即日起，HyperPay钱包会全面支持XAS的管理和收发。除上币合作外，双方表示将继续探索其他深入合作的可能性，共建区块链生态系统。',
- 'create_time': '16:57',
- 'title': '阿希链与HyperPay达成战略合作  XAS已正式接入HyperPay钱包'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '根据360Netlab报告称，由于以太坊矿机配置不当以及第三方应用问题，黑客到目前为止已经窃取了2000万美元的ETH。360Netlab的专家表示，这些网络攻击的目标是不安全的以太坊节点。而早在3月15日，360Netlab就提醒加密货币社区黑客正在搜索互联网上不安全的以太坊节点，当时网络犯罪分子盗走了3.96个ETH。然而，最近的研究发现另一个黑客成功盗走了38642个ETH，大约价值2000万美元。',
- 'create_time': '16:39',
- 'title': '360团队：有黑客已盗走价值2000万美元的ETH'}
-{'content': '\n'
-            '根据360Netlab报告称，由于以太坊矿机配置不当以及第三方应用问题，黑客到目前为止已经窃取了2000万美元的ETH。360Netlab的专家表示，这些网络攻击的目标是不安全的以太坊节点。而早在3月15日，360Netlab就提醒加密货币社区黑客正在搜索互联网上不安全的以太坊节点，当时网络犯罪分子盗走了3.96个ETH。然而，最近的研究发现另一个黑客成功盗走了38642个ETH，大约价值2000万美元。',
- 'create_time': '16:39',
- 'title': '360团队：有黑客已盗走价值2000万美元的ETH'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据BitInfoCharts，在全球1100万比特币持有者中，有1000个（约0.009％）控制着所有BTC的35.4％，在这1000个比特币持有者中，前十名账户持有者控制着所有BTC的5.96％。',
- 'create_time': '16:35',
- 'title': '1000个比特币持有者控制着所有BTC的35.4％'}
-{'content': '\n'
-            '据BitInfoCharts，在全球1100万比特币持有者中，有1000个（约0.009％）控制着所有BTC的35.4％，在这1000个比特币持有者中，前十名账户持有者控制着所有BTC的5.96％。',
- 'create_time': '16:35',
- 'title': '1000个比特币持有者控制着所有BTC的35.4％'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '维基链官方称，将于6月14日-6月29日世界杯小组赛期间，推出第三期维基争霸赛。本期比赛分为雨露均沾人人有奖、竞猜有礼好运转出来、转发有礼、公众号关注有礼、邀请有礼五部分，每个活动均可获得游戏代币SPC，可用以参与世界杯竞猜。此外，维基链还设置了价值超百万的抽奖环节，前一千名每人一根金条。维基链钱包DApp也将会更新至2.0版本。',
- 'create_time': '16:28',
- 'title': '维基链将于6月14日开启第三期争霸赛'}
-{'content': '\n'
-            '维基链官方称，将于6月14日-6月29日世界杯小组赛期间，推出第三期维基争霸赛。本期比赛分为雨露均沾人人有奖、竞猜有礼好运转出来、转发有礼、公众号关注有礼、邀请有礼五部分，每个活动均可获得游戏代币SPC，可用以参与世界杯竞猜。此外，维基链还设置了价值超百万的抽奖环节，前一千名每人一根金条。维基链钱包DApp也将会更新至2.0版本。',
- 'create_time': '16:28',
- 'title': '维基链将于6月14日开启第三期争霸赛'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据coinhills数据，法币兑比特币占比中，韩元已跌下3%，目前占比2.98%，排名由此前第三降至第四。其它法币中，日元占比仍最高，占69.35%，其次是美元（占比21.02%）、欧元（占比3.74%）。韩国市场BTC价格普遍在6700美元，Bithumb上BTC价格6721.46美元。据币世界行情，BTC现全球均价6563.83美元，跌幅4.51%。',
- 'create_time': '16:18',
- 'title': '韩元兑比特币占比跌下3%'}
-{'content': '\n'
-            '据coinhills数据，法币兑比特币占比中，韩元已跌下3%，目前占比2.98%，排名由此前第三降至第四。其它法币中，日元占比仍最高，占69.35%，其次是美元（占比21.02%）、欧元（占比3.74%）。韩国市场BTC价格普遍在6700美元，Bithumb上BTC价格6721.46美元。据币世界行情，BTC现全球均价6563.83美元，跌幅4.51%。',
- 'create_time': '16:18',
- 'title': '韩元兑比特币占比跌下3%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n行情显示，目前数字货币市场仍处于低位，现全球总市值2822.5亿美元，已回至2018年4月水平。',
- 'create_time': '16:10',
- 'title': '数字货币市场总市值跌至2800亿美元 回至4月水平'}
-{'content': '\n行情显示，目前数字货币市场仍处于低位，现全球总市值2822.5亿美元，已回至2018年4月水平。',
- 'create_time': '16:10',
- 'title': '数字货币市场总市值跌至2800亿美元 回至4月水平'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，YYB（云游链）官方发布通告称：近日市场上出现了部分打着YYB的旗号进行私募的个人和组织，而云游链官方从始至终未授权任何人或任何组织进行私募活动。希望大家能够理性判断，辨别真假。',
- 'create_time': '15:50',
- 'title': 'YYB发布官方通告：未授权任何个人或组织进行私募活动'}
-{'content': '\n'
-            '今日，YYB（云游链）官方发布通告称：近日市场上出现了部分打着YYB的旗号进行私募的个人和组织，而云游链官方从始至终未授权任何人或任何组织进行私募活动。希望大家能够理性判断，辨别真假。',
- 'create_time': '15:50',
- 'title': 'YYB发布官方通告：未授权任何个人或组织进行私募活动'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coinpost消息，在一个与数字货币相关的采访中，数字货币Factom首席执行官PaulSnow表示，现在个人实体钱包中都有很多张卡片，如驾驶证、购物卡，使用区块链技术则可以建立一个钱包，内置数字签名证明自己的身份来使用相关服务，不再使用实体钱包与卡片。',
- 'create_time': '15:41',
- 'title': 'Factom首席执行官：数字货币能促进消费者与生产者直接交易'}
-{'content': '\n'
-            '据Coinpost消息，在一个与数字货币相关的采访中，数字货币Factom首席执行官PaulSnow表示，现在个人实体钱包中都有很多张卡片，如驾驶证、购物卡，使用区块链技术则可以建立一个钱包，内置数字签名证明自己的身份来使用相关服务，不再使用实体钱包与卡片。',
- 'create_time': '15:41',
- 'title': 'Factom首席执行官：数字货币能促进消费者与生产者直接交易'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '布比创始人蒋海近日接受采访时表示，区块链引发商业变革的概率从三年前的50%已提高至如今的80%，但确实还有20%的概率，区块链并不能实现众人的乐观预期。比如，吞吐量和交易成本制约公链的商用，导致市场冷却，众人离场观望。此外，蒋海认为，基础公链与行业区块链会并存，但前者的影响更大，因为它上面承载的大量多样化应用更能促进生态的构建。而公链取胜，靠的则是链上承载的价值和链上价值的流动性。对于布比近日在技术和商业实践上支持公链BUMO的举动，蒋海表示其非常重视商业级公链的发展，正好BUMO的两位创始人郭强和李思成也希望打造一条好用、能用的公链，去支撑数字资产流通和物联网价值传递，这个理念上与其不谋而合。',
- 'create_time': '15:09',
- 'title': '布比创始人蒋海：区块链有八成概率会驱动商业变革'}
-{'content': '\n'
-            '布比创始人蒋海近日接受采访时表示，区块链引发商业变革的概率从三年前的50%已提高至如今的80%，但确实还有20%的概率，区块链并不能实现众人的乐观预期。比如，吞吐量和交易成本制约公链的商用，导致市场冷却，众人离场观望。此外，蒋海认为，基础公链与行业区块链会并存，但前者的影响更大，因为它上面承载的大量多样化应用更能促进生态的构建。而公链取胜，靠的则是链上承载的价值和链上价值的流动性。对于布比近日在技术和商业实践上支持公链BUMO的举动，蒋海表示其非常重视商业级公链的发展，正好BUMO的两位创始人郭强和李思成也希望打造一条好用、能用的公链，去支撑数字资产流通和物联网价值传递，这个理念上与其不谋而合。',
- 'create_time': '15:09',
- 'title': '布比创始人蒋海：区块链有八成概率会驱动商业变革'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据coindesk消息，加拿大的大众传媒和数据巨头汤森路透（ThomsonReuters）今日宣布称，正在扩展其数字货币情绪数据工具箱，以涵盖100种不同的数字货币。',
- 'create_time': '15:08',
- 'title': '大众传媒和数据巨头汤森路透正扩展其数字货币情绪数据工具箱'}
-{'content': '\n'
-            '据coindesk消息，加拿大的大众传媒和数据巨头汤森路透（ThomsonReuters）今日宣布称，正在扩展其数字货币情绪数据工具箱，以涵盖100种不同的数字货币。',
- 'create_time': '15:08',
- 'title': '大众传媒和数据巨头汤森路透正扩展其数字货币情绪数据工具箱'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日A股区块链板块低开低走，尾盘加速跳水收跌2.32%。81只概念股中，10只上涨，66只下跌。涨幅前三为：嘉泽新能（+6.17%），科达股份（+3.02%），凯恩股份（+2.16%）；跌幅前三为：卫士通（-8.95%），用友网络（-6.93%），科蓝软件（-5.61%）。',
- 'create_time': '15:06',
- 'title': 'A股收盘：区块链板块尾盘跳水收跌2.32%'}
-{'content': '\n'
-            '今日A股区块链板块低开低走，尾盘加速跳水收跌2.32%。81只概念股中，10只上涨，66只下跌。涨幅前三为：嘉泽新能（+6.17%），科达股份（+3.02%），凯恩股份（+2.16%）；跌幅前三为：卫士通（-8.95%），用友网络（-6.93%），科蓝软件（-5.61%）。',
- 'create_time': '15:06',
- 'title': 'A股收盘：区块链板块尾盘跳水收跌2.32%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日凌晨，AcFun对用户发布公告称网站遭遇黑客攻击，近千万条用户数据外泄。据圈内流传截图，A站的这些用户信息目前已在暗网上被兜售，并有疑似摩拜单车的用户信息也被泄漏，在出售贴中，黑客声明仅支持比特币交易。A站目前提醒用户速修改密码。',
- 'create_time': '14:59',
- 'title': 'A站遭黑客攻击 暗网兜售信息仅支持比特币支付'}
-{'content': '\n'
-            '今日凌晨，AcFun对用户发布公告称网站遭遇黑客攻击，近千万条用户数据外泄。据圈内流传截图，A站的这些用户信息目前已在暗网上被兜售，并有疑似摩拜单车的用户信息也被泄漏，在出售贴中，黑客声明仅支持比特币交易。A站目前提醒用户速修改密码。',
- 'create_time': '14:59',
- 'title': 'A站遭黑客攻击 暗网兜售信息仅支持比特币支付'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据IMEOS报道，今日14:03:37EOS众筹地址转出2881.27648039个ETH，共计约142万美元，截止目前EOS众筹地址累计共转出7211776.138203863个ETH（约35.53亿美元），EOS众筹地址ETH余额为0.0，ETH已全部转出。',
- 'create_time': '14:59',
- 'title': 'EOS 众筹地址 ETH 全部转出'}
-{'content': '\n'
-            '据IMEOS报道，今日14:03:37EOS众筹地址转出2881.27648039个ETH，共计约142万美元，截止目前EOS众筹地址累计共转出7211776.138203863个ETH（约35.53亿美元），EOS众筹地址ETH余额为0.0，ETH已全部转出。',
- 'create_time': '14:59',
- 'title': 'EOS 众筹地址 ETH 全部转出'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Minernews消息，在亚马逊FireTV以及FireTV控制棒上现在发现了一种加密蠕虫ADB.Miner，该蠕虫容易感染安卓系统软件。相关挖矿行为会严重拖慢电视运行速度，检查是否感染该蠕虫的办法是查看是否安装了一个“Test”的app，最好通过恢复出厂设置来去除该蠕虫病毒。',
- 'create_time': '14:42',
- 'title': '亚马逊Fire TV出现新挖矿蠕虫病毒'}
-{'content': '\n'
-            '据Minernews消息，在亚马逊FireTV以及FireTV控制棒上现在发现了一种加密蠕虫ADB.Miner，该蠕虫容易感染安卓系统软件。相关挖矿行为会严重拖慢电视运行速度，检查是否感染该蠕虫的办法是查看是否安装了一个“Test”的app，最好通过恢复出厂设置来去除该蠕虫病毒。',
- 'create_time': '14:42',
- 'title': '亚马逊Fire TV出现新挖矿蠕虫病毒'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '链塔智库发布《2018中国区块链投资机构20强》名单，分布式资本、硬币资本、连接资本分别位列前三。区块链平台项目最受欢迎，海外项目相比国内项目更受青睐。所投项目发行Token比例最高的为蛮子基金，20家投资机构的区块链项目综合退出率近70%。2018中国区块链投资机构影响力前三分别为硬币资本、红杉资本中国、真格基金。',
- 'create_time': '14:25',
- 'title': '区块链评级机构：区块链平台项目最受投资机构欢迎'}
-{'content': '\n'
-            '链塔智库发布《2018中国区块链投资机构20强》名单，分布式资本、硬币资本、连接资本分别位列前三。区块链平台项目最受欢迎，海外项目相比国内项目更受青睐。所投项目发行Token比例最高的为蛮子基金，20家投资机构的区块链项目综合退出率近70%。2018中国区块链投资机构影响力前三分别为硬币资本、红杉资本中国、真格基金。',
- 'create_time': '14:25',
- 'title': '区块链评级机构：区块链平台项目最受投资机构欢迎'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Alternative消息，今日恐慌指数为19，较昨日15上升4，恐慌程度下降，现为极度恐惧等级。恐慌指数是该网站推出的用于衡量市场恐惧情绪与贪婪情绪的指数，范围从0到100，0代表极度恐惧，100代表极度贪婪。',
- 'create_time': '14:17',
- 'title': '今日恐慌指数19 较昨日恐慌程度下降'}
-{'content': '\n'
-            '据Alternative消息，今日恐慌指数为19，较昨日15上升4，恐慌程度下降，现为极度恐惧等级。恐慌指数是该网站推出的用于衡量市场恐惧情绪与贪婪情绪的指数，范围从0到100，0代表极度恐惧，100代表极度贪婪。',
- 'create_time': '14:17',
- 'title': '今日恐慌指数19 较昨日恐慌程度下降'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '14:00',
- 'title': 'Coindesk分析ETH：RSI显示熊市中有一波短期反弹，也可能跌破485美元。若跌破485美元，将面临417美元支撑点。'}
-{'content': '\n',
- 'create_time': '14:00',
- 'title': 'Coindesk分析ETH：RSI显示熊市中有一波短期反弹，也可能跌破485美元。若跌破485美元，将面临417美元支撑点。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '13:54',
- 'title': 'Zilliqa（ZIL）首席执行官董心书宣布参选火币公链领袖招募。'}
-{'content': '\n',
- 'create_time': '13:54',
- 'title': 'Zilliqa（ZIL）首席执行官董心书宣布参选火币公链领袖招募。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '13:49',
- 'title': 'FXStreet分析师：ETH反弹动能不足，或很难越过500美元关口，下行关键目标位为今年低点364美元。'}
-{'content': '\n',
- 'create_time': '13:49',
- 'title': 'FXStreet分析师：ETH反弹动能不足，或很难越过500美元关口，下行关键目标位为今年低点364美元。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '私募股权的区块链平台SwarmFund宣布推出以Robinhood、Ripple和滴滴为代表的私募股权代币，为有关加密货币的大公司构建二级市场。',
- 'create_time': '13:25',
- 'title': 'Swarm Fund为滴滴等大公司推出私募股权代币'}
-{'content': '\n'
-            '私募股权的区块链平台SwarmFund宣布推出以Robinhood、Ripple和滴滴为代表的私募股权代币，为有关加密货币的大公司构建二级市场。',
- 'create_time': '13:25',
- 'title': 'Swarm Fund为滴滴等大公司推出私募股权代币'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日14:00，FAIR世界杯竞猜活动“邀约FAIR世界杯，百万激情等你来”将正式上线，玩家可使用FAIRToken参与竞猜。火币HADAX也将同时开启FAIR交易赛。',
+ 'create_time': '13:37',
+ 'title': 'FAIR世界杯竞猜活动今日14：00上线'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
             '资金流向最能反映市场主力和庄家意图，想在币圈赚钱，其中一个方法就是密切跟踪主力资金流向。《币世界》每天13点为您整理每日资金热捧/资金出逃的10大币种。查看今日《币市龙虎榜》，点击“查看详情”。',
- 'create_time': '13:01',
- 'title': '6月13日币市龙虎榜（附币种名单）'}
+ 'create_time': '13:04',
+ 'title': '6月14日币市龙虎榜（附币种名单）'}
 {'content': '\n'
             '资金流向最能反映市场主力和庄家意图，想在币圈赚钱，其中一个方法就是密切跟踪主力资金流向。《币世界》每天13点为您整理每日资金热捧/资金出逃的10大币种。查看今日《币市龙虎榜》，点击“查看详情”。',
+ 'create_time': '13:04',
+ 'title': '6月14日币市龙虎榜（附币种名单）'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币Pro定于6月15日11:00在创新区开放DCR/BTC，DCR/ETH交易。6月14日13:00已开放充值；6月17日11:00开放DCR提现业务。Decred（DCR）与比特币类似，强调社区投入，开放治理以及可持续的资金和开发。',
+ 'create_time': '13:03',
+ 'title': '火币Pro将于6月15日11:00上线DCR'}
+{'content': '\n'
+            '火币Pro定于6月15日11:00在创新区开放DCR/BTC，DCR/ETH交易。6月14日13:00已开放充值；6月17日11:00开放DCR提现业务。Decred（DCR）与比特币类似，强调社区投入，开放治理以及可持续的资金和开发。',
+ 'create_time': '13:03',
+ 'title': '火币Pro将于6月15日11:00上线DCR'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '在俄罗斯，加密货币、ICO和采矿的法律地位尚未确定。俄国家杜马今年三月相继出台三项法案，旨在填补这一空白并建立数字经济领域的监管。三项法案均已通过一审。俄罗斯国家杜马金融市场委员会主席阿纳托利·阿克萨科夫表示，“数字货币”的概念肯定会被剔除，将用“数字权益”的概念替代。他还表示，不打算效仿美国SEC将代币分为实用型代币（UtilityToken）和证券型代币（SecurityToken）。',
  'create_time': '13:01',
- 'title': '6月13日币市龙虎榜（附币种名单）'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据cryptonews报道，内罗毕电子产品零售商BoxlightElectronics表示，它已成为肯尼亚第一家接受数字货币作为付款方式的供应商，并称肯尼亚的年轻人希望享受数字货币付费的便利。',
- 'create_time': '12:49',
- 'title': '肯尼亚产生第一家接受数字货币支付的零售商'}
+ 'title': '俄国家杜马官员：三项数字货币相关法案均已通过一审'}
 {'content': '\n'
-            '据cryptonews报道，内罗毕电子产品零售商BoxlightElectronics表示，它已成为肯尼亚第一家接受数字货币作为付款方式的供应商，并称肯尼亚的年轻人希望享受数字货币付费的便利。',
- 'create_time': '12:49',
- 'title': '肯尼亚产生第一家接受数字货币支付的零售商'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据OKEx公告，ORS将上线OKEx。6月13日16点开放存款业务，14日16点开放OKB交易市场，19日16点开放BTC、ETH、USDT交易市场。',
- 'create_time': '12:47',
- 'title': 'ORS将于14日16点在OKEx开放OKB交易市场'}
+            '在俄罗斯，加密货币、ICO和采矿的法律地位尚未确定。俄国家杜马今年三月相继出台三项法案，旨在填补这一空白并建立数字经济领域的监管。三项法案均已通过一审。俄罗斯国家杜马金融市场委员会主席阿纳托利·阿克萨科夫表示，“数字货币”的概念肯定会被剔除，将用“数字权益”的概念替代。他还表示，不打算效仿美国SEC将代币分为实用型代币（UtilityToken）和证券型代币（SecurityToken）。',
+ 'create_time': '13:01',
+ 'title': '俄国家杜马官员：三项数字货币相关法案均已通过一审'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '近日，韩国一位支持区块链和数字货币的竞选者赢得了济州岛市长的选举，由于该市是半自制状态，韩国内地的法律可能不适用于该市。这位市长表示，尽管中央政府禁止ICO，但他准备支持优秀的ICO项目，并在必要时给予特殊的法律地位。',
+ 'create_time': '12:56',
+ 'title': '韩国新任济州岛市长表示将支持优秀的ICO项目'}
 {'content': '\n'
-            '据OKEx公告，ORS将上线OKEx。6月13日16点开放存款业务，14日16点开放OKB交易市场，19日16点开放BTC、ETH、USDT交易市场。',
- 'create_time': '12:47',
- 'title': 'ORS将于14日16点在OKEx开放OKB交易市场'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据菩提官方消息，现已有QTUM量子链、菩提、Ink、Energo能源链、dCamp、TradeTerminal、SWFT等多个项目方参与冠名了6支球队的预测赛事，小组赛球队冠名费用为88个QTUM。除了冠名，项目方还将参与预测过程，并支持球队在预测市场上的所有赛事。目前，小组赛预测事件已全部上线菩提预测市场，参与预测活动，可赢取QTUM代币奖励。',
- 'create_time': '12:45',
- 'title': '世界杯小组赛预测事件全部上线菩提  众项目方参与冠名'}
+            '近日，韩国一位支持区块链和数字货币的竞选者赢得了济州岛市长的选举，由于该市是半自制状态，韩国内地的法律可能不适用于该市。这位市长表示，尽管中央政府禁止ICO，但他准备支持优秀的ICO项目，并在必要时给予特殊的法律地位。',
+ 'create_time': '12:56',
+ 'title': '韩国新任济州岛市长表示将支持优秀的ICO项目'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据中国网财经消息，今日，中国邮政储蓄银行与腾讯公司、微众银行在北京举行全面深化战略合作协议签约仪式。根据协议，邮储银行与腾讯公司、微众银行将在金融科技，比如人工智能、区块链、信息安全等领域开展广泛合作与交流培训。',
+ 'create_time': '12:53',
+ 'title': '邮储银行与腾讯、微众银行达成合作，将在区块链等领域交流合作'}
 {'content': '\n'
-            '据菩提官方消息，现已有QTUM量子链、菩提、Ink、Energo能源链、dCamp、TradeTerminal、SWFT等多个项目方参与冠名了6支球队的预测赛事，小组赛球队冠名费用为88个QTUM。除了冠名，项目方还将参与预测过程，并支持球队在预测市场上的所有赛事。目前，小组赛预测事件已全部上线菩提预测市场，参与预测活动，可赢取QTUM代币奖励。',
- 'create_time': '12:45',
- 'title': '世界杯小组赛预测事件全部上线菩提  众项目方参与冠名'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coindesk消息，QSP社区成员与开发团队发生冲突，认为开发团队在损害币值。争论焦点在于QSP团队接受ETH与美元，而不接受QSP。该团队接受ETH购买审计服务，而服务标价用美元。这引起了相关人员如持币者的不满，认为这与公司得蓝图不符。持币者还对该团队曾公布的与审计相关的技术进展提出质疑。而QSP团队回应称一直在遵循白皮书的路线图。',
+            '据中国网财经消息，今日，中国邮政储蓄银行与腾讯公司、微众银行在北京举行全面深化战略合作协议签约仪式。根据协议，邮储银行与腾讯公司、微众银行将在金融科技，比如人工智能、区块链、信息安全等领域开展广泛合作与交流培训。',
+ 'create_time': '12:53',
+ 'title': '邮储银行与腾讯、微众银行达成合作，将在区块链等领域交流合作'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据SOC官方消息，SOC明日将被比特币体育在线投注网站正式接入，成为该平台接入的第一个非比特币的虚拟货币。Sportsbet拥有合法牌照，平台具有数千计的赔率和多样的竞猜选项，可提供完整的加密货币服务，及最新的在线、移动软件支持。同时，Sportsbet也是Bitcasino平台的官方合作伙伴。',
+ 'create_time': '12:48',
+ 'title': '比特币体育投注网站Sportsbet明日正式接入SOC'}
+{'content': '\n'
+            '据SOC官方消息，SOC明日将被比特币体育在线投注网站正式接入，成为该平台接入的第一个非比特币的虚拟货币。Sportsbet拥有合法牌照，平台具有数千计的赔率和多样的竞猜选项，可提供完整的加密货币服务，及最新的在线、移动软件支持。同时，Sportsbet也是Bitcasino平台的官方合作伙伴。',
+ 'create_time': '12:48',
+ 'title': '比特币体育投注网站Sportsbet明日正式接入SOC'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据cryptonews消息，桑坦德银行的巴西个人理财主管称，该银行将开始使用一种区块驱动的解决方案，该方案使用瑞波技术开发，旨在使客户能够用欧元和美元进行国际转账。该银行还承诺，将在2018年底前推出第二套区块链驱动的解决方案。',
+ 'create_time': '12:34',
+ 'title': '桑坦德银行个人理财主管：将使用靠瑞波技术开发的区块链驱动解决方案'}
+{'content': '\n'
+            '据cryptonews消息，桑坦德银行的巴西个人理财主管称，该银行将开始使用一种区块驱动的解决方案，该方案使用瑞波技术开发，旨在使客户能够用欧元和美元进行国际转账。该银行还承诺，将在2018年底前推出第二套区块链驱动的解决方案。',
+ 'create_time': '12:34',
+ 'title': '桑坦德银行个人理财主管：将使用靠瑞波技术开发的区块链驱动解决方案'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '昨晚曾扬言要分阶段公开A站被泄漏用户信息的黑客，在地下论坛发帖表示，出于A站客服态度诚恳，以及对于二次元世界的热爱，决定无条件删除数据库。在帖子中，他们还表示，从来没有把数据库出售给任何一个人，对于此前公布的300名用户的信息，他们也表示抱歉。最后，他们还哭穷表示从来没人光顾过这个生意，希望有人使用ETH捐赠他们。',
  'create_time': '12:32',
- 'title': 'QSP社区成员与开发团队发生冲突 认为开发团队在损害币值'}
+ 'title': '黑客决定删除A站被泄漏数据库 并表示接受ETH捐赠'}
 {'content': '\n'
-            '据Coindesk消息，QSP社区成员与开发团队发生冲突，认为开发团队在损害币值。争论焦点在于QSP团队接受ETH与美元，而不接受QSP。该团队接受ETH购买审计服务，而服务标价用美元。这引起了相关人员如持币者的不满，认为这与公司得蓝图不符。持币者还对该团队曾公布的与审计相关的技术进展提出质疑。而QSP团队回应称一直在遵循白皮书的路线图。',
+            '昨晚曾扬言要分阶段公开A站被泄漏用户信息的黑客，在地下论坛发帖表示，出于A站客服态度诚恳，以及对于二次元世界的热爱，决定无条件删除数据库。在帖子中，他们还表示，从来没有把数据库出售给任何一个人，对于此前公布的300名用户的信息，他们也表示抱歉。最后，他们还哭穷表示从来没人光顾过这个生意，希望有人使用ETH捐赠他们。',
  'create_time': '12:32',
- 'title': 'QSP社区成员与开发团队发生冲突 认为开发团队在损害币值'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '火币Pro公告，火币Pro现已恢复Achain(ACT)和LinkEyeToken(LET)的充值和提币业务。《币世界》行情显示，ACT现均价0.14美元，跌幅0.09%；LET现均价0.039美元，跌幅10.57%',
- 'create_time': '12:12',
- 'title': '火币Pro已恢复ACT和LET充提业务'}
+ 'title': '黑客决定删除A站被泄漏数据库 并表示接受ETH捐赠'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据cointelegrap报道，西联汇款CEOHikmetErsek表示，近期不会在全球汇款服务中增加数字货币转账解决方案。Ersek还将各国央行对数字货币普遍持怀疑态度的立场，作为不将服务扩展到数字资产的原因之一。',
+ 'create_time': '12:21',
+ 'title': '西联汇款CEO：近期不会将数字货币加入全球汇款服务中'}
 {'content': '\n'
-            '火币Pro公告，火币Pro现已恢复Achain(ACT)和LinkEyeToken(LET)的充值和提币业务。《币世界》行情显示，ACT现均价0.14美元，跌幅0.09%；LET现均价0.039美元，跌幅10.57%',
- 'create_time': '12:12',
- 'title': '火币Pro已恢复ACT和LET充提业务'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据BitUN（比联）最新公告，BitUN今日20：00将正式上线世界杯主题的竞猜理财产品。用户可选择自己喜爱的球队作为投资标的，当世界杯决赛结束时，所有投资者均可获得9%-12%的年化收益；投资标的若为冠军队伍，则可一起瓜分1000万BUCC的竞猜奖励。据悉，该理财产品支持BTC和ETH两个币种，6月16日20：00停止申购。',
- 'create_time': '12:04',
- 'title': 'BitUN推出世界杯竞猜理财产品 年化收益9%-12%'}
+            '据cointelegrap报道，西联汇款CEOHikmetErsek表示，近期不会在全球汇款服务中增加数字货币转账解决方案。Ersek还将各国央行对数字货币普遍持怀疑态度的立场，作为不将服务扩展到数字资产的原因之一。',
+ 'create_time': '12:21',
+ 'title': '西联汇款CEO：近期不会将数字货币加入全球汇款服务中'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '主力资金流向直接决定板块币种涨跌，数字货币分析师“比特东风”为您作最专业负责的大盘、板块和币种分析，及时追踪主力资金意图，在繁多的板块币种里，挑选热门概念，规避冷门板块。（点击“查看详情”）',
+ 'create_time': '12:16',
+ 'title': '6月14日币市《板块风云榜》'}
 {'content': '\n'
-            '据BitUN（比联）最新公告，BitUN今日20：00将正式上线世界杯主题的竞猜理财产品。用户可选择自己喜爱的球队作为投资标的，当世界杯决赛结束时，所有投资者均可获得9%-12%的年化收益；投资标的若为冠军队伍，则可一起瓜分1000万BUCC的竞猜奖励。据悉，该理财产品支持BTC和ETH两个币种，6月16日20：00停止申购。',
- 'create_time': '12:04',
- 'title': 'BitUN推出世界杯竞猜理财产品 年化收益9%-12%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n火币Pro宣布将于6月13日18时上线OCN/USDT交易。据《币世界》行情，OCN现均价0.011美元，跌幅8.13%。',
- 'create_time': '12:03',
- 'title': '火币Pro将于6月13日18时上线OCN/USDT交易'}
-{'content': '\n火币Pro宣布将于6月13日18时上线OCN/USDT交易。据《币世界》行情，OCN现均价0.011美元，跌幅8.13%。',
- 'create_time': '12:03',
- 'title': '火币Pro将于6月13日18时上线OCN/USDT交易'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n今日上午，BTC在6550美元附近弱势震荡，主流币种虽有微弱反弹，但日内跌幅依然较大。',
+            '主力资金流向直接决定板块币种涨跌，数字货币分析师“比特东风”为您作最专业负责的大盘、板块和币种分析，及时追踪主力资金意图，在繁多的板块币种里，挑选热门概念，规避冷门板块。（点击“查看详情”）',
+ 'create_time': '12:16',
+ 'title': '6月14日币市《板块风云榜》'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据新浪财经消息，今日在“2018陆家嘴论坛”上，中国人民银行原行长周小川表示，最近出现了纯粹炒作性的数字类、加密类的产品，跟实体经济没什么关系，但仍旧还可以继续炒热。他提出，中国从2008年年底提出这个问题，到2010年中央经济工作会议就正式写入“金融要为实体经济服务”，同时也为这个观点考察金融市场和金融产品。从全球来讲，中国这方面走得还不够远、不够充分，以至于最近又出现了纯粹炒作性的数字类的、加密类的产品。',
+ 'create_time': '12:16',
+ 'title': '周小川示警纯炒作性加密货币，金融要为实体经济服务'}
+{'content': '\n'
+            '据新浪财经消息，今日在“2018陆家嘴论坛”上，中国人民银行原行长周小川表示，最近出现了纯粹炒作性的数字类、加密类的产品，跟实体经济没什么关系，但仍旧还可以继续炒热。他提出，中国从2008年年底提出这个问题，到2010年中央经济工作会议就正式写入“金融要为实体经济服务”，同时也为这个观点考察金融市场和金融产品。从全球来讲，中国这方面走得还不够远、不够充分，以至于最近又出现了纯粹炒作性的数字类的、加密类的产品。',
+ 'create_time': '12:16',
+ 'title': '周小川示警纯炒作性加密货币，金融要为实体经济服务'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '开源中国技术社区发布OntologyVBFT共识算法性能测试报告。报告显示，在没有加入分片、并行处理和FPGA硬件加速的前提下，使用7个节点测试，TPS达到了5300以上，在公链中处于较高水准。',
+ 'create_time': '12:15',
+ 'title': '技术社区发布本体VBFT共识算法性能测试报告'}
+{'content': '\n'
+            '开源中国技术社区发布OntologyVBFT共识算法性能测试报告。报告显示，在没有加入分片、并行处理和FPGA硬件加速的前提下，使用7个节点测试，TPS达到了5300以上，在公链中处于较高水准。',
+ 'create_time': '12:15',
+ 'title': '技术社区发布本体VBFT共识算法性能测试报告'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据外媒报道，近日，美国密歇根州立法机构提交的两项新法案HB6257和HB6258显示，篡改区块链数据将构成犯罪。HB6257指出：任何伪造或篡改公共记录并有意伤害或欺骗他人的行为都构成犯罪，被起诉后将处以14年以下监禁；HB6258修改了密歇根刑法的有关条例，除了数字货币外，还包括分布式分类账技术(DLT)的定义。据悉，密歇根州代表CurtWanderWall本月早些时候提交的法案调整了该州关于“制造、改变或伪造公共记录”的刑法，拟议的法案将扩大到“通过改变由分布式账本技术创造的记录完成违规行为的人”。',
+ 'create_time': '12:09',
+ 'title': '密歇根州提交新法案：篡改区块链数据或面临14年以下监禁'}
+{'content': '\n'
+            '据外媒报道，近日，美国密歇根州立法机构提交的两项新法案HB6257和HB6258显示，篡改区块链数据将构成犯罪。HB6257指出：任何伪造或篡改公共记录并有意伤害或欺骗他人的行为都构成犯罪，被起诉后将处以14年以下监禁；HB6258修改了密歇根刑法的有关条例，除了数字货币外，还包括分布式分类账技术(DLT)的定义。据悉，密歇根州代表CurtWanderWall本月早些时候提交的法案调整了该州关于“制造、改变或伪造公共记录”的刑法，拟议的法案将扩大到“通过改变由分布式账本技术创造的记录完成违规行为的人”。',
+ 'create_time': '12:09',
+ 'title': '密歇根州提交新法案：篡改区块链数据或面临14年以下监禁'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n火币全球站定于6月15日16:00开启指数产品HB10交易，届时用户可以在USDT区交易HB10。',
+ 'create_time': '12:02',
+ 'title': '火币全球站6月15日16：00 开启指数产品HB10 USDT 区交易'}
+{'content': '\n火币全球站定于6月15日16:00开启指数产品HB10交易，届时用户可以在USDT区交易HB10。',
+ 'create_time': '12:02',
+ 'title': '火币全球站6月15日16：00 开启指数产品HB10 USDT 区交易'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日上午，BTC在9时许开始小幅上涨，10时短时拉升至日内最高6514.89美元后小幅回落，现于6500美元附近调整。主流币种普跌，市场整体向下。',
  'create_time': '12:01',
- 'title': '币世界午行情：BTC在6550美元附近低位震荡 主流币种普跌'}
-{'content': '\n今日上午，BTC在6550美元附近弱势震荡，主流币种虽有微弱反弹，但日内跌幅依然较大。',
+ 'title': '币世界午行情：BTC上午短时拉升至日内最高6515美元 目前市场整体仍向下'}
+{'content': '\n'
+            '今日上午，BTC在9时许开始小幅上涨，10时短时拉升至日内最高6514.89美元后小幅回落，现于6500美元附近调整。主流币种普跌，市场整体向下。',
  'create_time': '12:01',
- 'title': '币世界午行情：BTC在6550美元附近低位震荡 主流币种普跌'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据cointelegraph消息，日本警方正调查涉及CoinhiveMonero加密劫持案件，据悉日本警方怀疑涉案人员违反禁止使用电脑病毒的法律，未经同意在访问者的计算机上安装了Coinhive挖矿软件，或者“明确了挖矿通知”。',
- 'create_time': '11:59',
- 'title': '日本警方正调查一起涉及门罗挖矿软件Coinhive的加密劫持案件'}
-{'content': '\n'
-            '据cointelegraph消息，日本警方正调查涉及CoinhiveMonero加密劫持案件，据悉日本警方怀疑涉案人员违反禁止使用电脑病毒的法律，未经同意在访问者的计算机上安装了Coinhive挖矿软件，或者“明确了挖矿通知”。',
- 'create_time': '11:59',
- 'title': '日本警方正调查一起涉及门罗挖矿软件Coinhive的加密劫持案件'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，工信部赛迪研究院更新了第二期评估对象名单，第二期将在第一期28个评估对象基础上增至30个，新增的评估公有链为EOS和星云链（NAS）。本次评估结果将于6月20日在上海科学会堂发布。据《币世界》行情，EOS现均价10.30美元，跌幅8.06%；NAS现均价5.25美元，跌幅8.10%。',
+ 'title': '币世界午行情：BTC上午短时拉升至日内最高6515美元 目前市场整体仍向下'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据newsbtc报道，分析师SarahJenn称，BTC看跌趋势加强，接连跌破楔形三角，技术图上，100SMA低于200SMA长期走势，表明阻力最小的路径是下行。这意味着抛售更有可能恢复而不是扭转。但RSI已经显示超卖状况，并准备上涨。这表明受买入影响，BTC可能会恢复在水平支撑之上甚至在楔形三角内部反弹。',
  'create_time': '11:57',
- 'title': '工信部赛迪研究院公链评估第二期：EOS和NAS入选'}
+ 'title': '分析师：BTC看跌趋势加强 短期超卖可能在楔形三角内部反弹'}
 {'content': '\n'
-            '今日，工信部赛迪研究院更新了第二期评估对象名单，第二期将在第一期28个评估对象基础上增至30个，新增的评估公有链为EOS和星云链（NAS）。本次评估结果将于6月20日在上海科学会堂发布。据《币世界》行情，EOS现均价10.30美元，跌幅8.06%；NAS现均价5.25美元，跌幅8.10%。',
+            '据newsbtc报道，分析师SarahJenn称，BTC看跌趋势加强，接连跌破楔形三角，技术图上，100SMA低于200SMA长期走势，表明阻力最小的路径是下行。这意味着抛售更有可能恢复而不是扭转。但RSI已经显示超卖状况，并准备上涨。这表明受买入影响，BTC可能会恢复在水平支撑之上甚至在楔形三角内部反弹。',
  'create_time': '11:57',
- 'title': '工信部赛迪研究院公链评估第二期：EOS和NAS入选'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据证券时报消息，“京东金融-华泰资管19号京东白条应收账款债权资产支持专项计划”成功设立并将于深交所挂牌转让。这一项目的设立，首次建立多方独立部署的联盟链，实现对京东金融ABS云平台区块链底层技术的升级。京东金融金融市场部负责人郝延山表示：联盟链需满足资产证券化业务各参与方的切实需求，才能充分体现区块链技术的应用价值。',
- 'create_time': '11:41',
- 'title': '京东白条ABS首次运用区块链技术'}
+ 'title': '分析师：BTC看跌趋势加强 短期超卖可能在楔形三角内部反弹'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据newsbtc报道，分析师AayushJindal称，ETH在小时图上存在一个下跌通道，但MACD图上显示出看涨迹象；小时图上RSI正在上涨，目前处于接近40的水平；向上压力位在490-495美元，下方支撑位在460-465美元之间。',
+ 'create_time': '11:49',
+ 'title': '分析师：ETH出现看涨迹象 上方压力区间在490-495美元'}
 {'content': '\n'
-            '据证券时报消息，“京东金融-华泰资管19号京东白条应收账款债权资产支持专项计划”成功设立并将于深交所挂牌转让。这一项目的设立，首次建立多方独立部署的联盟链，实现对京东金融ABS云平台区块链底层技术的升级。京东金融金融市场部负责人郝延山表示：联盟链需满足资产证券化业务各参与方的切实需求，才能充分体现区块链技术的应用价值。',
- 'create_time': '11:41',
- 'title': '京东白条ABS首次运用区块链技术'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '币安宣布将支持基于EOS的IQ、DAC、EON糖果空投，但若项目方未进行联系或拒绝分发糖果，将默认不支持此该币种的空投。另外所有糖果及分叉币需通过币安正常的上币审核流程，只有通过时才会开放交易，如果未通过审核则默认交易不开放。',
- 'create_time': '11:33',
- 'title': '币安支持EOS糖果IQ、DAC、EON'}
+            '据newsbtc报道，分析师AayushJindal称，ETH在小时图上存在一个下跌通道，但MACD图上显示出看涨迹象；小时图上RSI正在上涨，目前处于接近40的水平；向上压力位在490-495美元，下方支撑位在460-465美元之间。',
+ 'create_time': '11:49',
+ 'title': '分析师：ETH出现看涨迹象 上方压力区间在490-495美元'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据AFPBBNews消息，爱沙尼亚的电力公司EestiEnergia于本月开始利用风力发电进行数字货币挖矿，这得益于其邻于波罗的海，风力资源丰富，可降低挖矿成本。该公司董事OlegSonajalg表示：“如果能将下一代技术相互协同效应，将会提高我们的竞争力。”',
+ 'create_time': '11:48',
+ 'title': '爱沙尼亚电力公司本月开始利用风力发电进行数字货币挖矿'}
 {'content': '\n'
-            '币安宣布将支持基于EOS的IQ、DAC、EON糖果空投，但若项目方未进行联系或拒绝分发糖果，将默认不支持此该币种的空投。另外所有糖果及分叉币需通过币安正常的上币审核流程，只有通过时才会开放交易，如果未通过审核则默认交易不开放。',
- 'create_time': '11:33',
- 'title': '币安支持EOS糖果IQ、DAC、EON'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据Coinrail消息，已经与Tradove达成协定，对于交易所内持有代币BBC的账户，都会完全恢复其账户内BBC。',
+            '据AFPBBNews消息，爱沙尼亚的电力公司EestiEnergia于本月开始利用风力发电进行数字货币挖矿，这得益于其邻于波罗的海，风力资源丰富，可降低挖矿成本。该公司董事OlegSonajalg表示：“如果能将下一代技术相互协同效应，将会提高我们的竞争力。”',
+ 'create_time': '11:48',
+ 'title': '爱沙尼亚电力公司本月开始利用风力发电进行数字货币挖矿'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据币管家bgj.io官方消息，其平台全功能分红积分管家币BC将自6月20起的每周一至周六，拿出交易手续费的80%对持有BC的投资者进行分红；6月24日起，每周日交易手续费的25%用于回购销毁，60%用于补贴自愿锁仓的投资者，15%用于回馈当周交易量排名前20的投资者。BC总发行量2亿枚，平台锁仓1亿枚持续1至3年。目前，BC的市场流通量6750万枚，现价为每0.1382USDT（约0.91CNY），上涨2.91%。',
+ 'create_time': '11:42',
+ 'title': '币管家bgj.io定于6.20日起执行每日分红'}
+{'content': '\n'
+            '据币管家bgj.io官方消息，其平台全功能分红积分管家币BC将自6月20起的每周一至周六，拿出交易手续费的80%对持有BC的投资者进行分红；6月24日起，每周日交易手续费的25%用于回购销毁，60%用于补贴自愿锁仓的投资者，15%用于回馈当周交易量排名前20的投资者。BC总发行量2亿枚，平台锁仓1亿枚持续1至3年。目前，BC的市场流通量6750万枚，现价为每0.1382USDT（约0.91CNY），上涨2.91%。',
+ 'create_time': '11:42',
+ 'title': '币管家bgj.io定于6.20日起执行每日分红'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据彭博消息，泰国地产开发商WHAcorp.表示可能会在2019年晚些时候进行ICO。',
+ 'create_time': '11:32',
+ 'title': '彭博社：泰国地产开发商WHA corp.表示可能会在2019年晚些时候进行ICO'}
+{'content': '\n据彭博消息，泰国地产开发商WHAcorp.表示可能会在2019年晚些时候进行ICO。',
+ 'create_time': '11:32',
+ 'title': '彭博社：泰国地产开发商WHA corp.表示可能会在2019年晚些时候进行ICO'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '比特娱乐BT88在其区块链游戏平台上线了世界杯竞猜游戏，玩家可以自己创建盘口单让其他玩家来竞猜。目前，比特娱乐全球注册用户为12万人。',
+ 'create_time': '11:29',
+ 'title': '比特娱乐上线世界杯竞猜游戏'}
+{'content': '\n'
+            '比特娱乐BT88在其区块链游戏平台上线了世界杯竞猜游戏，玩家可以自己创建盘口单让其他玩家来竞猜。目前，比特娱乐全球注册用户为12万人。',
+ 'create_time': '11:29',
+ 'title': '比特娱乐上线世界杯竞猜游戏'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'CVC首席执行官VinnyLingham称，比特币唯一的真实的风险在于，若币价跌破3000美元，矿工就会离开市场，把算力卖给第三方，触发51%攻击的风险。博弈论提倡的“再创造一条SHA256主链”的想法在那种情况下可能弄巧成拙，那个时候我们可能会拥有三条重要的区块链。',
  'create_time': '11:19',
- 'title': 'BBC将完全恢复Coinrail用户持有代币BBC的账户'}
-{'content': '\n据Coinrail消息，已经与Tradove达成协定，对于交易所内持有代币BBC的账户，都会完全恢复其账户内BBC。',
+ 'title': 'CVC首席执行官：比特币唯一的风险在于跌破3000美元后矿工离开市场'}
+{'content': '\n'
+            'CVC首席执行官VinnyLingham称，比特币唯一的真实的风险在于，若币价跌破3000美元，矿工就会离开市场，把算力卖给第三方，触发51%攻击的风险。博弈论提倡的“再创造一条SHA256主链”的想法在那种情况下可能弄巧成拙，那个时候我们可能会拥有三条重要的区块链。',
  'create_time': '11:19',
- 'title': 'BBC将完全恢复Coinrail用户持有代币BBC的账户'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '中国万向控股有限公司副董事长兼执行董事肖风今日发文，对央行发行数字货币进行了大胆猜想与建议。他表示：没有比特币就没有法定数字货币；央行发行法定数字货币的第一个目标就是取代现在数字货币市场上由私人机构提供的、锚定美元发行的稳定数字货币。',
- 'create_time': '10:53',
- 'title': '肖风：央行发行数字货币的第一目标是取代市场现行的私人数字货币'}
+ 'title': 'CVC首席执行官：比特币唯一的风险在于跌破3000美元后矿工离开市场'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '第一财经6月14日报道，近日西门子股份公司管理委员会成员奈柯（CedrikNeike）接受采访时表示，数字化成为企业创新成长的关键驱动力。2017财年，西门子数字化服务和软件业务实现营收超过52亿欧元，未来还将进一步发展增材制造、自主机器人、区块链应用、数据分析与人工智能、分布式能源系统、软件系统与开发流程等核心技术。',
+ 'create_time': '11:16',
+ 'title': '西门子管理委员会成员：西门子未来将发展区块链应用等核心技术'}
 {'content': '\n'
-            '中国万向控股有限公司副董事长兼执行董事肖风今日发文，对央行发行数字货币进行了大胆猜想与建议。他表示：没有比特币就没有法定数字货币；央行发行法定数字货币的第一个目标就是取代现在数字货币市场上由私人机构提供的、锚定美元发行的稳定数字货币。',
- 'create_time': '10:53',
- 'title': '肖风：央行发行数字货币的第一目标是取代市场现行的私人数字货币'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日市场普跌，概念板块全部沦陷。平台币跌幅最小（-0.08%），板块19只币种中，上涨币种过半。其中，BDB（币多网平台币）以37.62%的涨幅领涨该板块。',
- 'create_time': '10:44',
- 'title': '平台币抗跌  BDB逆势上涨37.62%'}
+            '第一财经6月14日报道，近日西门子股份公司管理委员会成员奈柯（CedrikNeike）接受采访时表示，数字化成为企业创新成长的关键驱动力。2017财年，西门子数字化服务和软件业务实现营收超过52亿欧元，未来还将进一步发展增材制造、自主机器人、区块链应用、数据分析与人工智能、分布式能源系统、软件系统与开发流程等核心技术。',
+ 'create_time': '11:16',
+ 'title': '西门子管理委员会成员：西门子未来将发展区块链应用等核心技术'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据火币公告显示，火币Pro现已恢复Nebulas（NAS）的充值和提币业务。',
+ 'create_time': '11:11',
+ 'title': '火币Pro现已恢复Nebulas（NAS）的充值和提币业务'}
+{'content': '\n据火币公告显示，火币Pro现已恢复Nebulas（NAS）的充值和提币业务。',
+ 'create_time': '11:11',
+ 'title': '火币Pro现已恢复Nebulas（NAS）的充值和提币业务'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n币安创始人赵长鹏在推特发文称，数字货币是一个新生经济事物，不适合划入现有的经济范畴。',
+ 'create_time': '10:51',
+ 'title': '币安创始人赵长鹏：数字货币是新生经济事物 不适合划入现有的经济范畴'}
+{'content': '\n币安创始人赵长鹏在推特发文称，数字货币是一个新生经济事物，不适合划入现有的经济范畴。',
+ 'create_time': '10:51',
+ 'title': '币安创始人赵长鹏：数字货币是新生经济事物 不适合划入现有的经济范畴'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '币安发布公告：将于今日（6月14日）19:00上线SiaCoin（SC），并开通SC/BNB、SC/BTC、SC/ETH交易市场，SC充值通道现已开放，可进行充值。SC是一款去中心化的云储存平台，旨在使一群互不信任的和互不了解的计算机节点联合起来，形成统一的运行逻辑和程序。',
+ 'create_time': '10:46',
+ 'title': '币安将于今日晚间19:00上线SiaCoin'}
 {'content': '\n'
-            '今日市场普跌，概念板块全部沦陷。平台币跌幅最小（-0.08%），板块19只币种中，上涨币种过半。其中，BDB（币多网平台币）以37.62%的涨幅领涨该板块。',
- 'create_time': '10:44',
- 'title': '平台币抗跌  BDB逆势上涨37.62%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据bitcoin消息，美国联邦存款保险公司前主席SheilaBair近日发表文章称，国家发行的数字货币（CBDCs）可以缓解金融危机风险并改善货币工具。同时文章中也提到了CBDCs可能会对当前银行支付系统产生冲击，指出由于银行对存款的依赖，可能会对信贷可用性产生严重负面影响。',
- 'create_time': '10:39',
- 'title': '美国联邦存款保险公司前主席：CBDCs可以降低金融危机风险并改善货币工具'}
-{'content': '\n'
-            '据bitcoin消息，美国联邦存款保险公司前主席SheilaBair近日发表文章称，国家发行的数字货币（CBDCs）可以缓解金融危机风险并改善货币工具。同时文章中也提到了CBDCs可能会对当前银行支付系统产生冲击，指出由于银行对存款的依赖，可能会对信贷可用性产生严重负面影响。',
- 'create_time': '10:39',
- 'title': '美国联邦存款保险公司前主席：CBDCs可以降低金融危机风险并改善货币工具'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coinbase联合创始人BrianAmstrong消息，投资Coinbase指数基金是接触一篮子加密资产的最好方式，且收费比例低于大部分数字货币基金2%-20%的报价。',
+            '币安发布公告：将于今日（6月14日）19:00上线SiaCoin（SC），并开通SC/BNB、SC/BTC、SC/ETH交易市场，SC充值通道现已开放，可进行充值。SC是一款去中心化的云储存平台，旨在使一群互不信任的和互不了解的计算机节点联合起来，形成统一的运行逻辑和程序。',
+ 'create_time': '10:46',
+ 'title': '币安将于今日晚间19:00上线SiaCoin'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC刚刚再次拉升最高涨至6511美元，火币Pro现报6508美元，涨幅3.34%。',
  'create_time': '10:38',
- 'title': 'Coinbase联合创始人：Coinbase指数基金收费低于大多数数字货币基金'}
-{'content': '\n'
-            '据Coinbase联合创始人BrianAmstrong消息，投资Coinbase指数基金是接触一篮子加密资产的最好方式，且收费比例低于大部分数字货币基金2%-20%的报价。',
+ 'title': 'BTC拉升突破6500美元'}
+{'content': '\nBTC刚刚再次拉升最高涨至6511美元，火币Pro现报6508美元，涨幅3.34%。',
  'create_time': '10:38',
- 'title': 'Coinbase联合创始人：Coinbase指数基金收费低于大多数数字货币基金'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，NKN联合创始人兼NKNLabsCTO张逸伦博士在CPCCryptoDevCon大会上宣布，NKN提前20天开源核心代码，并公布了最新产品路线图。此外，NKN测试网预览版将于本月16日上线，主网预计于2019年6月上线，比原计划提前了一个季度。据介绍，NKN核心代码库的亮点包括：去中心化数据传输网络（DDTN）、可扩展的元胞自动机共识机制（MVCA）、有效的工作量证明机制，即中继证明（PoR）和中继路径验证（RPV）、NKN地址方案。张逸伦博士表示，NKN团队会坚持把项目开发放在首位，以实力和成果应对不断变化的市场。据《币世界》行情显示，NKN现价0.28美元，涨幅22.78%。',
+ 'title': 'BTC拉升突破6500美元'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Bithumb官方推特消息，SNT今日上线Bithumb，现价0.079美元，涨幅9.48%。SNT基于以太坊客户端应用（Status），是Status的一款内置钱包，即时发送消息的通讯应用。',
+ 'create_time': '10:35',
+ 'title': 'SNT今日上线Bithumb 涨幅9.48%'}
+{'content': '\n'
+            '据Bithumb官方推特消息，SNT今日上线Bithumb，现价0.079美元，涨幅9.48%。SNT基于以太坊客户端应用（Status），是Status的一款内置钱包，即时发送消息的通讯应用。',
+ 'create_time': '10:35',
+ 'title': 'SNT今日上线Bithumb 涨幅9.48%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '世界银行区块链实验室联合创始人周忠永（PeterZhou）今日表示，世界银行区块链实验室不会参与数字货币业务，而是为成员国国家提供区块链概念验证和应用解决方案服务。央行数字货币将是区块链技术非常好的应用，英国、加拿大等国正在尝试。未来区块链的行业发展将面临一些挑战，例如：能源消耗、交易速度、跨平台共通性，以及监管法律法规等。',
+ 'create_time': '10:33',
+ 'title': '世界银行区块链实验室周忠永：不会参与数字货币业务'}
+{'content': '\n'
+            '世界银行区块链实验室联合创始人周忠永（PeterZhou）今日表示，世界银行区块链实验室不会参与数字货币业务，而是为成员国国家提供区块链概念验证和应用解决方案服务。央行数字货币将是区块链技术非常好的应用，英国、加拿大等国正在尝试。未来区块链的行业发展将面临一些挑战，例如：能源消耗、交易速度、跨平台共通性，以及监管法律法规等。',
+ 'create_time': '10:33',
+ 'title': '世界银行区块链实验室周忠永：不会参与数字货币业务'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Bithumb官方推特消息，ADA今日上线Bithumb，现价0.17美元，涨幅11.72%。卡尔达诺（ADA）是一个分散且公开的区块链。',
  'create_time': '10:32',
- 'title': 'NKN今日正式开源核心代码，测试网预览版本周上线'}
+ 'title': 'ADA今日上线Bithumb 涨幅11.72%'}
 {'content': '\n'
-            '今日，NKN联合创始人兼NKNLabsCTO张逸伦博士在CPCCryptoDevCon大会上宣布，NKN提前20天开源核心代码，并公布了最新产品路线图。此外，NKN测试网预览版将于本月16日上线，主网预计于2019年6月上线，比原计划提前了一个季度。据介绍，NKN核心代码库的亮点包括：去中心化数据传输网络（DDTN）、可扩展的元胞自动机共识机制（MVCA）、有效的工作量证明机制，即中继证明（PoR）和中继路径验证（RPV）、NKN地址方案。张逸伦博士表示，NKN团队会坚持把项目开发放在首位，以实力和成果应对不断变化的市场。据《币世界》行情显示，NKN现价0.28美元，涨幅22.78%。',
+            '据Bithumb官方推特消息，ADA今日上线Bithumb，现价0.17美元，涨幅11.72%。卡尔达诺（ADA）是一个分散且公开的区块链。',
  'create_time': '10:32',
- 'title': 'NKN今日正式开源核心代码，测试网预览版本周上线'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '在6月11-12日于举行的CPCCrypto开发者大会上，QLC团队宣布成功完成多维区块点阵结构上的多通证转账，并将于今年7月底邀请QLCToken的持有者加入多通证转账测试。',
- 'create_time': '10:30',
- 'title': 'QLC宣布成功完成多维区块点阵结构上进行多通证转账'}
+ 'title': 'ADA今日上线Bithumb 涨幅11.72%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据晶报消息，近年来，深圳的夫妻离婚时，出现了分割游戏装备、比特币等虚拟财产的新现象。',
+ 'create_time': '10:28',
+ 'title': '深圳夫妻离婚时出现分割比特币等虚拟财产现象'}
+{'content': '\n据晶报消息，近年来，深圳的夫妻离婚时，出现了分割游戏装备、比特币等虚拟财产的新现象。',
+ 'create_time': '10:28',
+ 'title': '深圳夫妻离婚时出现分割比特币等虚拟财产现象'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据IMEOS消息，百万EOS是因用户操作不当被盗，并不是交易所EOS被盗，各大节点正努力协同找回。目前根据佳能节点CTObean的分析，可能是因为在用户复制粘贴私钥的时候，被某些恶意程序监听了，建议大家不要复制私钥。',
+ 'create_time': '10:28',
+ 'title': '百万EOS是因用户操作不当被盗，并不是交易所EOS被盗'}
 {'content': '\n'
-            '在6月11-12日于举行的CPCCrypto开发者大会上，QLC团队宣布成功完成多维区块点阵结构上的多通证转账，并将于今年7月底邀请QLCToken的持有者加入多通证转账测试。',
- 'create_time': '10:30',
- 'title': 'QLC宣布成功完成多维区块点阵结构上进行多通证转账'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '主力资金流向直接决定板块币种涨跌，数字货币分析师“比特东风”为您及时追踪主力资金意图，在繁多的板块币种里，挑选热门概念，规避冷门板块。（点击“查看详情”）',
- 'create_time': '10:20',
- 'title': '6月13日币市《板块风云榜》'}
+            '据IMEOS消息，百万EOS是因用户操作不当被盗，并不是交易所EOS被盗，各大节点正努力协同找回。目前根据佳能节点CTObean的分析，可能是因为在用户复制粘贴私钥的时候，被某些恶意程序监听了，建议大家不要复制私钥。',
+ 'create_time': '10:28',
+ 'title': '百万EOS是因用户操作不当被盗，并不是交易所EOS被盗'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据币为Btcdo行情显示，其平台币BDB自昨日起持续、逆势上涨，24小时累计涨幅已达100.03%，现报0.13美元。',
+ 'create_time': '10:28',
+ 'title': '币为Btcdo平台币BDB24h涨超100.03%'}
+{'content': '\n据币为Btcdo行情显示，其平台币BDB自昨日起持续、逆势上涨，24小时累计涨幅已达100.03%，现报0.13美元。',
+ 'create_time': '10:28',
+ 'title': '币为Btcdo平台币BDB24h涨超100.03%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币发布公告：因Nebulas（NAS）官方节点正在升级调整，火币Pro现已暂停NAS的充值和提币业务，节点稳定后恢复，具体时间将以公告另行通知。',
+ 'create_time': '10:27',
+ 'title': '火币Pro暂停NAS充提业务'}
 {'content': '\n'
-            '主力资金流向直接决定板块币种涨跌，数字货币分析师“比特东风”为您及时追踪主力资金意图，在繁多的板块币种里，挑选热门概念，规避冷门板块。（点击“查看详情”）',
- 'create_time': '10:20',
- 'title': '6月13日币市《板块风云榜》'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '10:17',
- 'title': 'Tokeninsight分析：今日市场继续下跌，数据显示BTC空头头寸没有下降。'}
-{'content': '\n',
- 'create_time': '10:17',
- 'title': 'Tokeninsight分析：今日市场继续下跌，数据显示BTC空头头寸没有下降。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '10:14',
- 'title': 'Coindesk分析：EOS跌至4月20号以来最低点，1小时线微幅反弹，9.5-9.6美元为关键支撑位，RSI显示超卖，可能小幅上涨。整体中性看涨。'}
-{'content': '\n',
- 'create_time': '10:14',
- 'title': 'Coindesk分析：EOS跌至4月20号以来最低点，1小时线微幅反弹，9.5-9.6美元为关键支撑位，RSI显示超卖，可能小幅上涨。整体中性看涨。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '继昨日大幅上涨53%之后，FT今日在Fcoin再度逆市放量大涨19%，现报1.19美元，振幅26.21%。作为FCoin交易所的平台币，FT自5月31日上线以来，从开盘价0.1元左右，直线涨至7.63元，已翻了近80倍。据了解，Fcoin由火币前CTO张健发起。',
- 'create_time': '10:13',
- 'title': 'FT逆市再创新高 今日涨幅19%'}
+            '火币发布公告：因Nebulas（NAS）官方节点正在升级调整，火币Pro现已暂停NAS的充值和提币业务，节点稳定后恢复，具体时间将以公告另行通知。',
+ 'create_time': '10:27',
+ 'title': '火币Pro暂停NAS充提业务'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'SOC今日发布了基于Telegram的智能竞猜应用，任何用户在Telegram添加@socguessbot机器人即可通过直接对话完成竞猜。目前，该应用已添加所有世界杯赛事，官方表示后续会推出多语言版本。',
+ 'create_time': '10:22',
+ 'title': 'SOC发布基于Telegram的智能竞猜应用'}
 {'content': '\n'
-            '继昨日大幅上涨53%之后，FT今日在Fcoin再度逆市放量大涨19%，现报1.19美元，振幅26.21%。作为FCoin交易所的平台币，FT自5月31日上线以来，从开盘价0.1元左右，直线涨至7.63元，已翻了近80倍。据了解，Fcoin由火币前CTO张健发起。',
- 'create_time': '10:13',
- 'title': 'FT逆市再创新高 今日涨幅19%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '10:02',
- 'title': '李启威发推：Bitcoin Art Gallery是BTC闪电网络第一个杀手级应用。'}
-{'content': '\n',
- 'create_time': '10:02',
- 'title': '李启威发推：Bitcoin Art Gallery是BTC闪电网络第一个杀手级应用。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据www.thefastmode消息，韩国电信公司KT子公司KTSAT计划在外层空间使用5G技术，并结合区块链应用于卫星通信，提供用于安全数据分享的区块链服务。',
- 'create_time': '10:00',
- 'title': '韩国KT子公司寻求将区块链技术应用于卫星通信'}
+            'SOC今日发布了基于Telegram的智能竞猜应用，任何用户在Telegram添加@socguessbot机器人即可通过直接对话完成竞猜。目前，该应用已添加所有世界杯赛事，官方表示后续会推出多语言版本。',
+ 'create_time': '10:22',
+ 'title': 'SOC发布基于Telegram的智能竞猜应用'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'BTC刚刚小幅拉升回归6400美元，火币Pro暂报6411美元，涨幅0.66%。主流币种同步由跌转涨，BCH暂报846美元（+2.47%）、ETH暂报477美元（+2.96%）、ETC暂报13.48美元（+1.80%）、LTC暂报94.47美元（+2.99%）、EOS暂报9.89美元（+2.95%）。',
+ 'create_time': '10:15',
+ 'title': 'BTC短暂拉升回归6400美元 主流币种普涨'}
 {'content': '\n'
-            '据www.thefastmode消息，韩国电信公司KT子公司KTSAT计划在外层空间使用5G技术，并结合区块链应用于卫星通信，提供用于安全数据分享的区块链服务。',
- 'create_time': '10:00',
- 'title': '韩国KT子公司寻求将区块链技术应用于卫星通信'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Allcoinsnews消息，欧洲一个区块链能源公司Swytch与能源交易商Energy2marketGmbH（e2m）合作，计划利用风力、水力等能源，为50多万个家庭提供能源支持。对于减少碳排放的公司与个人，如利用风力等可再生能源发电的公司，Swytch奖励将会Swytch令牌。e2m称这对能源交易商和生产商很有吸引力。',
- 'create_time': '09:51',
- 'title': '欧洲一区块链能源企业用令牌奖励清洁能源生产交易商'}
+            'BTC刚刚小幅拉升回归6400美元，火币Pro暂报6411美元，涨幅0.66%。主流币种同步由跌转涨，BCH暂报846美元（+2.47%）、ETH暂报477美元（+2.96%）、ETC暂报13.48美元（+1.80%）、LTC暂报94.47美元（+2.99%）、EOS暂报9.89美元（+2.95%）。',
+ 'create_time': '10:15',
+ 'title': 'BTC短暂拉升回归6400美元 主流币种普涨'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据sputniknews报道，利兹大学新闻学博士JairoLugoOcando称，区块链技术必须使各方产生信心，而委内瑞拉发行的石油币并没有得到该国国际储备的支持，国内恶性通货膨胀达到新高，货币产量呈指数级增长，其与石油生产和GDP没有关系，委内瑞拉的石油币从一开始就是失败的项目。',
+ 'create_time': '10:15',
+ 'title': '学者：委内瑞拉的石油币从一开始就是失败的项目'}
 {'content': '\n'
-            '据Allcoinsnews消息，欧洲一个区块链能源公司Swytch与能源交易商Energy2marketGmbH（e2m）合作，计划利用风力、水力等能源，为50多万个家庭提供能源支持。对于减少碳排放的公司与个人，如利用风力等可再生能源发电的公司，Swytch奖励将会Swytch令牌。e2m称这对能源交易商和生产商很有吸引力。',
- 'create_time': '09:51',
- 'title': '欧洲一区块链能源企业用令牌奖励清洁能源生产交易商'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '09:30',
- 'title': 'LET官方：正更新网络节点，部分节点不能与火币Pro同步，存取资产业务会受到影响。同步完成后，相关功能会恢复。'}
-{'content': '\n',
- 'create_time': '09:30',
- 'title': 'LET官方：正更新网络节点，部分节点不能与火币Pro同步，存取资产业务会受到影响。同步完成后，相关功能会恢复。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '09:28',
- 'title': '慢雾区：谨慎使用未开源的浏览器扩展，疑似出现 EOS 私钥窃取攻击行为。'}
-{'content': '\n',
- 'create_time': '09:28',
- 'title': '慢雾区：谨慎使用未开源的浏览器扩展，疑似出现 EOS 私钥窃取攻击行为。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'A股开盘，区块链板块下跌0.28%，81只概念股中，16只上涨，47只下跌。涨幅前三为：嘉泽新能（+4.45%），凯恩股份（+1.15%）、宣亚国际（+0.98%）；跌幅前三为：科蓝软件（-1.93%），东华软件（-1.27%），三六零（-1.25%）。',
- 'create_time': '09:27',
- 'title': 'A股开盘：区块链概念板块下跌0.28%'}
+            '据sputniknews报道，利兹大学新闻学博士JairoLugoOcando称，区块链技术必须使各方产生信心，而委内瑞拉发行的石油币并没有得到该国国际储备的支持，国内恶性通货膨胀达到新高，货币产量呈指数级增长，其与石油生产和GDP没有关系，委内瑞拉的石油币从一开始就是失败的项目。',
+ 'create_time': '10:15',
+ 'title': '学者：委内瑞拉的石油币从一开始就是失败的项目'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '新华日报6月14日报道，江苏苏宁银行已成功接入基于区块链技术的国内信用证信息传输系统，实现了各操作环节透明可追踪，信用证实时秒级到达，大幅提高了信用证业务处理效率。苏宁银行还自主研发了区块链黑名单共享平台，所有金融机构都可以将自己的黑名单数据加密存储在区块链上，实现欺诈风险的联防联控。',
+ 'create_time': '10:08',
+ 'title': '江苏苏宁银行自主研发区块链黑名单共享平台'}
 {'content': '\n'
-            'A股开盘，区块链板块下跌0.28%，81只概念股中，16只上涨，47只下跌。涨幅前三为：嘉泽新能（+4.45%），凯恩股份（+1.15%）、宣亚国际（+0.98%）；跌幅前三为：科蓝软件（-1.93%），东华软件（-1.27%），三六零（-1.25%）。',
- 'create_time': '09:27',
- 'title': 'A股开盘：区块链概念板块下跌0.28%'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据杭州日报今日报道，前不久由国外权威机构发布的“2017全球区块链企业专利排行榜（前100名）”中，杭州共有阿里巴巴、趣链科技、云象网络、复杂美科技、秘猿科技五家企业闯入前50强。目前，杭州已聚集了一大批优秀的区块链企业与项目，并被业界公认为“中国区块链创新城市四强”。',
- 'create_time': '09:25',
- 'title': '杭州成为中国区块链创新城市四强'}
+            '新华日报6月14日报道，江苏苏宁银行已成功接入基于区块链技术的国内信用证信息传输系统，实现了各操作环节透明可追踪，信用证实时秒级到达，大幅提高了信用证业务处理效率。苏宁银行还自主研发了区块链黑名单共享平台，所有金融机构都可以将自己的黑名单数据加密存储在区块链上，实现欺诈风险的联防联控。',
+ 'create_time': '10:08',
+ 'title': '江苏苏宁银行自主研发区块链黑名单共享平台'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC五分钟内上涨1.2%，上涨金额为76美元，其中火币PRO上现价为$6400.0，请密切关注行情走向，注意控制风险。',
+ 'create_time': '10:07',
+ 'title': 'BTC五分钟内上涨1.2% 突破6400美元'}
+{'content': '\nBTC五分钟内上涨1.2%，上涨金额为76美元，其中火币PRO上现价为$6400.0，请密切关注行情走向，注意控制风险。',
+ 'create_time': '10:07',
+ 'title': 'BTC五分钟内上涨1.2% 突破6400美元'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据《币世界》行情显示，EOS由涨转跌，逼近9.5美元重要支撑位，现价9.57美元，跌幅0.43%。据IMEOS报道，交易所近百万EOS被盗，暂缓推进EOS主网激活。',
+ 'create_time': '09:58',
+ 'title': 'EOS由涨转跌 逼近9.5美元重要支撑位'}
 {'content': '\n'
-            '据杭州日报今日报道，前不久由国外权威机构发布的“2017全球区块链企业专利排行榜（前100名）”中，杭州共有阿里巴巴、趣链科技、云象网络、复杂美科技、秘猿科技五家企业闯入前50强。目前，杭州已聚集了一大批优秀的区块链企业与项目，并被业界公认为“中国区块链创新城市四强”。',
- 'create_time': '09:25',
- 'title': '杭州成为中国区块链创新城市四强'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CCN消息，Hotmail创始人SabeerBhatia称，数字货币潜在的商业模式就是欺诈，数字货币就是一份白皮书，一种对世界将来面貌的希望。他特别针对IOTA，称IOTA基于物联网，但没有给卖东西给任何人。IOTA的理念是物联网设备允许端对端沟通并且在区块链上运行金融交易。这个概念不值得150亿美元。它的价值就是投机而来的。IOTA市值曾达到150亿美元，现为35亿美元。',
- 'create_time': '09:18',
- 'title': 'Hotmail创始人：数字货币的商业模式基于欺诈'}
+            '据《币世界》行情显示，EOS由涨转跌，逼近9.5美元重要支撑位，现价9.57美元，跌幅0.43%。据IMEOS报道，交易所近百万EOS被盗，暂缓推进EOS主网激活。',
+ 'create_time': '09:58',
+ 'title': 'EOS由涨转跌 逼近9.5美元重要支撑位'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据IMEOS消息，EOS主网上线期间大量EOS私钥被黑客偷走。已经有60多位英文区和韩文区的受害者，中文区的还没统计。涉及的EOS总数超过百万，截止目前已经有3个账号被找回，一个被认领。目前，由EOS42发起，EOSCannon（佳能社区）、EOS纽约、EOSNation、BlockSmith、EOSAmsterdam、EOSRio、EOSDAC节点正在支持处理此事。据《币世界》行情，EOS现均价10.05美元，今日涨幅2.82%。',
+ 'create_time': '09:45',
+ 'title': '交易所暂缓推进EOS主网激活 近百万EOS被盗'}
 {'content': '\n'
-            '据CCN消息，Hotmail创始人SabeerBhatia称，数字货币潜在的商业模式就是欺诈，数字货币就是一份白皮书，一种对世界将来面貌的希望。他特别针对IOTA，称IOTA基于物联网，但没有给卖东西给任何人。IOTA的理念是物联网设备允许端对端沟通并且在区块链上运行金融交易。这个概念不值得150亿美元。它的价值就是投机而来的。IOTA市值曾达到150亿美元，现为35亿美元。',
- 'create_time': '09:18',
- 'title': 'Hotmail创始人：数字货币的商业模式基于欺诈'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '在《农民日报》6月13日发表的题为《“区块链+”给农业信息化带来新空间》的文章中，中国农业部信息中心康春鹏博士特别提到，区块链用得好，可以极大地推动现代农业发展；用得不好，则可能吹破“区块链+农业”泡沫，严重伤害农业农村信息化。为防止以区块链为噱头的数字货币进入农村开展非法集资，损害农民利益，应尽快完善相关法律法规。',
- 'create_time': '09:12',
- 'title': '农业部信息中心康春鹏：完善区块链法律法规 保护农民利益'}
+            '据IMEOS消息，EOS主网上线期间大量EOS私钥被黑客偷走。已经有60多位英文区和韩文区的受害者，中文区的还没统计。涉及的EOS总数超过百万，截止目前已经有3个账号被找回，一个被认领。目前，由EOS42发起，EOSCannon（佳能社区）、EOS纽约、EOSNation、BlockSmith、EOSAmsterdam、EOSRio、EOSDAC节点正在支持处理此事。据《币世界》行情，EOS现均价10.05美元，今日涨幅2.82%。',
+ 'create_time': '09:45',
+ 'title': '交易所暂缓推进EOS主网激活 近百万EOS被盗'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '近日，密码学专家KeeganRyan发布了一份研究报告称，他们在多个加密库中发现了一个漏洞，该漏洞允许单侧通道的攻击者获得用户的ECDSA或DSA私钥。当这些密码库使用私钥创建签名时，就会无意中通过内存缓存泄露信息。在同一台机器上运行的无特权攻击者可以从几千个签名中收集信息，并获得私钥的值。据悉，在受影响的加密库中，LibreSSL、NSS、OpenSSL、WolfCrypt、Botan、Libgcrypt、MatrixSSL和BoringSSL已经向研究人员表明，他们或正在或已经准备好了修复补丁，以排除此漏洞带来的威胁。',
+ 'create_time': '09:43',
+ 'title': '加密专家发现多个加密库中存在漏洞'}
 {'content': '\n'
-            '在《农民日报》6月13日发表的题为《“区块链+”给农业信息化带来新空间》的文章中，中国农业部信息中心康春鹏博士特别提到，区块链用得好，可以极大地推动现代农业发展；用得不好，则可能吹破“区块链+农业”泡沫，严重伤害农业农村信息化。为防止以区块链为噱头的数字货币进入农村开展非法集资，损害农民利益，应尽快完善相关法律法规。',
- 'create_time': '09:12',
- 'title': '农业部信息中心康春鹏：完善区块链法律法规 保护农民利益'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC今日凌晨3:00左右快速大跌逾3%，主流币种纷纷下挫。据《币世界》行情统计，自凌晨3:00到现在，以下币种表现较为抗跌：',
- 'create_time': '09:04',
- 'title': '过去6小时逆市抗跌币种盘点'}
-{'content': '\nBTC今日凌晨3:00左右快速大跌逾3%，主流币种纷纷下挫。据《币世界》行情统计，自凌晨3:00到现在，以下币种表现较为抗跌：',
- 'create_time': '09:04',
- 'title': '过去6小时逆市抗跌币种盘点'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据cointelegraph消息，德国金融监管机构（BaFin）总裁FelixHufeld表示，目前数字货币监管者的首要任务是保持金融系统整体稳定性，而并非保护散户投资者。尽管BaFin存在的作用是保护消费者和维护金融市场的整体稳定性，Hufeld表示，现阶段只能着重解决系统性风险问题，没有办法事无巨细保护到每一个投资者。这也是为什么BaFin在去年强调ICO存有巨大风险，具有很强的波动性。',
- 'create_time': '08:57',
- 'title': '德国监管机构BaFin：数字货币监管首要任务是保持金融系统整体稳定性'}
+            '近日，密码学专家KeeganRyan发布了一份研究报告称，他们在多个加密库中发现了一个漏洞，该漏洞允许单侧通道的攻击者获得用户的ECDSA或DSA私钥。当这些密码库使用私钥创建签名时，就会无意中通过内存缓存泄露信息。在同一台机器上运行的无特权攻击者可以从几千个签名中收集信息，并获得私钥的值。据悉，在受影响的加密库中，LibreSSL、NSS、OpenSSL、WolfCrypt、Botan、Libgcrypt、MatrixSSL和BoringSSL已经向研究人员表明，他们或正在或已经准备好了修复补丁，以排除此漏洞带来的威胁。',
+ 'create_time': '09:43',
+ 'title': '加密专家发现多个加密库中存在漏洞'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'A股开盘，区块链板块整体下跌0.58%，81只概念股中，11只上涨，56只下跌，9只平盘，5只停牌。涨幅前三为：商赢环球（+0.93%），飞天诚信（+0.75%），浙大网新（+0.48%）；跌幅前三为：宣亚国际（-3.6%），视觉中国（-3.44%），凯恩股份（-2.25%）。',
+ 'create_time': '09:29',
+ 'title': 'A股开盘：区块链概念板块下跌0.58%'}
 {'content': '\n'
-            '据cointelegraph消息，德国金融监管机构（BaFin）总裁FelixHufeld表示，目前数字货币监管者的首要任务是保持金融系统整体稳定性，而并非保护散户投资者。尽管BaFin存在的作用是保护消费者和维护金融市场的整体稳定性，Hufeld表示，现阶段只能着重解决系统性风险问题，没有办法事无巨细保护到每一个投资者。这也是为什么BaFin在去年强调ICO存有巨大风险，具有很强的波动性。',
- 'create_time': '08:57',
- 'title': '德国监管机构BaFin：数字货币监管首要任务是保持金融系统整体稳定性'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Bitcoin消息，韩国一家刊物宣称，在2月份几家银行发现Coinrail可能存在洗钱交易，一些银行4月份采取措施停止了与Coinrail的相关交易。',
- 'create_time': '08:41',
- 'title': '韩国几家银行在2月份发现Coinrail存在可疑洗钱交易'}
+            'A股开盘，区块链板块整体下跌0.58%，81只概念股中，11只上涨，56只下跌，9只平盘，5只停牌。涨幅前三为：商赢环球（+0.93%），飞天诚信（+0.75%），浙大网新（+0.48%）；跌幅前三为：宣亚国际（-3.6%），视觉中国（-3.44%），凯恩股份（-2.25%）。',
+ 'create_time': '09:29',
+ 'title': 'A股开盘：区块链概念板块下跌0.58%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CCN消息，美国证监会高级官员KaraStein认为，数字货币有减少投资成本的潜力，它可以降低募资成本，我们正在思考如何拥抱创新以保证其有效落地。',
+ 'create_time': '09:22',
+ 'title': '美证监会高级官员：数字货币可以降低募资成本'}
 {'content': '\n'
-            '据Bitcoin消息，韩国一家刊物宣称，在2月份几家银行发现Coinrail可能存在洗钱交易，一些银行4月份采取措施停止了与Coinrail的相关交易。',
- 'create_time': '08:41',
- 'title': '韩国几家银行在2月份发现Coinrail存在可疑洗钱交易'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n',
- 'create_time': '08:34',
- 'title': '据CNBC消息，加州伯克利分校等顶级大学已经开设数字货币与区块链课程。'}
-{'content': '\n',
- 'create_time': '08:34',
- 'title': '据CNBC消息，加州伯克利分校等顶级大学已经开设数字货币与区块链课程。'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CNBC消息，谷歌对BTC的搜索量今年已下降75%。对此BK资本管理公司创始人BrianKelly称，也许把一些比特币泡沫挤出去是好的，但现在比特币的谷歌搜索量仍多于碧昂丝的搜索量。Kelly称，如果矿机每18个月更新一次，那么采矿成本会增加到5900-6000美元，6500美元是支持采矿的基本价格。6800美元是阻力点，如果突破6800美元，将可能形成强劲上涨势头，可以买入。注：碧昂丝是美国著名女歌手。',
- 'create_time': '08:29',
- 'title': 'Brian Kelly：即使比特币下跌，谷歌搜索量仍多于碧昂丝'}
+            '据CCN消息，美国证监会高级官员KaraStein认为，数字货币有减少投资成本的潜力，它可以降低募资成本，我们正在思考如何拥抱创新以保证其有效落地。',
+ 'create_time': '09:22',
+ 'title': '美证监会高级官员：数字货币可以降低募资成本'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC五分钟内下跌1.18%，下跌金额为75美元，其中火币PRO上现价为$6324.72，请密切关注行情走向，注意控制风险。',
+ 'create_time': '09:20',
+ 'title': 'BTC五分钟内下跌1.18%'}
+{'content': '\nBTC五分钟内下跌1.18%，下跌金额为75美元，其中火币PRO上现价为$6324.72，请密切关注行情走向，注意控制风险。',
+ 'create_time': '09:20',
+ 'title': 'BTC五分钟内下跌1.18%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'IOTA今日上线Bitpanda。据《币世界》行情显示，IOTA现价1.20美元，涨幅0.56%。IOTA是一种基于DAG（有向无环图）的全新分布式账本体系结构。',
+ 'create_time': '08:39',
+ 'title': 'IOTA今日上线Bitpanda 涨幅0.56%'}
 {'content': '\n'
-            '据CNBC消息，谷歌对BTC的搜索量今年已下降75%。对此BK资本管理公司创始人BrianKelly称，也许把一些比特币泡沫挤出去是好的，但现在比特币的谷歌搜索量仍多于碧昂丝的搜索量。Kelly称，如果矿机每18个月更新一次，那么采矿成本会增加到5900-6000美元，6500美元是支持采矿的基本价格。6800美元是阻力点，如果突破6800美元，将可能形成强劲上涨势头，可以买入。注：碧昂丝是美国著名女歌手。',
- 'create_time': '08:29',
- 'title': 'Brian Kelly：即使比特币下跌，谷歌搜索量仍多于碧昂丝'}
-2018-06-13 20:30:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CCN消息，金融刊物Risk.net报道称，标准普尔、穆迪和惠誉都对比特币期货市场交易量的增加表示担忧。如果未来几个月这些金融产品的交易量继续增长，评级机构可能会下调那些清算比特币期货的银行的评级。穆迪董事总经理AnaArsov表示，在决定一家银行的评级时，他将把比特币期货清算业务视为“信用负面”。',
- 'create_time': '08:11',
- 'title': '评级机构或将下调清算比特币期货业务的银行的评级'}
+            'IOTA今日上线Bitpanda。据《币世界》行情显示，IOTA现价1.20美元，涨幅0.56%。IOTA是一种基于DAG（有向无环图）的全新分布式账本体系结构。',
+ 'create_time': '08:39',
+ 'title': 'IOTA今日上线Bitpanda 涨幅0.56%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'Coindesk分析师称，因为ETH空头和多头都在寻求一个明确的价格底位，此时ETH进入价格盘整阶段，RSI指标显示目前ETH处于超卖，突破501美元将确认牛市到来，跌破450美元则看涨失败，总体态势呈中性。',
+ 'create_time': '08:24',
+ 'title': 'Coindesk分析：ETH突破501美元将确认牛市到来'}
 {'content': '\n'
-            '据CCN消息，金融刊物Risk.net报道称，标准普尔、穆迪和惠誉都对比特币期货市场交易量的增加表示担忧。如果未来几个月这些金融产品的交易量继续增长，评级机构可能会下调那些清算比特币期货的银行的评级。穆迪董事总经理AnaArsov表示，在决定一家银行的评级时，他将把比特币期货清算业务视为“信用负面”。',
- 'create_time': '08:11',
- 'title': '评级机构或将下调清算比特币期货业务的银行的评级'}
-2018-06-13 20:30:04 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-06-13 20:30:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+            'Coindesk分析师称，因为ETH空头和多头都在寻求一个明确的价格底位，此时ETH进入价格盘整阶段，RSI指标显示目前ETH处于超卖，突破501美元将确认牛市到来，跌破450美元则看涨失败，总体态势呈中性。',
+ 'create_time': '08:24',
+ 'title': 'Coindesk分析：ETH突破501美元将确认牛市到来'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日，李笑来发文“关于陈伟星言论的回应”，文中称：陈伟星其实是个伪创业者，虽然他一直以“快的创始人”自称，可事实上呢？吕传伟是干嘛的？陈伟星其实自己从未做过完整的事。李笑来还认为，陈伟星自己投的项目XMX就是空气币，白皮书是抄袭另外一个项目的。',
+ 'create_time': '08:20',
+ 'title': '李笑来长文回应陈伟星：XMX就是空气币'}
+{'content': '\n'
+            '今日，李笑来发文“关于陈伟星言论的回应”，文中称：陈伟星其实是个伪创业者，虽然他一直以“快的创始人”自称，可事实上呢？吕传伟是干嘛的？陈伟星其实自己从未做过完整的事。李笑来还认为，陈伟星自己投的项目XMX就是空气币，白皮书是抄袭另外一个项目的。',
+ 'create_time': '08:20',
+ 'title': '李笑来长文回应陈伟星：XMX就是空气币'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '6月13日晚间，网爆12306密码可能泄露，3千万条数据在暗网上以10个比特币的价格出售。随后，中国铁路发布声明表示网站未发生用户信息泄漏，网传信息与铁路12306网站无关。',
+ 'create_time': '08:14',
+ 'title': '网传12306数据在暗网以比特币出售 官方辟谣称未发生用户信息泄漏'}
+{'content': '\n'
+            '6月13日晚间，网爆12306密码可能泄露，3千万条数据在暗网上以10个比特币的价格出售。随后，中国铁路发布声明表示网站未发生用户信息泄漏，网传信息与铁路12306网站无关。',
+ 'create_time': '08:14',
+ 'title': '网传12306数据在暗网以比特币出售 官方辟谣称未发生用户信息泄漏'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Bitcoin消息，比特现金研究人员提出了新的交易排序规则，新规则采用标识符排序，而不是当前的拓扑排序规则，使得网络更容易处理大的区块。',
+ 'create_time': '08:10',
+ 'title': '比特现金研究人员提出新交易排序规则'}
+{'content': '\n'
+            '据Bitcoin消息，比特现金研究人员提出了新的交易排序规则，新规则采用标识符排序，而不是当前的拓扑排序规则，使得网络更容易处理大的区块。',
+ 'create_time': '08:10',
+ 'title': '比特现金研究人员提出新交易排序规则'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '1.德国金融监管机构（BaFin）总裁FelixHufeld表示，目前数字货币监管者的首要任务是保持金融系统整体稳定性，而并非保护散户投资者。',
+ 'create_time': '08:06',
+ 'title': '币世界早间内参：火币支持EOS投票 德国监管动向'}
+{'content': '\n'
+            '1.德国金融监管机构（BaFin）总裁FelixHufeld表示，目前数字货币监管者的首要任务是保持金融系统整体稳定性，而并非保护散户投资者。',
+ 'create_time': '08:06',
+ 'title': '币世界早间内参：火币支持EOS投票 德国监管动向'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据证券日报报道，5月份全球互联网金融行业共发生55例融资，其中国内共发生33例融资，融资金额高达56.8亿元。国内外融资热点大致相同，主要集中在区块链和借贷行业。网贷之家研究员刘美茹称，全球融资热度稍有下降，融资总金额环比下降66%。',
+ 'create_time': '08:02',
+ 'title': '证券日报：5月份融资总额近60亿元 区块链领域被“热捧”'}
+{'content': '\n'
+            '据证券日报报道，5月份全球互联网金融行业共发生55例融资，其中国内共发生33例融资，融资金额高达56.8亿元。国内外融资热点大致相同，主要集中在区块链和借贷行业。网贷之家研究员刘美茹称，全球融资热度稍有下降，融资总金额环比下降66%。',
+ 'create_time': '08:02',
+ 'title': '证券日报：5月份融资总额近60亿元 区块链领域被“热捧”'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n今日零点BTC短时下挫，再创历史新低6127.3美元之后小幅回调，现于6300美元附近整理；主流币种普跌，市场同步下行。',
+ 'create_time': '07:36',
+ 'title': '币世界早行情：BTC再创历史新低6127.3美元 市场同步下行'}
+{'content': '\n今日零点BTC短时下挫，再创历史新低6127.3美元之后小幅回调，现于6300美元附近整理；主流币种普跌，市场同步下行。',
+ 'create_time': '07:36',
+ 'title': '币世界早行情：BTC再创历史新低6127.3美元 市场同步下行'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '财联社消息，刚刚分拆并完成独立融资的度小满（即原“百度金融”）积极探索区块链的多场景应用。目前BAT的区块链探索主要都由金融业务线牵头进行。不过，在专家看来，目前区块链的金融场景应用仍多囿于非核心项目，并受限于制度、技术规则、改造成本等多重障碍。区块链“拿着锤子在找钉”，规模化应用仍需等待。',
+ 'create_time': '06:47',
+ 'title': 'BAT金融业务线领衔探索 区块链规模化应用尚需时日'}
+{'content': '\n'
+            '财联社消息，刚刚分拆并完成独立融资的度小满（即原“百度金融”）积极探索区块链的多场景应用。目前BAT的区块链探索主要都由金融业务线牵头进行。不过，在专家看来，目前区块链的金融场景应用仍多囿于非核心项目，并受限于制度、技术规则、改造成本等多重障碍。区块链“拿着锤子在找钉”，规模化应用仍需等待。',
+ 'create_time': '06:47',
+ 'title': 'BAT金融业务线领衔探索 区块链规模化应用尚需时日'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '有追踪消息显示，比特币地址17A16QmavnUfCW11DAApiJxp7ARnxN5pGX于今日凌晨陆续转出915个比特币。',
+ 'create_time': '06:44',
+ 'title': '有地址于今日凌晨转出915个比特币'}
+{'content': '\n'
+            '有追踪消息显示，比特币地址17A16QmavnUfCW11DAApiJxp7ARnxN5pGX于今日凌晨陆续转出915个比特币。',
+ 'create_time': '06:44',
+ 'title': '有地址于今日凌晨转出915个比特币'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '纽约时报财经博主NathannielPopper今日早间表示，他观察到，Ripple的CEOBradGarlinghouse曾在今年年初表示，他得知银行将使用XRP。这两天Garlinghouse却被路透援引其言论称，银行对使用XRP和加密货币不感兴趣。他提出疑问，这到底是媒体误传还是有些东西已经改变？',
+ 'create_time': '06:40',
+ 'title': 'Nathanniel Popper：Ripple CEO言论前后不一致，媒体误传还是态度转变？'}
+{'content': '\n'
+            '纽约时报财经博主NathannielPopper今日早间表示，他观察到，Ripple的CEOBradGarlinghouse曾在今年年初表示，他得知银行将使用XRP。这两天Garlinghouse却被路透援引其言论称，银行对使用XRP和加密货币不感兴趣。他提出疑问，这到底是媒体误传还是有些东西已经改变？',
+ 'create_time': '06:40',
+ 'title': 'Nathanniel Popper：Ripple CEO言论前后不一致，媒体误传还是态度转变？'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '德克萨斯大学奥斯汀分校的《IsBitcoinReallyUn-Tethered?》合著作者阿明•沙姆斯(AminShams)在CNBC的FastMoney栏目上发表了他对比特币的看法。他表示，投资者首先需要的是信任，市场首先需要的是诚信。在2017年的繁荣时期，比特币和其他数字货币的价格上涨，可能并非全是基于需求的推动。夏姆斯还指出，数字货币的价格已经是相互关联的，很难区分不同的数字货币，查看了一些主要数字货币的基本面，发现所有数字货币的价格都受到了影响。\xa0'
+            '当他被问及比特币鲸鱼时，他承认可能会有比特币鲸鱼，但他们并没有特别关注这一点。\xa0',
+ 'create_time': '06:29',
+ 'title': '比特币报告作者：所有主流数字货币价格都受到影响'}
+{'content': '\n'
+            '德克萨斯大学奥斯汀分校的《IsBitcoinReallyUn-Tethered?》合著作者阿明•沙姆斯(AminShams)在CNBC的FastMoney栏目上发表了他对比特币的看法。他表示，投资者首先需要的是信任，市场首先需要的是诚信。在2017年的繁荣时期，比特币和其他数字货币的价格上涨，可能并非全是基于需求的推动。夏姆斯还指出，数字货币的价格已经是相互关联的，很难区分不同的数字货币，查看了一些主要数字货币的基本面，发现所有数字货币的价格都受到了影响。\xa0'
+            '当他被问及比特币鲸鱼时，他承认可能会有比特币鲸鱼，但他们并没有特别关注这一点。\xa0',
+ 'create_time': '06:29',
+ 'title': '比特币报告作者：所有主流数字货币价格都受到影响'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据ccn报道，今天上午，爱尔兰领导人TaoiseachLeoVaradkar在都柏林的MoneyConf会议上宣布，政府正准备将爱尔兰的首都变为欧洲的技术之都。Varadkar称，没有任何比爱尔兰更好的讨论网络安全，区块链，加密货币，人工智能，监管和未来金融科技等问题的地方。',
+ 'create_time': '06:06',
+ 'title': '爱尔兰领导人：没有任何地方比爱尔兰更适合讨论区块链、加密货币和人工智能'}
+{'content': '\n'
+            '据ccn报道，今天上午，爱尔兰领导人TaoiseachLeoVaradkar在都柏林的MoneyConf会议上宣布，政府正准备将爱尔兰的首都变为欧洲的技术之都。Varadkar称，没有任何比爱尔兰更好的讨论网络安全，区块链，加密货币，人工智能，监管和未来金融科技等问题的地方。',
+ 'create_time': '06:06',
+ 'title': '爱尔兰领导人：没有任何地方比爱尔兰更适合讨论区块链、加密货币和人工智能'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'Coindesk分析文章指出，Bitfinex数据显示，BPI达到70天低点后，RSI指数创2016年8月以来新低（26.4）。RSI（相对强弱指数）用于识别超买和超卖，比较指定时间段内近期收益和损失的大小，来衡量价格速度变化。目前该指标正接近低于资产真实价值的水平，通常价格会反弹。BTC很少触及超卖水平（小于30），2月6日是RSI最近一次低于30，当时BTC在两周内从6,000美元上涨至11,788美元，涨幅96％。尽管超卖指标显示疲软倾向，但BTC日线的RSI指数在触底之前，多头仍需谨慎行事。',
+ 'create_time': '05:35',
+ 'title': 'Coindesk分析：比特币RSI指数创2016年8月以来新低'}
+{'content': '\n'
+            'Coindesk分析文章指出，Bitfinex数据显示，BPI达到70天低点后，RSI指数创2016年8月以来新低（26.4）。RSI（相对强弱指数）用于识别超买和超卖，比较指定时间段内近期收益和损失的大小，来衡量价格速度变化。目前该指标正接近低于资产真实价值的水平，通常价格会反弹。BTC很少触及超卖水平（小于30），2月6日是RSI最近一次低于30，当时BTC在两周内从6,000美元上涨至11,788美元，涨幅96％。尽管超卖指标显示疲软倾向，但BTC日线的RSI指数在触底之前，多头仍需谨慎行事。',
+ 'create_time': '05:35',
+ 'title': 'Coindesk分析：比特币RSI指数创2016年8月以来新低'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '网络与企业安全公司PaloAltoNetworks日前公布研究发现，约5%的流通门罗币（XMR）是通过未经允许的劫持他人电脑算力恶意挖矿所得。PaloAltoNetworks的研究报告指出，这些数据并未包括基于网页的门罗币矿工和其他该公司可能无法访问的矿工，这意味着，上述5%左右的恶意挖掘门罗币比例很可能太低。',
+ 'create_time': '05:17',
+ 'title': '研究：至少5%的门罗币是恶意挖矿所得'}
+{'content': '\n'
+            '网络与企业安全公司PaloAltoNetworks日前公布研究发现，约5%的流通门罗币（XMR）是通过未经允许的劫持他人电脑算力恶意挖矿所得。PaloAltoNetworks的研究报告指出，这些数据并未包括基于网页的门罗币矿工和其他该公司可能无法访问的矿工，这意味着，上述5%左右的恶意挖掘门罗币比例很可能太低。',
+ 'create_time': '05:17',
+ 'title': '研究：至少5%的门罗币是恶意挖矿所得'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'CME比特币期货BTC7月合约收跌230美元，跌幅大约3.54%，报6270美元，CME比特币期货连续两个交易日录得前月合约收盘纪录新低。',
+ 'create_time': '05:14',
+ 'title': '比特币期货收跌逾3.5%，连续两天创收盘历史新低'}
+{'content': '\n'
+            'CME比特币期货BTC7月合约收跌230美元，跌幅大约3.54%，报6270美元，CME比特币期货连续两个交易日录得前月合约收盘纪录新低。',
+ 'create_time': '05:14',
+ 'title': '比特币期货收跌逾3.5%，连续两天创收盘历史新低'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据newsbtc消息，2018年以来，比特币价格虽然比年初下降了近50％，但仍然有可能转向积极。首先，比特币将在未来几个月有许多技术更新，交易费用也在下降；其次，越来越多的商家将比特币作为支付方式；更多的人看到了积极监管比特币的好处，为数字货币空间提供了更多的合法性，并有助于吸引机构投资者；此外，主要的交易平台如纳斯达克、洲际交易所等都引进了数字货币。',
+ 'create_time': '05:09',
+ 'title': '2018年比特币价格仍有望走向积极'}
+{'content': '\n'
+            '据newsbtc消息，2018年以来，比特币价格虽然比年初下降了近50％，但仍然有可能转向积极。首先，比特币将在未来几个月有许多技术更新，交易费用也在下降；其次，越来越多的商家将比特币作为支付方式；更多的人看到了积极监管比特币的好处，为数字货币空间提供了更多的合法性，并有助于吸引机构投资者；此外，主要的交易平台如纳斯达克、洲际交易所等都引进了数字货币。',
+ 'create_time': '05:09',
+ 'title': '2018年比特币价格仍有望走向积极'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据coinjournal消息，社交投资平台eToro今天宣布，该平台用户可以在同一个投资组合中购买和持有英国的股票，持有股票、数字货币、交易所基金（ETF）和数千种其他金融资产。',
+ 'create_time': '05:02',
+ 'title': '社交投资平台eToro宣布可购买包含数字货币的投资组合'}
+{'content': '\n'
+            '据coinjournal消息，社交投资平台eToro今天宣布，该平台用户可以在同一个投资组合中购买和持有英国的股票，持有股票、数字货币、交易所基金（ETF）和数千种其他金融资产。',
+ 'create_time': '05:02',
+ 'title': '社交投资平台eToro宣布可购买包含数字货币的投资组合'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'Openledger在官网发表公告称，交易所目前已重新掌握所有的登陆域名，为了最大程度保证安全性，Openledger还将安全证书由SSL级升级到EV级，这是目前的最高安全证书。此外Openledger还推出了交易所被黑期间遭受损失用户的赔偿计划：1.用户可在交易所官网主题栏中创建一个卡签，标注“我的账户被泄露”，在其中尽可能多地详述情况，在2018年6月22日前提交（包括22日）；2.如果团队确认用户的账户被入侵且资金被盗，赔偿计划将于2018年7月2日启动。请注意，所有的事件都将被单独调查；3.Openledger将直接与项目参与方联系，随时更新赔偿程序的进程。',
+ 'create_time': '04:52',
+ 'title': 'Openledger公告：交易所安全问题已解决 将启动赔偿机制'}
+{'content': '\n'
+            'Openledger在官网发表公告称，交易所目前已重新掌握所有的登陆域名，为了最大程度保证安全性，Openledger还将安全证书由SSL级升级到EV级，这是目前的最高安全证书。此外Openledger还推出了交易所被黑期间遭受损失用户的赔偿计划：1.用户可在交易所官网主题栏中创建一个卡签，标注“我的账户被泄露”，在其中尽可能多地详述情况，在2018年6月22日前提交（包括22日）；2.如果团队确认用户的账户被入侵且资金被盗，赔偿计划将于2018年7月2日启动。请注意，所有的事件都将被单独调查；3.Openledger将直接与项目参与方联系，随时更新赔偿程序的进程。',
+ 'create_time': '04:52',
+ 'title': 'Openledger公告：交易所安全问题已解决 将启动赔偿机制'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '行情显示，BTC全网未确认交易不断攀升中，据blockchain数据显示，截至发稿，BTC全网未确认交易22018笔，24小时交易速率30.12笔/秒。据《币世界》行情，BTC现价6238.75美元，跌幅2.08%。',
+ 'create_time': '04:37',
+ 'title': '比特币未确认交易量超过2.2万笔'}
+{'content': '\n'
+            '行情显示，BTC全网未确认交易不断攀升中，据blockchain数据显示，截至发稿，BTC全网未确认交易22018笔，24小时交易速率30.12笔/秒。据《币世界》行情，BTC现价6238.75美元，跌幅2.08%。',
+ 'create_time': '04:37',
+ 'title': '比特币未确认交易量超过2.2万笔'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据bitcoin消息，比特币交易平台Paxful日前宣布了其有关比特币慈善活动的新进展，该公司向在美国的阿富汗女性难民提供奖学金，并为帮助建设卢旺达幼儿园提供了额外资源。',
+ 'create_time': '04:14',
+ 'title': 'Paxful向阿富汗女性难民颁发学术奖学金'}
+{'content': '\n'
+            '据bitcoin消息，比特币交易平台Paxful日前宣布了其有关比特币慈善活动的新进展，该公司向在美国的阿富汗女性难民提供奖学金，并为帮助建设卢旺达幼儿园提供了额外资源。',
+ 'create_time': '04:14',
+ 'title': 'Paxful向阿富汗女性难民颁发学术奖学金'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '昨日凌晨，AcFun发布公告称网站遭遇黑客攻击，近千万条用户数据外泄。而网上流传截图称，疑似摩拜单车的用户数据在暗网大卖，标价整体40万，只支持BTC支付，且已经有人购买。对此，摩拜方面回应称，摩拜收到情报后第一时间启动全量排查，暂未发现数据泄露和入侵的现象，相关网络传言不实。',
+ 'create_time': '03:21',
+ 'title': '摩拜回应数据泄露传闻：暂未发现数据泄露和入侵'}
+{'content': '\n'
+            '昨日凌晨，AcFun发布公告称网站遭遇黑客攻击，近千万条用户数据外泄。而网上流传截图称，疑似摩拜单车的用户数据在暗网大卖，标价整体40万，只支持BTC支付，且已经有人购买。对此，摩拜方面回应称，摩拜收到情报后第一时间启动全量排查，暂未发现数据泄露和入侵的现象，相关网络传言不实。',
+ 'create_time': '03:21',
+ 'title': '摩拜回应数据泄露传闻：暂未发现数据泄露和入侵'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日凌晨行情显示，BTC在0时20分至30分，价格迅速下调4%（低点$6098.12），大幅穿越布林带下轨，再创近日新低，但稍后随即反弹至$6300关口。历史数据显示，每当RSI低于30（RSI：26.91），会出现V型反弹，但目前仍然远低于MA5（$6797.25）和MA10（$7204.89）。技术图表来仍偏向空头，但BTC在凌晨短暂的震荡促使市值前十币种全部上涨（除BTC本身外），目前主流币中，ETC涨幅4.88%，暂报$13.878；ETH涨幅2.72%，暂报$476.34；LTC涨幅1.85%，暂报$93.42；BCH涨幅0.85%，暂报$832.89；BTC跌幅1.93%，暂报$6318.13。',
+ 'create_time': '03:09',
+ 'title': '凌晨行情：BTC价格在10分钟内下调4% 创6月新低后反弹至$6300'}
+{'content': '\n'
+            '今日凌晨行情显示，BTC在0时20分至30分，价格迅速下调4%（低点$6098.12），大幅穿越布林带下轨，再创近日新低，但稍后随即反弹至$6300关口。历史数据显示，每当RSI低于30（RSI：26.91），会出现V型反弹，但目前仍然远低于MA5（$6797.25）和MA10（$7204.89）。技术图表来仍偏向空头，但BTC在凌晨短暂的震荡促使市值前十币种全部上涨（除BTC本身外），目前主流币中，ETC涨幅4.88%，暂报$13.878；ETH涨幅2.72%，暂报$476.34；LTC涨幅1.85%，暂报$93.42；BCH涨幅0.85%，暂报$832.89；BTC跌幅1.93%，暂报$6318.13。',
+ 'create_time': '03:09',
+ 'title': '凌晨行情：BTC价格在10分钟内下调4% 创6月新低后反弹至$6300'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据channelnewsasia消息，一种名为“MyBigCoin”鲜为人知的加密货币正处于一个备受关注的案件中心，该案件可能决定美国商品期货交易委员会（CFTC）是否有权对与数字货币相关的欺诈行为做出制裁。今年1月CFTC曾指控“MyBigCoin”的发行方涉嫌600万美元的欺诈，“MyBigCoin”的律师则辩称，CFTC对数字货币没有监管权力，因为它不是像小麦或棉花那样的商品，也不会使用期货合约进行交易。美国地方法院法官RyaZobel将于周四听取此案的申诉。',
+ 'create_time': '02:38',
+ 'title': '美国CFTC对数字货币的监管或面临挑战'}
+{'content': '\n'
+            '据channelnewsasia消息，一种名为“MyBigCoin”鲜为人知的加密货币正处于一个备受关注的案件中心，该案件可能决定美国商品期货交易委员会（CFTC）是否有权对与数字货币相关的欺诈行为做出制裁。今年1月CFTC曾指控“MyBigCoin”的发行方涉嫌600万美元的欺诈，“MyBigCoin”的律师则辩称，CFTC对数字货币没有监管权力，因为它不是像小麦或棉花那样的商品，也不会使用期货合约进行交易。美国地方法院法官RyaZobel将于周四听取此案的申诉。',
+ 'create_time': '02:38',
+ 'title': '美国CFTC对数字货币的监管或面临挑战'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据加拿大央行官网消息，加拿大央行将与创意解构实验室（CreativeDestructionLab）合作，深化对人工智能、加密资产技术、量子计算等领先技术上的研究。',
+ 'create_time': '02:23',
+ 'title': '加拿大央行与CDL实验室合作 深化对加密资产技术的研究'}
+{'content': '\n'
+            '据加拿大央行官网消息，加拿大央行将与创意解构实验室（CreativeDestructionLab）合作，深化对人工智能、加密资产技术、量子计算等领先技术上的研究。',
+ 'create_time': '02:23',
+ 'title': '加拿大央行与CDL实验室合作 深化对加密资产技术的研究'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '行情显示，三大交易所BTC价格重新站上6300美元，火币Pro现价6349.47美元，跌幅0.37%；币安现价6344.01美元，跌幅5.48%；OKex现价6337.09美元，跌幅5.58%。',
+ 'create_time': '02:03',
+ 'title': '三大交易所BTC价格重新站上6300美元'}
+{'content': '\n'
+            '行情显示，三大交易所BTC价格重新站上6300美元，火币Pro现价6349.47美元，跌幅0.37%；币安现价6344.01美元，跌幅5.48%；OKex现价6337.09美元，跌幅5.58%。',
+ 'create_time': '02:03',
+ 'title': '三大交易所BTC价格重新站上6300美元'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据路透社消息，Ripple首席加密员DavidSchwartz在采访中表示，银行一直在采取措施，部署加密货币技术，使国际支付流程更快、更便宜。已经有银行测试使用Ripple开发的xCurrent技术，但Schwartz表示，但xCurrent的技术本身不是分布式记账（DLT）。',
+ 'create_time': '01:43',
+ 'title': 'Ripple首席加密员：银行现还没有使用分布式记账处理交易'}
+{'content': '\n'
+            '据路透社消息，Ripple首席加密员DavidSchwartz在采访中表示，银行一直在采取措施，部署加密货币技术，使国际支付流程更快、更便宜。已经有银行测试使用Ripple开发的xCurrent技术，但Schwartz表示，但xCurrent的技术本身不是分布式记账（DLT）。',
+ 'create_time': '01:43',
+ 'title': 'Ripple首席加密员：银行现还没有使用分布式记账处理交易'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'BitBullCapital首席执行官JoeDiPasquale表示，比特币今年的下跌正在增加，但需要注意的是，比特币的现货价格与12个月前相比仍增加了140％以上。虽然与2017年1400％的总体增幅相比，比特币目前的收益虽然不那么显着，但仍然超过其他许多资产类别。',
+ 'create_time': '01:42',
+ 'title': 'BitBull Capital首席执行官：目前比特币的收益虽不显著 但仍超过其他许多资产'}
+{'content': '\n'
+            'BitBullCapital首席执行官JoeDiPasquale表示，比特币今年的下跌正在增加，但需要注意的是，比特币的现货价格与12个月前相比仍增加了140％以上。虽然与2017年1400％的总体增幅相比，比特币目前的收益虽然不那么显着，但仍然超过其他许多资产类别。',
+ 'create_time': '01:42',
+ 'title': 'BitBull Capital首席执行官：目前比特币的收益虽不显著 但仍超过其他许多资产'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Coindesk报道，区块链初创公司Swarm周三宣布，它将推出新的“股权代币”，可以代表Coinbase和Ripple等区块公司的股权，但这些公司很快否认了这一说法。Coinbase和Ripple的代表进行强烈抨击，Coinbase已经发出了勒令停止通知，要求Swarm删除所有对Coinbase的引用。Ripple虽然没有公开发言，但Ripple的代表称Ripple没有Swarm购买其股权的记录，也不会批准这种收购。',
+ 'create_time': '01:42',
+ 'title': '区块链公司Swarm以Coinbase和Ripple的名义发行“股权代币”'}
+{'content': '\n'
+            '据Coindesk报道，区块链初创公司Swarm周三宣布，它将推出新的“股权代币”，可以代表Coinbase和Ripple等区块公司的股权，但这些公司很快否认了这一说法。Coinbase和Ripple的代表进行强烈抨击，Coinbase已经发出了勒令停止通知，要求Swarm删除所有对Coinbase的引用。Ripple虽然没有公开发言，但Ripple的代表称Ripple没有Swarm购买其股权的记录，也不会批准这种收购。',
+ 'create_time': '01:42',
+ 'title': '区块链公司Swarm以Coinbase和Ripple的名义发行“股权代币”'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CNBC消息，在有关比特币价格被Tether操纵的报道之后，比特币价格下跌5%，跌至2月份以来的最低水平，今日凌晨，比特币跌至6200美元以下。BitBullCapital首席执行官JoeDiPasquale表示，在比特币价格回升之前，跌至5000美元的底部价格是有可能的。',
+ 'create_time': '01:31',
+ 'title': '比特币价格跌至5000美元尚有可能'}
+{'content': '\n'
+            '据CNBC消息，在有关比特币价格被Tether操纵的报道之后，比特币价格下跌5%，跌至2月份以来的最低水平，今日凌晨，比特币跌至6200美元以下。BitBullCapital首席执行官JoeDiPasquale表示，在比特币价格回升之前，跌至5000美元的底部价格是有可能的。',
+ 'create_time': '01:31',
+ 'title': '比特币价格跌至5000美元尚有可能'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据英国每日邮报，近日，澳大利亚加密交易所Blockbid首席运营官DavidSapper表示：“最近Coinrail遭受黑客攻击表明，快速发展、不断变化的加密货币世界仍对欺诈者和黑客有着强烈的吸引力，这反过来又增加了市场的风险。由于对加密货币交易所和交易的监管不力，未经授权的对核心系统和客户账户的访问是潜在的威胁。交易所越受到欢迎，平台就越难以执行，因此在安全性方面留下了一些潜在的漏洞。”',
+ 'create_time': '01:15',
+ 'title': 'Blockbid首席运营官：交易所越受欢迎 越容易留下漏洞'}
+{'content': '\n'
+            '据英国每日邮报，近日，澳大利亚加密交易所Blockbid首席运营官DavidSapper表示：“最近Coinrail遭受黑客攻击表明，快速发展、不断变化的加密货币世界仍对欺诈者和黑客有着强烈的吸引力，这反过来又增加了市场的风险。由于对加密货币交易所和交易的监管不力，未经授权的对核心系统和客户账户的访问是潜在的威胁。交易所越受到欢迎，平台就越难以执行，因此在安全性方面留下了一些潜在的漏洞。”',
+ 'create_time': '01:15',
+ 'title': 'Blockbid首席运营官：交易所越受欢迎 越容易留下漏洞'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Coindesk消息，密歇根州代表CurtWanderWall本月早些时候提交的法案调整了该州关于“制造、改变或伪造公共记录”的刑法。拟议的法案将扩大到“通过改变由分布式账本技术创造的记录完成违规行为的人”。本月的另一项涉及信用卡犯罪的法案，也将该技术纳入其中，该法案中指出，金融交易设备是任何进入信用账户及存款账户的工具和方式，包括通过使用数字货币或分布式账本技术。',
+ 'create_time': '00:57',
+ 'title': '密歇根州法案将伪造区块链数据定为非法行为'}
+{'content': '\n'
+            '据Coindesk消息，密歇根州代表CurtWanderWall本月早些时候提交的法案调整了该州关于“制造、改变或伪造公共记录”的刑法。拟议的法案将扩大到“通过改变由分布式账本技术创造的记录完成违规行为的人”。本月的另一项涉及信用卡犯罪的法案，也将该技术纳入其中，该法案中指出，金融交易设备是任何进入信用账户及存款账户的工具和方式，包括通过使用数字货币或分布式账本技术。',
+ 'create_time': '00:57',
+ 'title': '密歇根州法案将伪造区块链数据定为非法行为'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'BTC五分钟内上涨2.13%，上涨金额为130美元，其中火币PRO上现价为$6257.61，币安现价为$6264.56；OKex现价为$6266.66，请密切关注行情走向，注意控制风险。',
+ 'create_time': '00:32',
+ 'title': 'BTC五分钟内上涨2.13%'}
+{'content': '\n'
+            'BTC五分钟内上涨2.13%，上涨金额为130美元，其中火币PRO上现价为$6257.61，币安现价为$6264.56；OKex现价为$6266.66，请密切关注行情走向，注意控制风险。',
+ 'create_time': '00:32',
+ 'title': 'BTC五分钟内上涨2.13%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'BTC五分钟内下跌1.11%，下跌金额为70美元，其中火币Pro上现价为6279美元，跌幅3.37%；币安现价为6300美元，跌幅6.19%；OKex现价为6362美元，跌幅5.37%。',
+ 'create_time': '00:23',
+ 'title': 'BTC五分钟内下跌1.11%'}
+{'content': '\n'
+            'BTC五分钟内下跌1.11%，下跌金额为70美元，其中火币Pro上现价为6279美元，跌幅3.37%；币安现价为6300美元，跌幅6.19%；OKex现价为6362美元，跌幅5.37%。',
+ 'create_time': '00:23',
+ 'title': 'BTC五分钟内下跌1.11%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币Pro今日发布公告，EOS候选主链已于6月10日启动，根据EOS白皮书规定候选主链必须在获得足够的社区共识并且投票超过15%后才能激活候选主链的大部分功能，因此现在已启动的链还不能称之为EOS主链。火币Pro将启动对当前EOS候选主链投票，详见公告。',
+ 'create_time': '00:19',
+ 'title': '火币Pro将启动对当前EOS候选主链投票'}
+{'content': '\n'
+            '火币Pro今日发布公告，EOS候选主链已于6月10日启动，根据EOS白皮书规定候选主链必须在获得足够的社区共识并且投票超过15%后才能激活候选主链的大部分功能，因此现在已启动的链还不能称之为EOS主链。火币Pro将启动对当前EOS候选主链投票，详见公告。',
+ 'create_time': '00:19',
+ 'title': '火币Pro将启动对当前EOS候选主链投票'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n数字货币市场目前总市值达2735.56亿美元，下跌7.4%。24h成交额达156.20亿美元，上涨6%。',
+ 'create_time': '00:02',
+ 'title': '币世界24小时行情梳理 BTC跌破6400美元'}
+{'content': '\n数字货币市场目前总市值达2735.56亿美元，下跌7.4%。24h成交额达156.20亿美元，上涨6%。',
+ 'create_time': '00:02',
+ 'title': '币世界24小时行情梳理 BTC跌破6400美元'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nRipple官方转发XRPSymbol消息，XRP标志已经确认。据币世界行情，XRP现全球均价0.5美元，跌幅8.1%。',
+ 'create_time': '23:51',
+ 'title': 'XRP更换标志'}
+{'content': '\nRipple官方转发XRPSymbol消息，XRP标志已经确认。据币世界行情，XRP现全球均价0.5美元，跌幅8.1%。',
+ 'create_time': '23:51',
+ 'title': 'XRP更换标志'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC五分钟内下跌1.02%，下跌金额为65美元，其中火币PRO上现价为$6359.95，请密切关注行情走向，注意控制风险。',
+ 'create_time': '23:51',
+ 'title': 'BTC五分钟内下跌1.02%'}
+{'content': '\nBTC五分钟内下跌1.02%，下跌金额为65美元，其中火币PRO上现价为$6359.95，请密切关注行情走向，注意控制风险。',
+ 'create_time': '23:51',
+ 'title': 'BTC五分钟内下跌1.02%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'CoinPayments官方发布消息：已将PIVX整合到其平台上，以支持PIVX支付处理，允许商家接受PIVX支付。添加PIVX托管的钱包将允许用户和商家使用其CoinPayments账户存储、发送和接受PIVX。据《币世界》行情，PIVX现均价2.61美元，今日跌幅8.94%。',
+ 'create_time': '23:38',
+ 'title': 'PIVX已添加到数字货币钱包CoinPayments平台'}
+{'content': '\n'
+            'CoinPayments官方发布消息：已将PIVX整合到其平台上，以支持PIVX支付处理，允许商家接受PIVX支付。添加PIVX托管的钱包将允许用户和商家使用其CoinPayments账户存储、发送和接受PIVX。据《币世界》行情，PIVX现均价2.61美元，今日跌幅8.94%。',
+ 'create_time': '23:38',
+ 'title': 'PIVX已添加到数字货币钱包CoinPayments平台'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '根据EOSAuthority投票统计，目前EOS主网投票率为8.4255%。目前EOS区块链正在进行激活，如果没有15%的投票支持，EOS链条仍不能运行。imToken昨日已经正式开放EOS投票；Bitfinex今日也发起“Bitfinex是否应暂时持有EOS余额以促成EOS网络激活”的公众投票。据《币世界》行情，EOS现均价9.76美元，今日跌幅10.29％。',
+ 'create_time': '23:23',
+ 'title': 'EOS主网激活投票率已达8.4255%'}
+{'content': '\n'
+            '根据EOSAuthority投票统计，目前EOS主网投票率为8.4255%。目前EOS区块链正在进行激活，如果没有15%的投票支持，EOS链条仍不能运行。imToken昨日已经正式开放EOS投票；Bitfinex今日也发起“Bitfinex是否应暂时持有EOS余额以促成EOS网络激活”的公众投票。据《币世界》行情，EOS现均价9.76美元，今日跌幅10.29％。',
+ 'create_time': '23:23',
+ 'title': 'EOS主网激活投票率已达8.4255%'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'CNN分析师JosephYoung刚刚发推表示：你与其一味去做空、做多市场，不如仅仅观望市场，不发起任何交易。一些过早或愚蠢的交易造成的损失会超过任何短期收益带来的收益。在没有知识储备的前提下去玩愚蠢的游戏，你会失去所有的积蓄。请谨慎交易。',
+ 'create_time': '23:13',
+ 'title': 'CCN分析师：知识储备很重要 请谨慎交易'}
+{'content': '\n'
+            'CNN分析师JosephYoung刚刚发推表示：你与其一味去做空、做多市场，不如仅仅观望市场，不发起任何交易。一些过早或愚蠢的交易造成的损失会超过任何短期收益带来的收益。在没有知识储备的前提下去玩愚蠢的游戏，你会失去所有的积蓄。请谨慎交易。',
+ 'create_time': '23:13',
+ 'title': 'CCN分析师：知识储备很重要 请谨慎交易'}
+2018-06-14 15:55:04 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'ZEN官方发布消息，2.0.14-RC1版本已经发布，并已准备进行社区测试。据币世界行情，ZEN现全球均价17.14美元，跌幅9.85%。',
+ 'create_time': '23:11',
+ 'title': 'ZEN 2.0.14-RC1 版本发布'}
+{'content': '\n'
+            'ZEN官方发布消息，2.0.14-RC1版本已经发布，并已准备进行社区测试。据币世界行情，ZEN现全球均价17.14美元，跌幅9.85%。',
+ 'create_time': '23:11',
+ 'title': 'ZEN 2.0.14-RC1 版本发布'}
+2018-06-14 15:55:04 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-06-14 15:55:04 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
 {'downloader/request_bytes': 448,
  'downloader/request_count': 2,
  'downloader/request_method_count/GET': 2,
- 'downloader/response_bytes': 37693,
+ 'downloader/response_bytes': 40053,
  'downloader/response_count': 2,
  'downloader/response_status_count/200': 2,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 6, 13, 12, 30, 4, 644933),
+ 'finish_time': datetime.datetime(2018, 6, 14, 7, 55, 4, 696029),
  'item_dropped_count': 100,
  'item_dropped_reasons_count/DropItem': 100,
  'log_count/DEBUG': 3,
  'log_count/INFO': 7,
  'log_count/WARNING': 100,
- 'memusage/max': 47484928,
- 'memusage/startup': 47484928,
+ 'memusage/max': 47538176,
+ 'memusage/startup': 47538176,
  'response_received_count': 2,
  'scheduler/dequeued': 1,
  'scheduler/dequeued/memory': 1,
  'scheduler/enqueued': 1,
  'scheduler/enqueued/memory': 1,
- 'start_time': datetime.datetime(2018, 6, 13, 12, 30, 4, 27945)}
-2018-06-13 20:30:04 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'start_time': datetime.datetime(2018, 6, 14, 7, 55, 4, 43098)}
+2018-06-14 15:55:04 [scrapy.core.engine] INFO: Spider closed (finished)
