@@ -8,7 +8,7 @@ import logging
 import os
 
 now = datetime.datetime.now().strftime('%Y-%m-%d')
-alert = ["黑客攻击","黑客窃取","被盗","上线"]
+alert = ["黑客攻击","黑客窃取","被盗"]
 Blog = os.path.dirname((os.path.abspath(__file__)))
 logpath = Blog+"/log/bsjalert.log"
 print(logpath)    
