@@ -10,7 +10,7 @@ import time
 i = 1
 pset = set()
 
-start = datetime.datetime.now()
+#start = datetime.datetime.now()
 while True:
     query = str(i).zfill(2) if i <10 else i
     headers = {"Host": "premproxy.com",
@@ -41,6 +41,6 @@ while True:
         pot =  re.findall('\.'+po+'\\\\\'\)\.html\((.*?)\)',beau)[0]
         print(ipc + pot)
     i += 1
-stop = datetime.datetime.now()
-totime = (stop - start).seconds
-print(totime)
+#stop = datetime.datetime.now()
+#totime = (stop - start).seconds
+#print(totime)
