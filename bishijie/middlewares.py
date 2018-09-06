@@ -6,6 +6,7 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+import random
 
 
 class BishijieSpiderMiddleware(object):
@@ -101,3 +102,16 @@ class BishijieDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+class ProxyMiddleware(object):
+    def __init__(self):
+        self.prolist = []
+        with open("utils/proxyver.txt",'r') as ff:
+            for purl in ff.readlines():
+                prourl = "http://{}".format(str(purl).strip().strip('\n'))
+                self.prolist.append(prourl)
+    def process_request(self,request,spider):
+        ip = random.choice(self.prolist)
+        if spider.name == "fbf":
+            print(ip)
+            request.meta['proxy'] = ip
+ 
