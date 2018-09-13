@@ -17,5 +17,6 @@ class BishijieItem(scrapy.Item):
 class FreebufItem(scrapy.Item):
     title = scrapy.Field()
     content = scrapy.Field()
+    publish_time = scrapy.Field()
     url = scrapy.Field()
     crawl_time = scrapy.Field()

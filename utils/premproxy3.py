@@ -33,7 +33,7 @@ def verpro(q):
         if tv.status_code == 200:
             with lock:
                 with open("proxyver.txt","a+") as ww:
-                    ww.write(vc + '\n')
+                    ww.write("http://" + vc + '\n')
                     ww.flush()
     except Exception as e:
         pass
@@ -99,4 +99,4 @@ if __name__ == "__main__":
             h.join()
     print("检测可用代理完成!")
     tend = time.time()
-    print("共计花费时间: {}",format(tend-tstart))
+    print("共计花费时间: {}".format(tend-tstart))

@@ -5,5 +5,5 @@ workon bishijie
 echo `date +%F-%T` >bsj.log 
 echo "----------------------------------------------------------------------------------"
 nohup scrapy crawl bsj >>bsj.log 2>&1 &
-sleep 3
+sleep 2
 /data/py/bsj/utils/mail.py

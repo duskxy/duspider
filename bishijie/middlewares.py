@@ -107,7 +107,7 @@ class ProxyMiddleware(object):
         self.prolist = []
         with open("utils/proxyver.txt",'r') as ff:
             for purl in ff.readlines():
-                prourl = "http://{}".format(str(purl).strip().strip('\n'))
+                prourl = "{}".format(str(purl).strip().strip('\n'))
                 self.prolist.append(prourl)
     def process_request(self,request,spider):
         ip = random.choice(self.prolist)

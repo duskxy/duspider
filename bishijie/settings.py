@@ -19,7 +19,7 @@ FEED_EXPORT_ENCODING = 'utf-8'
 #USER_AGENT = 'bishijie (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -50,12 +50,24 @@ ROBOTSTXT_OBEY = True
 #    'bishijie.middlewares.BishijieSpiderMiddleware': 543,
 #}
 
+
+RETRY_TIMES = 10
+RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
+
+
+
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
 #    'bishijie.middlewares.BishijieDownloaderMiddleware': 543,
-     'bishijie.middlewares.ProxyMiddleware': 100,
+    'bishijie.middlewares.ProxyMiddleware': 100,
+#     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
+#     'scrapy_proxies.RandomProxy': 100,
+#     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
 }
+PROXY_LIST = 'utils/proxyver.txt'
+PROXY_MODE = 0
+
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html

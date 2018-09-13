@@ -21,8 +21,8 @@ class BishijiePipeline(object):
             return item
         elif spider.name == 'fbf':
             cursor = fbfmyconn.cursor()
-            sql = 'insert into fbf(title,content,url) values(%s,%s,%s)'
-            cursor.execute(sql,(item['title'],item['url'],item['content']))
+            sql = 'insert into fbf(title,content,publish_time,url) values(%s,%s,%s,%s)'
+            cursor.execute(sql,(item['title'],item['url'],item('publish_time'),item['content']))
             fbfmyconn.commit()
             
 class DuplicatesPipeline(object):

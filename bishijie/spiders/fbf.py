@@ -3,13 +3,13 @@ import scrapy
 from bishijie.items import FreebufItem
 from scrapy.loader import ItemLoader
 
+import sys
 
 class FbfSpider(scrapy.Spider):
     name = 'fbf'
     allowed_domains = ['www.freebuf.com']
-    DOWNLOAD_DELAY = 1
     custom_settings = {
-        "COOKIES_ENABLED": True
+        "COOKIES_ENABLED": False
     }
     def start_requests(self):
         headers = {
@@ -21,8 +21,11 @@ class FbfSpider(scrapy.Spider):
             yield scrapy.Request("http://www.freebuf.com/page/{}".format(url),headers=headers,callback=self.parse)
     def parse(self, response):
         all_url = response.xpath('//div[@class="news-img"]/a/@href').extract()
-        title = response.css('.news-info')
         print(all_url)
+        if not all_url:
+            if 'acw_sc__v3' in response.body.decode("utf-8"):
+                print("错误,请重试")
+                sys.exit()
         # print(title)
 
     def parse_fbf():
