@@ -1,4 +1,3 @@
-# encoding: utf-8
 import aiohttp
 import asyncio
 from lxml import etree
@@ -10,7 +9,6 @@ import queue
 import threading
 import os
 import time
-import chardet
 import sys
 
 if os.path.exists("proxyver.txt"):
@@ -33,7 +31,7 @@ def verpro(q):
     proxies = {"http":vc}
     try:
         tv = requests.get("http://www.freebuf.com",proxies=proxies,timeout=6)
-        if tv.status_code == 200 and 'FreeBuf' in tv.text:
+        if tv.status_code == 200:
             with lock:
                 with open("proxyver.txt","a+") as ww:
                     ww.write("http://" + vc + '\n')
@@ -47,7 +45,7 @@ async def get(url,call_parse=None):
     
     async with aiohttp.ClientSession(headers=headers) as session:
         async with session.get(url) as resp:
-            txt = await resp.text(encoding='gb18030')
+            txt = await resp.text()
             p = etree.HTML(txt)
             ipp = p.xpath('//*[@class="anon" or @class="transp"]/td[1]/text()')
             jquery = "https://premproxy.com" + re.findall(r'<script src="(.*?)"></script>',txt)[1]

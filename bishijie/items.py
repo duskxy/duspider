@@ -4,9 +4,13 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
-
+from scrapy.loader import ItemLoader
+from scrapy.loader.processors import TakeFirst
 import scrapy
 
+
+class FreebufItemLoader(ItemLoader):
+    default_output_processor = TakeFirst()
 
 class BishijieItem(scrapy.Item):
     title = scrapy.Field()
@@ -15,8 +19,8 @@ class BishijieItem(scrapy.Item):
     crawl_time = scrapy.Field()
 
 class FreebufItem(scrapy.Item):
-    title = scrapy.Field()
-    content = scrapy.Field()
+    ftitle = scrapy.Field()
+    fcontent = scrapy.Field()
     publish_time = scrapy.Field()
     url = scrapy.Field()
     crawl_time = scrapy.Field()

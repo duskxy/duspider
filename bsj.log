@@ -1,842 +1,835 @@
-2018-09-13-09:27:01
-2018-09-13 09:27:02 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: bishijie)
-2018-09-13 09:27:02 [scrapy.utils.log] INFO: Versions: lxml 4.2.4.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.5.3 (default, Aug 21 2018, 20:13:55) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-514.26.2.el7.x86_64-x86_64-with-centos-7.2.1511-Core
-2018-09-13 09:27:02 [scrapy.crawler] INFO: Overridden settings: {'RETRY_TIMES': 10, 'SPIDER_MODULES': ['bishijie.spiders'], 'BOT_NAME': 'bishijie', 'RETRY_HTTP_CODES': [500, 503, 504, 400, 403, 404, 408], 'NEWSPIDER_MODULE': 'bishijie.spiders', 'FEED_EXPORT_ENCODING': 'utf-8'}
-2018-09-13 09:27:02 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.memusage.MemoryUsage',
+2018-09-30-14:09:02
+2018-09-30 14:09:03 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: bishijie)
+2018-09-30 14:09:03 [scrapy.utils.log] INFO: Versions: lxml 4.2.4.0, libxml2 2.9.8, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.5.3 (default, Aug 21 2018, 20:13:55) - [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)], pyOpenSSL 17.5.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-3.10.0-514.26.2.el7.x86_64-x86_64-with-centos-7.2.1511-Core
+2018-09-30 14:09:03 [scrapy.crawler] INFO: Overridden settings: {'SPIDER_MODULES': ['bishijie.spiders'], 'BOT_NAME': 'bishijie', 'RETRY_HTTP_CODES': [500, 502, 503, 504, 400, 403, 404, 408], 'FEED_EXPORT_ENCODING': 'utf-8', 'NEWSPIDER_MODULE': 'bishijie.spiders', 'RETRY_TIMES': 10}
+2018-09-30 14:09:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.corestats.CoreStats']
-2018-09-13 09:27:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['bishijie.middlewares.ProxyMiddleware',
- 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage']
+2018-09-30 14:09:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'bishijie.middlewares.RetryMiddleware',
  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-09-13 09:27:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-09-30 14:09:03 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-09-13 09:27:02 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-09-30 14:09:03 [scrapy.middleware] INFO: Enabled item pipelines:
 ['bishijie.pipelines.DuplicatesPipeline', 'bishijie.pipelines.BishijiePipeline']
-2018-09-13 09:27:02 [scrapy.core.engine] INFO: Spider opened
-2018-09-13 09:27:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-09-13 09:27:02 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2018-09-13 09:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/kuaixun/> (referer: None)
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '工信部信息化与软件服务业司郝鹏处长日前表示，区块链在成为一种新型的产业协作模式，为提高协同流通的效率，加速社会数字化进程，提供了有力支撑。推动区块链应用从数字资产向供应链管理，智能制造，工业互联网，社会公益，版权保护等经济社会的多个延伸。',
- 'create_time': '09:25',
- 'title': '工信部郝鹏：区块链是新型的产业协作模式，将加速社会数字化进程'}
+2018-09-30 14:09:03 [scrapy.core.engine] INFO: Spider opened
+2018-09-30 14:09:03 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-09-30 14:09:03 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-09-30 14:09:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.bishijie.com/kuaixun/> (referer: None)
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据统计，在2018年9月，有15家机构相继推出共13个稳定币。多数稳定币锚定美元，也有部分锚定离岸人民币、日元、澳元、黄金等。',
+ 'create_time': '14:00',
+ 'title': '本月已有15家机构宣布推出稳定币'}
+{'content': '\n据统计，在2018年9月，有15家机构相继推出共13个稳定币。多数稳定币锚定美元，也有部分锚定离岸人民币、日元、澳元、黄金等。',
+ 'create_time': '14:00',
+ 'title': '本月已有15家机构宣布推出稳定币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'OCN从9月9日开始触底反弹，一路最高涨至0.01美元，本月涨幅已达248%。火币现报0.01003美元（0.06元），今日涨幅9.34%。OCOIN(OCN)是ODYSSEY项目的数字代币符号，ODYSSEY是共享单车公司OBIKE创始团队发起的基于共享经济的区块链项目。',
+ 'create_time': '13:53',
+ 'title': 'OCN本月持续拉升 最高涨幅已达248%'}
 {'content': '\n'
-            '工信部信息化与软件服务业司郝鹏处长日前表示，区块链在成为一种新型的产业协作模式，为提高协同流通的效率，加速社会数字化进程，提供了有力支撑。推动区块链应用从数字资产向供应链管理，智能制造，工业互联网，社会公益，版权保护等经济社会的多个延伸。',
- 'create_time': '09:25',
- 'title': '工信部郝鹏：区块链是新型的产业协作模式，将加速社会数字化进程'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '根据《今日俄罗斯》报道，俄罗斯的学校系统即将纳入《国家技术倡议》中，以吸引学生参与到国家的发展中来，培养能解决技术问题的人才。学生们在可以学习到仿生技术、基因基础等学科外，还将包括在学校内开展区块链技术知识的推广。',
+            'OCN从9月9日开始触底反弹，一路最高涨至0.01美元，本月涨幅已达248%。火币现报0.01003美元（0.06元），今日涨幅9.34%。OCOIN(OCN)是ODYSSEY项目的数字代币符号，ODYSSEY是共享单车公司OBIKE创始团队发起的基于共享经济的区块链项目。',
+ 'create_time': '13:53',
+ 'title': 'OCN本月持续拉升 最高涨幅已达248%'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '比特币安全专家AndreasAntonopoulos近日表示，比特币ETF是披着羊皮的狼，这么做会导致比特币更加集中，而且会对整个生态系统造成损害。',
+ 'create_time': '13:37',
+ 'title': '比特币安全专家反对推出ETF'}
+{'content': '\n'
+            '比特币安全专家AndreasAntonopoulos近日表示，比特币ETF是披着羊皮的狼，这么做会导致比特币更加集中，而且会对整个生态系统造成损害。',
+ 'create_time': '13:37',
+ 'title': '比特币安全专家反对推出ETF'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日14:00，币为在币世界”币圈”将狂撒最后一波糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“币为”点击红包即可领到，最后一波，别再错过！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '13:30',
+ 'title': '9月最后一波，币为在币世界“币圈”狂撒个6万个BDB糖果啦！'}
+{'content': '\n'
+            '今日14:00，币为在币世界”币圈”将狂撒最后一波糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“币为”点击红包即可领到，最后一波，别再错过！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '13:30',
+ 'title': '9月最后一波，币为在币世界“币圈”狂撒个6万个BDB糖果啦！'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n刚刚陈伟星转发某媒体人朋友圈并称其眼睛是雪亮的。该媒体人对李笑来退出币圈表达了几点疑问：',
+ 'create_time': '13:22',
+ 'title': '陈伟星转发某媒体人对李笑来的质疑 并称眼睛是雪亮的'}
+{'content': '\n刚刚陈伟星转发某媒体人朋友圈并称其眼睛是雪亮的。该媒体人对李笑来退出币圈表达了几点疑问：',
+ 'create_time': '13:22',
+ 'title': '陈伟星转发某媒体人对李笑来的质疑 并称眼睛是雪亮的'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据链塔智库，苏州集中在高铁新城进行区块链布局，并专门出台了区块链政策，被称作“苏九条”。其设立了10亿元规模的引导基金，并有数百万级别的各种奖励。据了解，苏州现已开放15个应用场景，未来三年将建设100个应用场景。',
+ 'create_time': '13:09',
+ 'title': '报告：苏州设立10亿区块链引导基金 欲将高铁新城变“链谷”'}
+{'content': '\n'
+            '据链塔智库，苏州集中在高铁新城进行区块链布局，并专门出台了区块链政策，被称作“苏九条”。其设立了10亿元规模的引导基金，并有数百万级别的各种奖励。据了解，苏州现已开放15个应用场景，未来三年将建设100个应用场景。',
+ 'create_time': '13:09',
+ 'title': '报告：苏州设立10亿区块链引导基金 欲将高铁新城变“链谷”'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据IOST官方消息，9月30日，IOST第二版公测网Everestv1.0上线，新版测试网支持Javascript语言编程，支持智能合约DNS和可控制升级或删除合约，以及高性能MVCC多版本缓存存储层。此外，IOST表示主网将于2019年第一季度推出。',
+ 'create_time': '13:04',
+ 'title': 'IOST发布第二版公测网'}
+{'content': '\n'
+            '据IOST官方消息，9月30日，IOST第二版公测网Everestv1.0上线，新版测试网支持Javascript语言编程，支持智能合约DNS和可控制升级或删除合约，以及高性能MVCC多版本缓存存储层。此外，IOST表示主网将于2019年第一季度推出。',
+ 'create_time': '13:04',
+ 'title': 'IOST发布第二版公测网'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据Alternative.me数据显示，今日恐慌指数为34，较昨日恐慌指数37减少3点，恐慌程度稍有增加，目前为恐惧等级。',
+ 'create_time': '12:48',
+ 'title': '今日恐慌指数34 恐慌程度稍稍增加'}
+{'content': '\n据Alternative.me数据显示，今日恐慌指数为34，较昨日恐慌指数37减少3点，恐慌程度稍有增加，目前为恐惧等级。',
+ 'create_time': '12:48',
+ 'title': '今日恐慌指数34 恐慌程度稍稍增加'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据币客BKEX官网公告，将于今日15:00开放ION充值，今晚20:00开放ION/USDT、ION/ETH交易对，并同时开放提现功能。',
+ 'create_time': '12:44',
+ 'title': 'ION将于今日20：00上线币客BKEX交易所'}
+{'content': '\n'
+            '据币客BKEX官网公告，将于今日15:00开放ION充值，今晚20:00开放ION/USDT、ION/ETH交易对，并同时开放提现功能。',
+ 'create_time': '12:44',
+ 'title': 'ION将于今日20：00上线币客BKEX交易所'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC刚刚小幅回落，创日内新低6555美元，火币现报6566美元，今日跌幅0.31%。',
+ 'create_time': '12:39',
+ 'title': 'BTC小幅回落创日内新低'}
+{'content': '\nBTC刚刚小幅回落，创日内新低6555美元，火币现报6566美元，今日跌幅0.31%。',
+ 'create_time': '12:39',
+ 'title': 'BTC小幅回落创日内新低'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币刚刚声明表示：近期有媒体反馈，有“内部文件”显示，火币EOS节点存在投票牟利的情况，经内部初步查证，火币与文中提及的相关节点并无任何财务往来，有关情况还在进一步了解中。据了解，今日自媒体EOSONE爆料，近日一份《火币矿池节点账户数据20180911》的Excel数据表在网上流传，表内数据显示，火币与其他节点票数互投，并控制其他节点分割节点收益。',
+ 'create_time': '12:25',
+ 'title': '火币回应“节点投票表”：与提及的相关节点无任何财务往来'}
+{'content': '\n'
+            '火币刚刚声明表示：近期有媒体反馈，有“内部文件”显示，火币EOS节点存在投票牟利的情况，经内部初步查证，火币与文中提及的相关节点并无任何财务往来，有关情况还在进一步了解中。据了解，今日自媒体EOSONE爆料，近日一份《火币矿池节点账户数据20180911》的Excel数据表在网上流传，表内数据显示，火币与其他节点票数互投，并控制其他节点分割节点收益。',
+ 'create_time': '12:25',
+ 'title': '火币回应“节点投票表”：与提及的相关节点无任何财务往来'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '新加坡数字货币交易平台bitget宣布进军数字资产私人银行业务，与MXcapitalGroup联合成立Bitget-MXWealthManagementLimited，业务范围包括主动交易、量化交易、被动资产配置、定制化衍生品等，旨在为全球高净值用户提供一站式的数字资产私人银行服务。MXcapitalGroup专注于数字金融生态体系，致力于将对冲基金和资产管理领域的积累和经验运用到数字货币市场，提升整个数字金融行业规范化和风险管理水平。',
+ 'create_time': '12:17',
+ 'title': 'bitget与MX capital Group联合发起数字资产私人银行Bitget-MX Wealth'}
+{'content': '\n'
+            '新加坡数字货币交易平台bitget宣布进军数字资产私人银行业务，与MXcapitalGroup联合成立Bitget-MXWealthManagementLimited，业务范围包括主动交易、量化交易、被动资产配置、定制化衍生品等，旨在为全球高净值用户提供一站式的数字资产私人银行服务。MXcapitalGroup专注于数字金融生态体系，致力于将对冲基金和资产管理领域的积累和经验运用到数字货币市场，提升整个数字金融行业规范化和风险管理水平。',
+ 'create_time': '12:17',
+ 'title': 'bitget与MX capital Group联合发起数字资产私人银行Bitget-MX Wealth'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n今日上午，BTC持续于6580美元附近横盘整理，主流币普跌。',
+ 'create_time': '12:00',
+ 'title': '币世界午行情：BTC持续于6580美元附近横盘整理'}
+{'content': '\n今日上午，BTC持续于6580美元附近横盘整理，主流币普跌。',
+ 'create_time': '12:00',
+ 'title': '币世界午行情：BTC持续于6580美元附近横盘整理'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日11:30，bitget在币世界”币圈”将狂撒最后一波糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“bitget”点击红包即可领到，最后一波，别再错过！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '11:23',
+ 'title': '9月最后一波，bitget在币世界“币圈”狂撒1万个GT糖果啦！'}
+{'content': '\n'
+            '今日11:30，bitget在币世界”币圈”将狂撒最后一波糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“bitget”点击红包即可领到，最后一波，别再错过！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '11:23',
+ 'title': '9月最后一波，bitget在币世界“币圈”狂撒1万个GT糖果啦！'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据菩提官方消息，由菩提预测市场与QTUM量子链技术团队共同开发，基于谷歌浏览器的插件轻钱包Qrypto已更新至1.4.2版本，用户可在ChromeWebStore搜索并添加使用。另外，基于以太坊版本的全新菩提预测市场DApp目前正在开发中，用户将无需同步全节点数据即可使用。据透露，该版本DApp预计将于2019年一季度上线。',
+ 'create_time': '11:17',
+ 'title': 'Qrypto插件钱包1.4.2版本上线'}
+{'content': '\n'
+            '据菩提官方消息，由菩提预测市场与QTUM量子链技术团队共同开发，基于谷歌浏览器的插件轻钱包Qrypto已更新至1.4.2版本，用户可在ChromeWebStore搜索并添加使用。另外，基于以太坊版本的全新菩提预测市场DApp目前正在开发中，用户将无需同步全节点数据即可使用。据透露，该版本DApp预计将于2019年一季度上线。',
+ 'create_time': '11:17',
+ 'title': 'Qrypto插件钱包1.4.2版本上线'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据财经网，周五香港政府宪报显示，香港证监会冻结了包括朱李月华旗下金利丰证券等三家不同证券行的个别客户的资产。而金利丰正是火币收购桐成控股的委托方和财务顾问。有业内人士指出，金利丰此次涉及的关联交易具体进展还要看监管的调查结果，如果坐实很有可能影响金利丰的券商牌照，进而阻碍火币的收购进度。',
+ 'create_time': '11:05',
+ 'title': '火币收购桐成之路再起波澜 收购委托方被监管调查'}
+{'content': '\n'
+            '据财经网，周五香港政府宪报显示，香港证监会冻结了包括朱李月华旗下金利丰证券等三家不同证券行的个别客户的资产。而金利丰正是火币收购桐成控股的委托方和财务顾问。有业内人士指出，金利丰此次涉及的关联交易具体进展还要看监管的调查结果，如果坐实很有可能影响金利丰的券商牌照，进而阻碍火币的收购进度。',
+ 'create_time': '11:05',
+ 'title': '火币收购桐成之路再起波澜 收购委托方被监管调查'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '币为今日正式开启以太坊区块网络智能合约的预测游戏活动。用户如果成功预测以太坊合约生成的随机数，即可获得奖池总额90%的奖励奖励。',
+ 'create_time': '10:47',
+ 'title': '币为开启区块链预测游戏活动'}
+{'content': '\n'
+            '币为今日正式开启以太坊区块网络智能合约的预测游戏活动。用户如果成功预测以太坊合约生成的随机数，即可获得奖池总额90%的奖励奖励。',
+ 'create_time': '10:47',
+ 'title': '币为开启区块链预测游戏活动'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据第一财经消息，中国社会科学院工业经济研究所研究员李晓华表示，新产业革命助力经济全球化。电子商务的发展打破了市场壁垒，使“买全球、卖全球”成为现实。区块链技术将进一步降低国际贸易的交易成本，促进生产和创新要素流动便利化，成为推动经济全球化的重要力量。',
+ 'create_time': '10:42',
+ 'title': '中国社会科学院研究员：区块链技术是推动经济全球化的重要力量'}
+{'content': '\n'
+            '据第一财经消息，中国社会科学院工业经济研究所研究员李晓华表示，新产业革命助力经济全球化。电子商务的发展打破了市场壁垒，使“买全球、卖全球”成为现实。区块链技术将进一步降低国际贸易的交易成本，促进生产和创新要素流动便利化，成为推动经济全球化的重要力量。',
+ 'create_time': '10:42',
+ 'title': '中国社会科学院研究员：区块链技术是推动经济全球化的重要力量'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '近日，原创内容社区简书加入了区块链化内容生态系统Fountain，用token来激励用户。Fountain在白皮书中表示将捐赠5亿个token给简书用于平台用户激励。',
+ 'create_time': '10:34',
+ 'title': '简书将接受区块链项目5亿代币捐赠用于平台用户激励'}
+{'content': '\n'
+            '近日，原创内容社区简书加入了区块链化内容生态系统Fountain，用token来激励用户。Fountain在白皮书中表示将捐赠5亿个token给简书用于平台用户激励。',
+ 'create_time': '10:34',
+ 'title': '简书将接受区块链项目5亿代币捐赠用于平台用户激励'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '阿希链联合创始人蒯大平出席在硅谷举办的区块链线下Meetup活动，就“跟随阿希进入区块链开发世界”主题进行分享，并现场演示了阿希链的设计理念、跨链资产转移功能等。',
+ 'create_time': '10:05',
+ 'title': '阿希链联合创始人蒯大平：跨链技术是实现价值网络的关键'}
+{'content': '\n'
+            '阿希链联合创始人蒯大平出席在硅谷举办的区块链线下Meetup活动，就“跟随阿希进入区块链开发世界”主题进行分享，并现场演示了阿希链的设计理念、跨链资产转移功能等。',
+ 'create_time': '10:05',
+ 'title': '阿希链联合创始人蒯大平：跨链技术是实现价值网络的关键'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CCN报道，整个2018年，比特币的价格一直处于历史低点，目前的主要阻力位分别为1万美元、8000美元和7000美元。Fundstrat创始人TomasLee表示，不管比特币的低点如何，它在6000美元的稳定都是乐观的。另外两大催化剂，可能会在未来两个月内大幅推高比特币的价格：加密货币交易市场基础设施的加强，以及害怕错过的机构投资者(FOMO)。',
+ 'create_time': '09:27',
+ 'title': 'Tomas Lee：两大催化剂将推动比特币价格上涨'}
+{'content': '\n'
+            '据CCN报道，整个2018年，比特币的价格一直处于历史低点，目前的主要阻力位分别为1万美元、8000美元和7000美元。Fundstrat创始人TomasLee表示，不管比特币的低点如何，它在6000美元的稳定都是乐观的。另外两大催化剂，可能会在未来两个月内大幅推高比特币的价格：加密货币交易市场基础设施的加强，以及害怕错过的机构投资者(FOMO)。',
+ 'create_time': '09:27',
+ 'title': 'Tomas Lee：两大催化剂将推动比特币价格上涨'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日《人民日报》报道火币发起的“中国区块链+产业联盟”正式成立以及火币中国落户海南。火币中国定位“区块链+产业服务一站式平台”，下辖火币研究院、火币大学（中国）、火币Labs（中国）、火币英才、火币律林五大事业部，为产业提供咨询、培训、技术、孵化、人才、法律服务。“中国区块链+产业联盟”的愿景是联合区块链领域各机构与社群，共同促进区块链与产业深度融合；从区块链技术赋能与通证经济赋能两方面入手，快速建立国际、国家、产业、区域等多方生态协作关系，切实助力实体经济发展。火币集团董事长李林表示，希望能借力海南自贸区政策，借助海南生态软件园平台，有序稳健开拓业务。',
+ 'create_time': '09:23',
+ 'title': '《人民日报》报道火币中国 区块链赋能实体大有可为'}
+{'content': '\n'
+            '今日《人民日报》报道火币发起的“中国区块链+产业联盟”正式成立以及火币中国落户海南。火币中国定位“区块链+产业服务一站式平台”，下辖火币研究院、火币大学（中国）、火币Labs（中国）、火币英才、火币律林五大事业部，为产业提供咨询、培训、技术、孵化、人才、法律服务。“中国区块链+产业联盟”的愿景是联合区块链领域各机构与社群，共同促进区块链与产业深度融合；从区块链技术赋能与通证经济赋能两方面入手，快速建立国际、国家、产业、区域等多方生态协作关系，切实助力实体经济发展。火币集团董事长李林表示，希望能借力海南自贸区政策，借助海南生态软件园平台，有序稳健开拓业务。',
+ 'create_time': '09:23',
+ 'title': '《人民日报》报道火币中国 区块链赋能实体大有可为'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据链得得消息，9月起，多名投资者爆料称，六度链（SDC）无法提现，负责人失联。据爆料，六度链（SDC）于2018年年初启动，项目隶属于中广六度实业集团有限公司，董事长为王东。该项目在其介绍文档中声称采用区块链技术进行店铺投资，投资者将获得其token“六度云贝（SDC）”，可随时提现或兑换为其他商品。据了解，该项目并未发布任何白皮书，token也未在任何交易所进行交易。',
  'create_time': '09:20',
- 'title': '俄罗斯将开启国家技术倡议 在学校内开展区块链培训'}
+ 'title': '媒体：六度链区块链发币融资疑为庞氏骗局'}
 {'content': '\n'
-            '根据《今日俄罗斯》报道，俄罗斯的学校系统即将纳入《国家技术倡议》中，以吸引学生参与到国家的发展中来，培养能解决技术问题的人才。学生们在可以学习到仿生技术、基因基础等学科外，还将包括在学校内开展区块链技术知识的推广。',
+            '据链得得消息，9月起，多名投资者爆料称，六度链（SDC）无法提现，负责人失联。据爆料，六度链（SDC）于2018年年初启动，项目隶属于中广六度实业集团有限公司，董事长为王东。该项目在其介绍文档中声称采用区块链技术进行店铺投资，投资者将获得其token“六度云贝（SDC）”，可随时提现或兑换为其他商品。据了解，该项目并未发布任何白皮书，token也未在任何交易所进行交易。',
  'create_time': '09:20',
- 'title': '俄罗斯将开启国家技术倡议 在学校内开展区块链培训'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '本周三《彭博商业周刊》发布了题为《为什么欧盟对马耳他狂怒》的文章，这篇文章从马耳他政府的角度发现了该国政府存在诸多腐败行为，并表示马耳他政府对金融腐败、洗钱、赌博和走私的纵容态度正在让这个欧盟成员走向极端，称其影响到了其他成员国的利益。面对多方的质疑和调查以及来自欧盟委员会的投票，马耳他的金融地位极有可能不保。这件事情有多种结果：马耳他接受欧盟监管，税收下降，经济倒退；马耳他不接受欧盟监管，退出欧盟，公民计划失去意义；等等其他结果。无论哪一种，对于数字加密货币交易所如币安、Bittrex、OKEx、CPOOT、ZBX、ABCC、STASIS等来说，风险如同投资数字加密货币一样，都是很高的。',
- 'create_time': '09:11',
- 'title': '媒体称“数字货币避难所”马耳他或将被“欧盟”扼杀'}
-{'content': '\n'
-            '本周三《彭博商业周刊》发布了题为《为什么欧盟对马耳他狂怒》的文章，这篇文章从马耳他政府的角度发现了该国政府存在诸多腐败行为，并表示马耳他政府对金融腐败、洗钱、赌博和走私的纵容态度正在让这个欧盟成员走向极端，称其影响到了其他成员国的利益。面对多方的质疑和调查以及来自欧盟委员会的投票，马耳他的金融地位极有可能不保。这件事情有多种结果：马耳他接受欧盟监管，税收下降，经济倒退；马耳他不接受欧盟监管，退出欧盟，公民计划失去意义；等等其他结果。无论哪一种，对于数字加密货币交易所如币安、Bittrex、OKEx、CPOOT、ZBX、ABCC、STASIS等来说，风险如同投资数字加密货币一样，都是很高的。',
- 'create_time': '09:11',
- 'title': '媒体称“数字货币避难所”马耳他或将被“欧盟”扼杀'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据cointelegraph报道，香港珠宝零售商周大福珠宝集团将开始使用区块链平台追踪钻石。周大福将部分钻石放在由区块链初创公司Everledger开发并由IBM区块链平台保护的区块链平台上。据报道，这将使零售商的客户能够使用TMark应用确定其TMark品牌商店中出售的宝石的来源和真实性。',
+ 'title': '媒体：六度链区块链发币融资疑为庞氏骗局'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '对于近日火爆的EOS像素游戏，EOS超级节点EOSpace（EOP）发起人王赟明认为，游戏是目前区块链上最容易实现的落地应用，但区块链游戏一定不能采取简单的资金接盘模式，而是要结合社区的力量开发和运营。因此，由EOSpace孵化的、运行在EOS上的“价值存储宠物养成”游戏XPET，便采取游戏公会节点竞选、移交合约更新权等方式去实现社区化治理的理想。王赟明表示，利用区块链技术实现的社区化治理游戏对传统的中心化游戏将会是颠覆性的革命。',
  'create_time': '09:08',
- 'title': '香港珠宝零售商周大福将使用区块链平台追踪钻石'}
+ 'title': 'EOSpace发起人王赟明：“社区化治理游戏”会是游戏行业颠覆性的革命'}
 {'content': '\n'
-            '据cointelegraph报道，香港珠宝零售商周大福珠宝集团将开始使用区块链平台追踪钻石。周大福将部分钻石放在由区块链初创公司Everledger开发并由IBM区块链平台保护的区块链平台上。据报道，这将使零售商的客户能够使用TMark应用确定其TMark品牌商店中出售的宝石的来源和真实性。',
+            '对于近日火爆的EOS像素游戏，EOS超级节点EOSpace（EOP）发起人王赟明认为，游戏是目前区块链上最容易实现的落地应用，但区块链游戏一定不能采取简单的资金接盘模式，而是要结合社区的力量开发和运营。因此，由EOSpace孵化的、运行在EOS上的“价值存储宠物养成”游戏XPET，便采取游戏公会节点竞选、移交合约更新权等方式去实现社区化治理的理想。王赟明表示，利用区块链技术实现的社区化治理游戏对传统的中心化游戏将会是颠覆性的革命。',
  'create_time': '09:08',
- 'title': '香港珠宝零售商周大福将使用区块链平台追踪钻石'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '福布斯分析师JosephYoung：比特币和数字货币在2018年已经下降了80%，比互联网泡沫破裂时还要糟糕。但是比特币在2013年和2014-2015年都分别出现过83%和87%的回调。它已经从两次这样的崩溃中幸存下来了。',
- 'create_time': '08:36',
- 'title': '福布斯分析师：数字货币泡沫今年破裂了80% 比特币挺过了两次泡沫破裂'}
+ 'title': 'EOSpace发起人王赟明：“社区化治理游戏”会是游戏行业颠覆性的革命'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CoinTime报道，近日在高创会区块链峰会上，斯坦福大学教授张首晟表示，人工智能需要数据，但是数据往往被中心化平台垄断，因而阻碍创新，从这个意义上人工智能有所欠缺，加密经济学创造了一个对于数据提供者有正确激励机制的数据市场，人工智能能够依赖这个数据市场起飞。',
+ 'create_time': '09:06',
+ 'title': '张首晟：加密经济学给数据市场带来了正确的激励机制'}
 {'content': '\n'
-            '福布斯分析师JosephYoung：比特币和数字货币在2018年已经下降了80%，比互联网泡沫破裂时还要糟糕。但是比特币在2013年和2014-2015年都分别出现过83%和87%的回调。它已经从两次这样的崩溃中幸存下来了。',
- 'create_time': '08:36',
- 'title': '福布斯分析师：数字货币泡沫今年破裂了80% 比特币挺过了两次泡沫破裂'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '根据《币世界》行情显示，今日早间各主流币种大幅拉升。BTC突破6400美元关口，现报价6410.00美元，涨幅2.25%。BCH现报价437.88美元，涨幅4.05%；ETH现报价187.20美元，涨幅达9.05%。LTC现报价52.48美元，涨幅达7.49%。',
- 'create_time': '08:20',
- 'title': 'BTC短线突破6400美元 主流币普涨'}
+            '据CoinTime报道，近日在高创会区块链峰会上，斯坦福大学教授张首晟表示，人工智能需要数据，但是数据往往被中心化平台垄断，因而阻碍创新，从这个意义上人工智能有所欠缺，加密经济学创造了一个对于数据提供者有正确激励机制的数据市场，人工智能能够依赖这个数据市场起飞。',
+ 'create_time': '09:06',
+ 'title': '张首晟：加密经济学给数据市场带来了正确的激励机制'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据证监会官网昨日刊文，证监会副主席阎庆民在首届中国数字经济投融资高峰论坛上表示：将进一步增强资本市场支持数字经济创新创业能力，调动长期投资、价值投资积极性，形成“投资—退出—再投资”良性循环，引导资金向数字经济主体倾斜。',
+ 'create_time': '08:58',
+ 'title': '证监会副主席阎庆民：引导资金向数字经济主体倾斜'}
 {'content': '\n'
-            '根据《币世界》行情显示，今日早间各主流币种大幅拉升。BTC突破6400美元关口，现报价6410.00美元，涨幅2.25%。BCH现报价437.88美元，涨幅4.05%；ETH现报价187.20美元，涨幅达9.05%。LTC现报价52.48美元，涨幅达7.49%。',
- 'create_time': '08:20',
- 'title': 'BTC短线突破6400美元 主流币普涨'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CCN报道，马耳他与去中心化数字货币平台Waves合作，讨论在该国政府和企业中使用Waves平台的潜在方案。并讨论在医疗保健、土地登记、投票等领域的技术合作。WAVES现均价2.24美元，涨幅0.65%。',
- 'create_time': '08:11',
- 'title': '马耳他与去中心化数字货币平台Waves合作'}
+            '据证监会官网昨日刊文，证监会副主席阎庆民在首届中国数字经济投融资高峰论坛上表示：将进一步增强资本市场支持数字经济创新创业能力，调动长期投资、价值投资积极性，形成“投资—退出—再投资”良性循环，引导资金向数字经济主体倾斜。',
+ 'create_time': '08:58',
+ 'title': '证监会副主席阎庆民：引导资金向数字经济主体倾斜'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据《币世界》监测，今早8.05，AE链上0x492开头地址向0x648开头地址转入100万枚AE，总价值约106万美元。AE现均价1.09美元，24h涨幅10.10%。',
+ 'create_time': '08:56',
+ 'title': 'AE链上出现100万枚大额转账'}
 {'content': '\n'
-            '据CCN报道，马耳他与去中心化数字货币平台Waves合作，讨论在该国政府和企业中使用Waves平台的潜在方案。并讨论在医疗保健、土地登记、投票等领域的技术合作。WAVES现均价2.24美元，涨幅0.65%。',
- 'create_time': '08:11',
- 'title': '马耳他与去中心化数字货币平台Waves合作'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据新浪报道，酝酿了近两个月后，央行牵头推动的国内首单将区块链技术引入供应链金融的试点业务近日落地深圳。试运行现场，比亚迪的一个供应商向平台一家银行提出贷款申请，资料齐全的情况下，这笔融资业务仅20分钟就完成。这仅仅是湾区贸易金融区块链平台在深圳上线试运行后的一次初体验。',
- 'create_time': '08:05',
- 'title': '国内首单应用区块链的融资业务在深圳完成 比亚迪参与'}
+            '据《币世界》监测，今早8.05，AE链上0x492开头地址向0x648开头地址转入100万枚AE，总价值约106万美元。AE现均价1.09美元，24h涨幅10.10%。',
+ 'create_time': '08:56',
+ 'title': 'AE链上出现100万枚大额转账'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CCN消息，GalaxyDigital创始人兼首席执行官MikeNovogratz称，由于机构投资者开始投资比特币，大公司也开始接受比特币，比特币正处于主要增长阶段。Novogratz表示，像微软和星巴克这样的大公司允许用户使用比特币，并且在短期内，更多的机构会因为害怕错过机会而投资。',
+ 'create_time': '08:03',
+ 'title': 'Galaxy Digital创始人：更多机构会因为害怕错过而投资比特币'}
 {'content': '\n'
-            '据新浪报道，酝酿了近两个月后，央行牵头推动的国内首单将区块链技术引入供应链金融的试点业务近日落地深圳。试运行现场，比亚迪的一个供应商向平台一家银行提出贷款申请，资料齐全的情况下，这笔融资业务仅20分钟就完成。这仅仅是湾区贸易金融区块链平台在深圳上线试运行后的一次初体验。',
- 'create_time': '08:05',
- 'title': '国内首单应用区块链的融资业务在深圳完成 比亚迪参与'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Chaindigg数据，今日凌晨01:21:13，37HA打头的地址转出约16220枚BTC，经过两轮转账，其中约15720枚BTC转入35gw打头的地址。凭借该笔转账，35gw打头的地址得以跻身比特币富豪榜第72位。',
- 'create_time': '07:55',
- 'title': '比特币富豪榜钱包地址发生大额转账 共约1.62万枚BTC'}
+            '据CCN消息，GalaxyDigital创始人兼首席执行官MikeNovogratz称，由于机构投资者开始投资比特币，大公司也开始接受比特币，比特币正处于主要增长阶段。Novogratz表示，像微软和星巴克这样的大公司允许用户使用比特币，并且在短期内，更多的机构会因为害怕错过机会而投资。',
+ 'create_time': '08:03',
+ 'title': 'Galaxy Digital创始人：更多机构会因为害怕错过而投资比特币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC从凌晨开始小幅震荡上扬，早间最高触及6634美元后回落，币安现报6604美元。主流币以窄幅震荡为主。',
+ 'create_time': '08:00',
+ 'title': '币世界早行情：BTC持续在6590美元附近震荡 市场整体上扬'}
+{'content': '\nBTC从凌晨开始小幅震荡上扬，早间最高触及6634美元后回落，币安现报6604美元。主流币以窄幅震荡为主。',
+ 'create_time': '08:00',
+ 'title': '币世界早行情：BTC持续在6590美元附近震荡 市场整体上扬'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n1.美国SEC、CFTC、FBI三家监管机构已经对国际比特币投资证券交易商1poolLtd.采取了行动。',
+ 'create_time': '07:48',
+ 'title': '币世界早间内参：李笑来不再做投资 币安去中心化平台'}
+{'content': '\n1.美国SEC、CFTC、FBI三家监管机构已经对国际比特币投资证券交易商1poolLtd.采取了行动。',
+ 'create_time': '07:48',
+ 'title': '币世界早间内参：李笑来不再做投资 币安去中心化平台'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Bitcoin.com消息，SEC、CFTC、FBI三家美国机构已经对国际比特币投资证券交易商1poolLtd.采取了行动。美国证券交易委员会(SEC)称1名经纪人违反了联邦证券法。商品期货交易委员会(CFTC)称其违反了商品交易法。与此同时，该公司表示，正计划让客户撤回资金。',
+ 'create_time': '07:32',
+ 'title': '美国SEC、CFTC、FBI对1pool Ltd采取行动'}
 {'content': '\n'
-            '据Chaindigg数据，今日凌晨01:21:13，37HA打头的地址转出约16220枚BTC，经过两轮转账，其中约15720枚BTC转入35gw打头的地址。凭借该笔转账，35gw打头的地址得以跻身比特币富豪榜第72位。',
- 'create_time': '07:55',
- 'title': '比特币富豪榜钱包地址发生大额转账 共约1.62万枚BTC'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Bittrex官方，Bittrex将于9月17日上线TRX/USD、LTC/USD交易对。TRX现均价0.018美元，LTC现均价51.60美元。',
- 'create_time': '07:51',
- 'title': 'Bittrex将于9月17日上线TRX/USD、LTC/USD交易对'}
+            '据Bitcoin.com消息，SEC、CFTC、FBI三家美国机构已经对国际比特币投资证券交易商1poolLtd.采取了行动。美国证券交易委员会(SEC)称1名经纪人违反了联邦证券法。商品期货交易委员会(CFTC)称其违反了商品交易法。与此同时，该公司表示，正计划让客户撤回资金。',
+ 'create_time': '07:32',
+ 'title': '美国SEC、CFTC、FBI对1pool Ltd采取行动'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据CCN消息，美国俄克拉荷马州警方逮捕了两名男子，逮捕的理由是他们从一家数字货币公司盗取了数百万美元。据了解，二人通过非法手段获取手机SIM卡，并窃取受害者的身份和电话号码。随后他们破解了一个与SIM卡绑定的数字货币钱包，并获得价值1400万美元的CMCT代币。',
+ 'create_time': '07:14',
+ 'title': '美国俄克拉荷马州警方逮捕两名男子 或因涉嫌数字货币欺诈'}
 {'content': '\n'
-            '据Bittrex官方，Bittrex将于9月17日上线TRX/USD、LTC/USD交易对。TRX现均价0.018美元，LTC现均价51.60美元。',
- 'create_time': '07:51',
- 'title': 'Bittrex将于9月17日上线TRX/USD、LTC/USD交易对'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n1.金砖国家银行于周三签署了一份关于分布式账簿和区块链在数字经济发展背景下合作研究的谅解备忘录。',
- 'create_time': '07:37',
- 'title': '币世界早间内参：金砖国家银行签署区块链谅解备忘录 火币收购日本交易所'}
-{'content': '\n1.金砖国家银行于周三签署了一份关于分布式账簿和区块链在数字经济发展背景下合作研究的谅解备忘录。',
- 'create_time': '07:37',
- 'title': '币世界早间内参：金砖国家银行签署区块链谅解备忘录 火币收购日本交易所'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CCN消息，安联首席经济顾问El-Erian表示，加密货币并未死亡，尽管它们可能被高估了。他提到，比特币是一种资产，其购买价值应该是大约5000美元。不必要的猜测导致了之前的看涨行为，引发了无根据的购买狂潮。',
- 'create_time': '07:35',
- 'title': '安联首席经济顾问：比特币价格应稳定在5000美元附近'}
+            '据CCN消息，美国俄克拉荷马州警方逮捕了两名男子，逮捕的理由是他们从一家数字货币公司盗取了数百万美元。据了解，二人通过非法手段获取手机SIM卡，并窃取受害者的身份和电话号码。随后他们破解了一个与SIM卡绑定的数字货币钱包，并获得价值1400万美元的CMCT代币。',
+ 'create_time': '07:14',
+ 'title': '美国俄克拉荷马州警方逮捕两名男子 或因涉嫌数字货币欺诈'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据时事通讯社消息，日本虚拟货币兑换协会（JVCEA）近日表示，考虑引入自律规则，对用户存储数字货币的比率设置一定的上限，该上限暂时约为被托管资产的10％至20％。',
+ 'create_time': '06:55',
+ 'title': '日本虚拟货币兑换协会：拟将用户的虚拟货币存量上限设为10％~20％'}
 {'content': '\n'
-            '据CCN消息，安联首席经济顾问El-Erian表示，加密货币并未死亡，尽管它们可能被高估了。他提到，比特币是一种资产，其购买价值应该是大约5000美元。不必要的猜测导致了之前的看涨行为，引发了无根据的购买狂潮。',
- 'create_time': '07:35',
- 'title': '安联首席经济顾问：比特币价格应稳定在5000美元附近'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据bitcoin.com报道，俄罗斯首都莫斯科每日的数字货币营业额在1000万美元到2000万美元之间，有时甚至达到5000万美元。其中，三分之一来自中国商人，他们使用数字货币对进口货物进行跨境支付。',
- 'create_time': '07:34',
- 'title': '调查报告：俄罗斯数字货币营业额三分之一来自中国商人'}
+            '据时事通讯社消息，日本虚拟货币兑换协会（JVCEA）近日表示，考虑引入自律规则，对用户存储数字货币的比率设置一定的上限，该上限暂时约为被托管资产的10％至20％。',
+ 'create_time': '06:55',
+ 'title': '日本虚拟货币兑换协会：拟将用户的虚拟货币存量上限设为10％~20％'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据NewsBitcoin消息，印度尼西亚数字货币支付公司Pundix在尼日利亚的一家商店推出了一个销售点终端，供当地用户以数字货币购物。',
+ 'create_time': '06:50',
+ 'title': 'Pundix在尼日利亚一商店推出销售点终端 供当地用户以数字货币购物'}
 {'content': '\n'
-            '据bitcoin.com报道，俄罗斯首都莫斯科每日的数字货币营业额在1000万美元到2000万美元之间，有时甚至达到5000万美元。其中，三分之一来自中国商人，他们使用数字货币对进口货物进行跨境支付。',
- 'create_time': '07:34',
- 'title': '调查报告：俄罗斯数字货币营业额三分之一来自中国商人'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n今日早间，BTC于6300美元附近横盘整理。BTC现报6331.40美元，涨幅0.96%,主流币普涨。',
- 'create_time': '07:26',
- 'title': '币世界早行情：BTC于6300美元附近横盘整理 主流币普涨'}
-{'content': '\n今日早间，BTC于6300美元附近横盘整理。BTC现报6331.40美元，涨幅0.96%,主流币普涨。',
- 'create_time': '07:26',
- 'title': '币世界早行情：BTC于6300美元附近横盘整理 主流币普涨'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'Cobra刚刚发布推特称，中心化交易所在未来五年内将成为过去时。他们将被分布式的网络节点所取代，这些节点促进不同的数字货币建立互信。法定数字货币将通过美元支持的稳定币进入去中心化的节点网络。',
- 'create_time': '06:34',
- 'title': 'Cobra：中心化交易所将被分布式网络节点取代'}
+            '据NewsBitcoin消息，印度尼西亚数字货币支付公司Pundix在尼日利亚的一家商店推出了一个销售点终端，供当地用户以数字货币购物。',
+ 'create_time': '06:50',
+ 'title': 'Pundix在尼日利亚一商店推出销售点终端 供当地用户以数字货币购物'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'CoinTrendz.com数据显示，过去一小时推特讨论量排行中，BTC凭借4327的讨论量排名第一。第二名的XRP和第三名ETH讨论量基本持平，分别为2508和2445。讨论量排名四至十位的分别为：XLM（1154）、LTC（1010）、EOS（868）、NEO（857）、BCH（730）、BNB（654）和OMG（539）。',
+ 'create_time': '03:24',
+ 'title': '过去一小时推特讨论量：BTC遥遥领先 XRP和ETH排名二三位'}
 {'content': '\n'
-            'Cobra刚刚发布推特称，中心化交易所在未来五年内将成为过去时。他们将被分布式的网络节点所取代，这些节点促进不同的数字货币建立互信。法定数字货币将通过美元支持的稳定币进入去中心化的节点网络。',
- 'create_time': '06:34',
- 'title': 'Cobra：中心化交易所将被分布式网络节点取代'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptoglobe消息，JohnMcAfee确定参加将于11月1日至2日举办的区块链峰会，峰会地点为马耳他。该次峰会参会人数预计超过5000。',
- 'create_time': '06:21',
- 'title': 'John McAfee将参加马耳他区块链峰会'}
+            'CoinTrendz.com数据显示，过去一小时推特讨论量排行中，BTC凭借4327的讨论量排名第一。第二名的XRP和第三名ETH讨论量基本持平，分别为2508和2445。讨论量排名四至十位的分别为：XLM（1154）、LTC（1010）、EOS（868）、NEO（857）、BCH（730）、BNB（654）和OMG（539）。',
+ 'create_time': '03:24',
+ 'title': '过去一小时推特讨论量：BTC遥遥领先 XRP和ETH排名二三位'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据HODL官方消息，Reddcoin近日已与该金融平台达成合作。对于HODL平台而言，Reddcoin的通证RDD将成为另一种可接受的抵押品形式。每个RDD持有者都可以从HODL获得快速、安全且免税的数字货币贷款。',
+ 'create_time': '03:07',
+ 'title': 'Reddcoin与HODL金融平台达成合作 前者的通证持有者可向后者贷款'}
 {'content': '\n'
-            '据Cryptoglobe消息，JohnMcAfee确定参加将于11月1日至2日举办的区块链峰会，峰会地点为马耳他。该次峰会参会人数预计超过5000。',
- 'create_time': '06:21',
- 'title': 'John McAfee将参加马耳他区块链峰会'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n韦氏评级刚刚发布推特称，目前在以太坊公链上运行的Dapp(分布式应用)大约为900个，但总计日活用户仅为9000个。',
- 'create_time': '05:36',
- 'title': '韦氏评级：以太坊的Dapp约为900个 但总计日活用户仅为9000个'}
-{'content': '\n韦氏评级刚刚发布推特称，目前在以太坊公链上运行的Dapp(分布式应用)大约为900个，但总计日活用户仅为9000个。',
- 'create_time': '05:36',
- 'title': '韦氏评级：以太坊的Dapp约为900个 但总计日活用户仅为9000个'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Ripple官网消息，日本软银旗下子公司和泰国的暹罗商业银行（SCB）已达成合作，并通过RippleNet的全球支付网络，为在日本工作的4.5万泰国工人提供向本国银行账户实时汇款的服务。',
- 'create_time': '05:20',
- 'title': 'RippleNet为在日本工作的泰国工人提供实施汇款服务'}
+            '据HODL官方消息，Reddcoin近日已与该金融平台达成合作。对于HODL平台而言，Reddcoin的通证RDD将成为另一种可接受的抵押品形式。每个RDD持有者都可以从HODL获得快速、安全且免税的数字货币贷款。',
+ 'create_time': '03:07',
+ 'title': 'Reddcoin与HODL金融平台达成合作 前者的通证持有者可向后者贷款'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n李笑来刚刚发微博表示，自己不会再做任何项目投资，包括区块链。他还表示，尽管对未来尚且没有明确的计划，但自己依然长期看好区块链。',
+ 'create_time': '02:19',
+ 'title': '李笑来：不做包括区块链在内的任何项目投资 但依然看好区块链'}
+{'content': '\n李笑来刚刚发微博表示，自己不会再做任何项目投资，包括区块链。他还表示，尽管对未来尚且没有明确的计划，但自己依然长期看好区块链。',
+ 'create_time': '02:19',
+ 'title': '李笑来：不做包括区块链在内的任何项目投资 但依然看好区块链'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Newsbtc消息，美国华尔街资深金融从业者、怀俄明州区块链联盟联合创始人CaitlinLong近日就大型金融机构主导比特币交易这一议题发表了自己的看法。他认为将比特币交给中心化的金融机构意味着保管人代表客户持有私钥，这违背了比特币的宗旨和区块链的理念。',
+ 'create_time': '01:25',
+ 'title': '美国区块链与金融资深人士：比特币由中心化机构掌控 违背其核心原则'}
 {'content': '\n'
-            '据Ripple官网消息，日本软银旗下子公司和泰国的暹罗商业银行（SCB）已达成合作，并通过RippleNet的全球支付网络，为在日本工作的4.5万泰国工人提供向本国银行账户实时汇款的服务。',
- 'create_time': '05:20',
- 'title': 'RippleNet为在日本工作的泰国工人提供实施汇款服务'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据Coindesk消息，巴西阿瓦伊足球俱乐部计划通过发行数字货币筹集2000万美元。',
- 'create_time': '05:04',
- 'title': '巴西一足球俱乐部拟发行数字货币筹集2000万美元'}
-{'content': '\n据Coindesk消息，巴西阿瓦伊足球俱乐部计划通过发行数字货币筹集2000万美元。',
- 'create_time': '05:04',
- 'title': '巴西一足球俱乐部拟发行数字货币筹集2000万美元'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptovest消息，拥有30000名成员的美国夜生活协会（ANA），包括美国的酒吧和夜总会产业，已与分布式支付系统Paytomat建立战略合作伙伴关系，以促进该行业采用数字货币支付。',
- 'create_time': '04:53',
- 'title': '美国夜生活协会旗下酒吧或将接受数字货币支付'}
+            '据Newsbtc消息，美国华尔街资深金融从业者、怀俄明州区块链联盟联合创始人CaitlinLong近日就大型金融机构主导比特币交易这一议题发表了自己的看法。他认为将比特币交给中心化的金融机构意味着保管人代表客户持有私钥，这违背了比特币的宗旨和区块链的理念。',
+ 'create_time': '01:25',
+ 'title': '美国区块链与金融资深人士：比特币由中心化机构掌控 违背其核心原则'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据Ambcrypto消息，美国加利福利亚州政府近日通过了两项支持区块链技术发展和应用的法案。',
+ 'create_time': '01:07',
+ 'title': '美国加州通过两项发展区块链技术的法案'}
+{'content': '\n据Ambcrypto消息，美国加利福利亚州政府近日通过了两项支持区块链技术发展和应用的法案。',
+ 'create_time': '01:07',
+ 'title': '美国加州通过两项发展区块链技术的法案'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'Zycrypto网站近日发文，通过分析比特币和莱特币的种种要素和机制，得出投资莱特币优于投资比特币的三大原因。一是，莱特币的交易速度更快；二是，莱特币在支付和交易方面更加舒适和方便；三是，莱特币挖矿所消耗的资源远低于比特币。',
+ 'create_time': '00:21',
+ 'title': '外媒发文：莱特币优于比特币的三个方面'}
 {'content': '\n'
-            '据Cryptovest消息，拥有30000名成员的美国夜生活协会（ANA），包括美国的酒吧和夜总会产业，已与分布式支付系统Paytomat建立战略合作伙伴关系，以促进该行业采用数字货币支付。',
- 'create_time': '04:53',
- 'title': '美国夜生活协会旗下酒吧或将接受数字货币支付'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CCN消息，基于区块链技术的体育和娱乐平台JetcoinInstitute近日宣布赞助德比郡足球俱乐部。德比郡位于英格兰，该球队归属于英国乙级联赛。双方的合作达成后，JetcoinInstitute将为球队提供球衣。',
- 'create_time': '04:52',
- 'title': '区块链平台Jetcoin Institute赞助英国德比郡足球俱乐部'}
+            'Zycrypto网站近日发文，通过分析比特币和莱特币的种种要素和机制，得出投资莱特币优于投资比特币的三大原因。一是，莱特币的交易速度更快；二是，莱特币在支付和交易方面更加舒适和方便；三是，莱特币挖矿所消耗的资源远低于比特币。',
+ 'create_time': '00:21',
+ 'title': '外媒发文：莱特币优于比特币的三个方面'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Bitcoinexchangeguide消息，在SEC宣布关闭加密货币交易1Broker后，网友热议，币安或BitMEX可能是SEC下一个监管对象，理由是币安或BitMEX很触犯到的法律很有可能与1Broker类似。',
+ 'create_time': '00:14',
+ 'title': '美国网友：币安或BitMEX可能是SEC下一个监管对象'}
 {'content': '\n'
-            '据CCN消息，基于区块链技术的体育和娱乐平台JetcoinInstitute近日宣布赞助德比郡足球俱乐部。德比郡位于英格兰，该球队归属于英国乙级联赛。双方的合作达成后，JetcoinInstitute将为球队提供球衣。',
- 'create_time': '04:52',
- 'title': '区块链平台Jetcoin Institute赞助英国德比郡足球俱乐部'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Newsbtc消息，一家名为Etherisc的瑞士区块链创业公司，正致力于通过基于以太坊的智能合约，为保险业提供解决方案。该公司创始人RenatKhasanshyn向美国媒体透露，如果近期遭受飓风灾害的弗吉尼亚州提供政策支持，他们可高效处理该州受害者提出的22.5万份保险索赔。并提前防范下一次飓风灾害引发的保险系统失效。',
- 'create_time': '04:45',
- 'title': '瑞士区块链公司拟通过智能合约 为美国弗吉尼亚州处理22.5万份保险索赔'}
-{'content': '\n'
-            '据Newsbtc消息，一家名为Etherisc的瑞士区块链创业公司，正致力于通过基于以太坊的智能合约，为保险业提供解决方案。该公司创始人RenatKhasanshyn向美国媒体透露，如果近期遭受飓风灾害的弗吉尼亚州提供政策支持，他们可高效处理该州受害者提出的22.5万份保险索赔。并提前防范下一次飓风灾害引发的保险系统失效。',
- 'create_time': '04:45',
- 'title': '瑞士区块链公司拟通过智能合约 为美国弗吉尼亚州处理22.5万份保险索赔'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptoglobe消息，著名R＆B歌手Akon近日在访谈节目中表示，现在不投资数字货币是无比愚蠢的。她还透露，自己在非洲国家塞内加尔推出的数字货币Akoin，在未来一个月内可面向大众出售。她进一步强调，买入Akoin就意味着对非洲的未来进行投资。',
- 'create_time': '04:35',
- 'title': '著名R＆B歌手Akon：现在不投资数字货币是无比愚蠢的'}
-{'content': '\n'
-            '据Cryptoglobe消息，著名R＆B歌手Akon近日在访谈节目中表示，现在不投资数字货币是无比愚蠢的。她还透露，自己在非洲国家塞内加尔推出的数字货币Akoin，在未来一个月内可面向大众出售。她进一步强调，买入Akoin就意味着对非洲的未来进行投资。',
- 'create_time': '04:35',
- 'title': '著名R＆B歌手Akon：现在不投资数字货币是无比愚蠢的'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据福布斯消息，捷克区块链联合组织与其合作伙伴IBM、普华永道和一家金融科技初创企业孵化器，已宣布计划为区块链技术在“经济和社会”中的发展做出贡献，将打击欺诈并推动数字化。该联盟将通过使用区块链技术在未来三到五年内“显著改变”捷克的经济，将加速该国区块链的发展。',
- 'create_time': '04:18',
- 'title': '捷克区块链联合组织将与IBM、普华永道等联合打击欺诈并推动数字化'}
-{'content': '\n'
-            '据福布斯消息，捷克区块链联合组织与其合作伙伴IBM、普华永道和一家金融科技初创企业孵化器，已宣布计划为区块链技术在“经济和社会”中的发展做出贡献，将打击欺诈并推动数字化。该联盟将通过使用区块链技术在未来三到五年内“显著改变”捷克的经济，将加速该国区块链的发展。',
- 'create_time': '04:18',
- 'title': '捷克区块链联合组织将与IBM、普华永道等联合打击欺诈并推动数字化'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据BitcoinExchangeGuide消息，全球区块链商业委员会首席执行官SandraRo表示，未来数据世界的赢家将是那些创建数据、分发数据以及提供数据分析工具的人。她补充说：“区块链将是所有项目的基础设施。”Sandra指出：“归根结底，区块链是关于社区的。这是驱使许多人进入这个领域的原因。”',
- 'create_time': '04:14',
- 'title': '全球区块链商业委员会CEO：区块链将是所有项目的基础设施'}
-{'content': '\n'
-            '据BitcoinExchangeGuide消息，全球区块链商业委员会首席执行官SandraRo表示，未来数据世界的赢家将是那些创建数据、分发数据以及提供数据分析工具的人。她补充说：“区块链将是所有项目的基础设施。”Sandra指出：“归根结底，区块链是关于社区的。这是驱使许多人进入这个领域的原因。”',
- 'create_time': '04:14',
- 'title': '全球区块链商业委员会CEO：区块链将是所有项目的基础设施'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Eurekalert消息，美国陆军工程兵团研究员BenjaminTrump及其团队近日发文表示，对超过800种分叉币的持续研究显示，除莱特币、狗币和绿币等特例外，绝大部分分叉币的存活时间不超过数月。此外，分叉币还将对数字货币的稳定性造成冲击，并破坏人们对区块链的信任。',
- 'create_time': '03:39',
- 'title': '研究显示：绝大部分分叉币以失败收场 并对数字货币的整体稳定性造成冲击'}
-{'content': '\n'
-            '据Eurekalert消息，美国陆军工程兵团研究员BenjaminTrump及其团队近日发文表示，对超过800种分叉币的持续研究显示，除莱特币、狗币和绿币等特例外，绝大部分分叉币的存活时间不超过数月。此外，分叉币还将对数字货币的稳定性造成冲击，并破坏人们对区块链的信任。',
- 'create_time': '03:39',
- 'title': '研究显示：绝大部分分叉币以失败收场 并对数字货币的整体稳定性造成冲击'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Bitcoinmagazine消息，美国非营利组织TourdeCrypto旗下的越野自行车手JasonBerlin和JovelVelasquez正计划通过巡演的方式，为休斯顿地区妇女中心（HAWC）筹集100万美元的数字货币。巡演将从9月14日开始，于11月9日结束。',
- 'create_time': '03:16',
- 'title': '美国两名越野自行车手计划为公益组织筹集100万美元的数字货币'}
-{'content': '\n'
-            '据Bitcoinmagazine消息，美国非营利组织TourdeCrypto旗下的越野自行车手JasonBerlin和JovelVelasquez正计划通过巡演的方式，为休斯顿地区妇女中心（HAWC）筹集100万美元的数字货币。巡演将从9月14日开始，于11月9日结束。',
- 'create_time': '03:16',
- 'title': '美国两名越野自行车手计划为公益组织筹集100万美元的数字货币'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据ETHNews消息，加拿大央行（BoC）最近在其网站上发布了一份题为基于区块链的资产交易结算的工作报告，报告探讨了证券结算对区块链的潜在利益和风险。报告指出，鉴于适当的技术规范和激励措施，基于区块链的证券结算可以提供适度的市场收益。',
- 'create_time': '03:14',
- 'title': '加拿大央行报告：基于区块链的证券结算可以提供适度的市场收益'}
-{'content': '\n'
-            '据ETHNews消息，加拿大央行（BoC）最近在其网站上发布了一份题为基于区块链的资产交易结算的工作报告，报告探讨了证券结算对区块链的潜在利益和风险。报告指出，鉴于适当的技术规范和激励措施，基于区块链的证券结算可以提供适度的市场收益。',
- 'create_time': '03:14',
- 'title': '加拿大央行报告：基于区块链的证券结算可以提供适度的市场收益'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '万向控股肖风在第四届区块链全球峰会上表示，稳定币技术发展和数字经济监管合规是实现区块链大规模应用的两重要条件。他称，区块链想要实现大规模应用普及还要实现另外两点：真正可以用来做支付工具，价值尺度，价值存储的稳定币技术发展和数字经济得到监管和合规。',
- 'create_time': '03:08',
- 'title': '肖风：稳定币技术发展和数字经济监管合规是实现区块链大规模应用的两重要条件'}
-{'content': '\n'
-            '万向控股肖风在第四届区块链全球峰会上表示，稳定币技术发展和数字经济监管合规是实现区块链大规模应用的两重要条件。他称，区块链想要实现大规模应用普及还要实现另外两点：真正可以用来做支付工具，价值尺度，价值存储的稳定币技术发展和数字经济得到监管和合规。',
- 'create_time': '03:08',
- 'title': '肖风：稳定币技术发展和数字经济监管合规是实现区块链大规模应用的两重要条件'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据marketwatch消息，受英国金融行为监管局（FCA）监管的基金DynamicCapital宣布将重组业务，重新命名为SMSCryptoManagement，旨在专注于新兴的数字货币市场。',
- 'create_time': '03:00',
- 'title': 'FCA监管的基金Dynamic Capital将重组业务 专注于数字货币'}
-{'content': '\n'
-            '据marketwatch消息，受英国金融行为监管局（FCA）监管的基金DynamicCapital宣布将重组业务，重新命名为SMSCryptoManagement，旨在专注于新兴的数字货币市场。',
- 'create_time': '03:00',
- 'title': 'FCA监管的基金Dynamic Capital将重组业务 专注于数字货币'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n《币世界》行情显示，ETH短时快速拉升，并突破180美元。火币现报价180.53美元，涨幅5.12%。',
- 'create_time': '02:48',
- 'title': 'ETH短时快速拉升 涨幅5.12%'}
-{'content': '\n《币世界》行情显示，ETH短时快速拉升，并突破180美元。火币现报价180.53美元，涨幅5.12%。',
- 'create_time': '02:48',
- 'title': 'ETH短时快速拉升 涨幅5.12%'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cointelegraph消息，Mt.Gox将在线索赔申请系统扩展到企业用户。此前消息，MtGox启动比特币债权人（非企业）索赔申请系统，截止日期为2018年10月22日。',
- 'create_time': '02:26',
- 'title': 'Mt. Gox将在线索赔申请系统扩展到企业用户'}
-{'content': '\n'
-            '据Cointelegraph消息，Mt.Gox将在线索赔申请系统扩展到企业用户。此前消息，MtGox启动比特币债权人（非企业）索赔申请系统，截止日期为2018年10月22日。',
- 'create_time': '02:26',
- 'title': 'Mt. Gox将在线索赔申请系统扩展到企业用户'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptovest消息，监管俄罗斯当局将数字货币交易视为非法行径，但在该国民众内部形成的数字货币黑市每日的交易额可达数百万美元。P2P平台和街头兑换是黑市的主要形态。',
- 'create_time': '01:48',
- 'title': '俄罗斯数字货币黑市日交易额可达数百万美元 主要形态为P2P平台和街头兑换'}
-{'content': '\n'
-            '据Cryptovest消息，监管俄罗斯当局将数字货币交易视为非法行径，但在该国民众内部形成的数字货币黑市每日的交易额可达数百万美元。P2P平台和街头兑换是黑市的主要形态。',
- 'create_time': '01:48',
- 'title': '俄罗斯数字货币黑市日交易额可达数百万美元 主要形态为P2P平台和街头兑换'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据福布斯报道，与IBM合作的金融科技初创公司全球债务登记处（GlobalDebtRegistry）正在使用区块链技术，防止在组建资产支持证券（ABS）投资组合时对抵押资产进行重复计算。据报道，该公司开发了一个私有区块链，旨在确保贷款资产的完整性，并保护网络上的抵押资产免于在未来出现错误或失实陈述。',
- 'create_time': '01:47',
- 'title': '与IBM合作的金融科技公司使用区块链记录资产支持证券'}
-{'content': '\n'
-            '据福布斯报道，与IBM合作的金融科技初创公司全球债务登记处（GlobalDebtRegistry）正在使用区块链技术，防止在组建资产支持证券（ABS）投资组合时对抵押资产进行重复计算。据报道，该公司开发了一个私有区块链，旨在确保贷款资产的完整性，并保护网络上的抵押资产免于在未来出现错误或失实陈述。',
- 'create_time': '01:47',
- 'title': '与IBM合作的金融科技公司使用区块链记录资产支持证券'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据中国电子商务协会中国区块链技术研究院官方消息，将联合分布式评测平台“区分”，发起《中国区块链力量》举荐和评选活动。此次竞选通过的团队将受邀参加在京举行的授牌大会，工信部、国家发改委、国务院等领导将参与、授牌。并委托区分平台作为指定评选机构。旨在区块链行业乱象丛生的当下，寻找真正优秀的项目和团队，为规范区块链行业发展而树立标杆，为制定区块链行业标准而寻找各行业先行者，为中国区块链行业的健康发展而贡献力量。据悉，此次《中国区块链力量》评选涉及区块链相关的各个行业，包括区块链基础设施类、区块链行业服务类、区块链商业应用类和区块链公共服务类。目前已经有数十家国内优秀底层公链团队、区块链技术服务企业、区块链教育机构、数据存储、区块链内容版权等团队报名参与此次竞选。',
- 'create_time': '01:46',
- 'title': '国家发改委、国务院领导或将参与中国区块链力量活动授牌大会'}
-{'content': '\n'
-            '据中国电子商务协会中国区块链技术研究院官方消息，将联合分布式评测平台“区分”，发起《中国区块链力量》举荐和评选活动。此次竞选通过的团队将受邀参加在京举行的授牌大会，工信部、国家发改委、国务院等领导将参与、授牌。并委托区分平台作为指定评选机构。旨在区块链行业乱象丛生的当下，寻找真正优秀的项目和团队，为规范区块链行业发展而树立标杆，为制定区块链行业标准而寻找各行业先行者，为中国区块链行业的健康发展而贡献力量。据悉，此次《中国区块链力量》评选涉及区块链相关的各个行业，包括区块链基础设施类、区块链行业服务类、区块链商业应用类和区块链公共服务类。目前已经有数十家国内优秀底层公链团队、区块链技术服务企业、区块链教育机构、数据存储、区块链内容版权等团队报名参与此次竞选。',
- 'create_time': '01:46',
- 'title': '国家发改委、国务院领导或将参与中国区块链力量活动授牌大会'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Bitcoin消息，Eurekahedge加密货币对冲基金指数显示，2018年加密对冲基金平均损失了51.58％，过去三个月平均损失25％。而在2017年，这些基金的平均年利润为1708％。这意味着这些基金目前的表现几乎不比买入并持有BTC的策略好。鉴于以太坊的持续下跌，这些基金9月份可能将面临更重的损失。',
- 'create_time': '01:30',
- 'title': '2018年加密对冲基金平均损失51.58％ 过去三个月平均损失25%'}
-{'content': '\n'
-            '据Bitcoin消息，Eurekahedge加密货币对冲基金指数显示，2018年加密对冲基金平均损失了51.58％，过去三个月平均损失25％。而在2017年，这些基金的平均年利润为1708％。这意味着这些基金目前的表现几乎不比买入并持有BTC的策略好。鉴于以太坊的持续下跌，这些基金9月份可能将面临更重的损失。',
- 'create_time': '01:30',
- 'title': '2018年加密对冲基金平均损失51.58％ 过去三个月平均损失25%'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coindesk分析，EOS近日价格走势呈下降三角态势，意味着价格或将持续下跌。如果EOS未来几日无法突破这一下降三角走势，且跌破3.5美元的支撑位，即可佐证熊市还将延续。',
- 'create_time': '01:30',
- 'title': 'Coindesk分析：若跌破3.5美元的支撑位 EOS的熊市或将延续'}
-{'content': '\n'
-            '据Coindesk分析，EOS近日价格走势呈下降三角态势，意味着价格或将持续下跌。如果EOS未来几日无法突破这一下降三角走势，且跌破3.5美元的支撑位，即可佐证熊市还将延续。',
- 'create_time': '01:30',
- 'title': 'Coindesk分析：若跌破3.5美元的支撑位 EOS的熊市或将延续'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '近日网络上流传“那个1500个比特币可以忽略不计的男人，拿不出10块钱给自己买包子”的言论，针对此，徐明星发微博称，友商对我太好了，设计各种局防不胜防，各种黑稿铺天盖地，各路水军整装上阵，还请了“财经小说”作家写出这么戏剧化的文章？据说要不惜成本，推到100家媒体。本人农村出身，勤俭节约是骨子里带出来的，从不铺张浪费，对他人好胜过对我自己。真希望尝尝这10块钱的包子是什么味道！像搅屎棍一样罔顾事实，编造剧情，乌烟瘴气，对区块链行业，包括自己在内，真的好吗？',
- 'create_time': '01:28',
- 'title': '徐明星发文怒怼网络文章 称其罔顾事实编造剧情'}
-{'content': '\n'
-            '近日网络上流传“那个1500个比特币可以忽略不计的男人，拿不出10块钱给自己买包子”的言论，针对此，徐明星发微博称，友商对我太好了，设计各种局防不胜防，各种黑稿铺天盖地，各路水军整装上阵，还请了“财经小说”作家写出这么戏剧化的文章？据说要不惜成本，推到100家媒体。本人农村出身，勤俭节约是骨子里带出来的，从不铺张浪费，对他人好胜过对我自己。真希望尝尝这10块钱的包子是什么味道！像搅屎棍一样罔顾事实，编造剧情，乌烟瘴气，对区块链行业，包括自己在内，真的好吗？',
- 'create_time': '01:28',
- 'title': '徐明星发文怒怼网络文章 称其罔顾事实编造剧情'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据韩联社消息，一名韩国央行官员近日表示，主要的数字货币在韩国市场以高额溢价交易，需对这些数字货币的价格进行审慎评估。',
- 'create_time': '01:01',
- 'title': '韩国央行官员：需对在本国市场以高额溢价交易的数字货币做审慎评估'}
-{'content': '\n据韩联社消息，一名韩国央行官员近日表示，主要的数字货币在韩国市场以高额溢价交易，需对这些数字货币的价格进行审慎评估。',
- 'create_time': '01:01',
- 'title': '韩国央行官员：需对在本国市场以高额溢价交易的数字货币做审慎评估'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptovest消息，四名区块链开发人员StephaneGosselin、AdamDossa、PabloRuiz和FabianVogelsteller近日提出了一项基于以太坊网络的新安全令牌标准。该标准称为ERC-1400，旨在更好的帮助实体企业享受安全令牌服务（STOs），以及遵循相关法规。',
- 'create_time': '00:50',
- 'title': '四名区块链开发人员提出基于以太坊网络的新安全令牌标准'}
-{'content': '\n'
-            '据Cryptovest消息，四名区块链开发人员StephaneGosselin、AdamDossa、PabloRuiz和FabianVogelsteller近日提出了一项基于以太坊网络的新安全令牌标准。该标准称为ERC-1400，旨在更好的帮助实体企业享受安全令牌服务（STOs），以及遵循相关法规。',
- 'create_time': '00:50',
- 'title': '四名区块链开发人员提出基于以太坊网络的新安全令牌标准'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cointelegraph消息，就近日徐明星接受警方调查，有传言称其持有WFEE股份，对此OKEx首席运营官AndyCheung向Cointelegraph回应称，徐明星与WFEE及该公司没有股权关系，并补充说：“虽然WFEE已经收购了OKBC(OKBlockchainCapital)以及其他几个资本投资，但WFEE白皮书和团队成员的后续变动尚未通知OKBC。”OKBC还发推文称，徐明星不是WFEE的股东。关于涉及OKEx的其他指控，据当地新闻界面报道，据称在OKEx遭受“重大损失”的三百名投资者中，有七人已经与徐明星达成了一种解决方式，Cointelegraph中文消息源也支持这一说法。此前消息，徐明星今日接受了HoneycombFinance的采访，证实他被上海警方拘留，但强烈否认有关欺诈的指控，称其使去警察局解释情况，向警方证明没有诈骗。',
- 'create_time': '00:44',
- 'title': 'OKEx首席运营官辟谣：徐明星与WFEE及公司没有股权关系'}
-{'content': '\n'
-            '据Cointelegraph消息，就近日徐明星接受警方调查，有传言称其持有WFEE股份，对此OKEx首席运营官AndyCheung向Cointelegraph回应称，徐明星与WFEE及该公司没有股权关系，并补充说：“虽然WFEE已经收购了OKBC(OKBlockchainCapital)以及其他几个资本投资，但WFEE白皮书和团队成员的后续变动尚未通知OKBC。”OKBC还发推文称，徐明星不是WFEE的股东。关于涉及OKEx的其他指控，据当地新闻界面报道，据称在OKEx遭受“重大损失”的三百名投资者中，有七人已经与徐明星达成了一种解决方式，Cointelegraph中文消息源也支持这一说法。此前消息，徐明星今日接受了HoneycombFinance的采访，证实他被上海警方拘留，但强烈否认有关欺诈的指控，称其使去警察局解释情况，向警方证明没有诈骗。',
- 'create_time': '00:44',
- 'title': 'OKEx首席运营官辟谣：徐明星与WFEE及公司没有股权关系'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日，经济参考报撰文《部分ICO项目套“洋马甲”逃避监管》称，去年9月4日，央行等多部门联合发布《关于防范代币发行融资风险的公告》，明确叫停ICO（首次代币发行）非法公开融资炒作。一年过去了，记者近期深入行业内调查发现，众多虚拟货币在过去一年里经历了“过山车”行情：冲上历史新高，如今跌入低谷。而新政之后，又有为数不少的项目打着国外基金会的旗号，不但顺利完成了ICO，而且登陆与国内相关的交易平台，以区块链之名行“割韭菜”之实，整个发行过程更为隐匿。相当数量的投资者经历了两次以上“腰斩”，损失在九成以上。',
- 'create_time': '00:37',
- 'title': '经济参考报：部分ICO项目套“洋马甲”逃避监管'}
-{'content': '\n'
-            '今日，经济参考报撰文《部分ICO项目套“洋马甲”逃避监管》称，去年9月4日，央行等多部门联合发布《关于防范代币发行融资风险的公告》，明确叫停ICO（首次代币发行）非法公开融资炒作。一年过去了，记者近期深入行业内调查发现，众多虚拟货币在过去一年里经历了“过山车”行情：冲上历史新高，如今跌入低谷。而新政之后，又有为数不少的项目打着国外基金会的旗号，不但顺利完成了ICO，而且登陆与国内相关的交易平台，以区块链之名行“割韭菜”之实，整个发行过程更为隐匿。相当数量的投资者经历了两次以上“腰斩”，损失在九成以上。',
- 'create_time': '00:37',
- 'title': '经济参考报：部分ICO项目套“洋马甲”逃避监管'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '微众银行科技发展总监万磊称：“目前微粒贷累计有1500万笔交易是通过区块链方式清算的。”2016年9月，微众银行联合华瑞银行开发的基于联盟型区块链技术的机构间对账平台投入试运行，用于优化“微粒贷”合作银行间的对账。',
- 'create_time': '00:30',
- 'title': '微众银行万磊：微粒贷累计有1500万笔交易以区块链方式清算'}
-{'content': '\n'
-            '微众银行科技发展总监万磊称：“目前微粒贷累计有1500万笔交易是通过区块链方式清算的。”2016年9月，微众银行联合华瑞银行开发的基于联盟型区块链技术的机构间对账平台投入试运行，用于优化“微粒贷”合作银行间的对账。',
- 'create_time': '00:30',
- 'title': '微众银行万磊：微粒贷累计有1500万笔交易以区块链方式清算'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '微众银行科技发展总监万磊今日表示，目前中国银行业实际上对区块链探索很积极，每个大中型银行都有自己的团队。但现在看来银行业还没有探索出成熟的应用场景，大家做的都是技术方面的尝试。对于金融业有些领域的应用，法律法规以及风控要求比技术更难解决。',
- 'create_time': '00:29',
- 'title': '微众银行万磊：中国银行业积极探索区块链，但还没有成熟应用场景'}
-{'content': '\n'
-            '微众银行科技发展总监万磊今日表示，目前中国银行业实际上对区块链探索很积极，每个大中型银行都有自己的团队。但现在看来银行业还没有探索出成熟的应用场景，大家做的都是技术方面的尝试。对于金融业有些领域的应用，法律法规以及风控要求比技术更难解决。',
- 'create_time': '00:29',
- 'title': '微众银行万磊：中国银行业积极探索区块链，但还没有成熟应用场景'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据彭博消息，截至9月12日本周三，追踪比特币等十只数字货币的数字资产指数MVISCryptoCompareDigitalAssets10Index今年1月以来累跌80%，而2000年互联网泡沫爆破时，纳斯达克综合指数从巅峰跌到低谷的跌幅也不过78%。',
- 'create_time': '00:26',
- 'title': '数字货币资产指数1月以来累跌80%'}
-{'content': '\n'
-            '据彭博消息，截至9月12日本周三，追踪比特币等十只数字货币的数字资产指数MVISCryptoCompareDigitalAssets10Index今年1月以来累跌80%，而2000年互联网泡沫爆破时，纳斯达克综合指数从巅峰跌到低谷的跌幅也不过78%。',
- 'create_time': '00:26',
- 'title': '数字货币资产指数1月以来累跌80%'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据GlobeNewswire消息，美国航空运价出版公司（ATPCO）已经与区块链公司Blockskye合作，已经发布了一份白皮书来探索区块链的关键特性及在航空分销中的应用。',
- 'create_time': '00:22',
- 'title': '美国航空运价出版公司探索区块链在航空分销中应用'}
-{'content': '\n'
-            '据GlobeNewswire消息，美国航空运价出版公司（ATPCO）已经与区块链公司Blockskye合作，已经发布了一份白皮书来探索区块链的关键特性及在航空分销中的应用。',
- 'create_time': '00:22',
- 'title': '美国航空运价出版公司探索区块链在航空分销中应用'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Globalcoinreport消息，万事达卡执行副总裁ColleenTaylor透露，早在2011年至2012年，该公司就为Ripple提供了指导，当时Ripple来到万事达卡寻求有关扩展产品的战略建议。当Ripple询问万事达卡是否可以花几天时间为他们制定产品战略计划时，Taylor毫无犹豫。Taylor表示，这是因为万事达卡看到Ripple具有敏捷性，同时万事达卡具有规模，这对万事达卡来说是完美的匹配。',
- 'create_time': '00:15',
- 'title': '万事达卡执行副总裁：几年前曾为Ripple提供指导'}
-{'content': '\n'
-            '据Globalcoinreport消息，万事达卡执行副总裁ColleenTaylor透露，早在2011年至2012年，该公司就为Ripple提供了指导，当时Ripple来到万事达卡寻求有关扩展产品的战略建议。当Ripple询问万事达卡是否可以花几天时间为他们制定产品战略计划时，Taylor毫无犹豫。Taylor表示，这是因为万事达卡看到Ripple具有敏捷性，同时万事达卡具有规模，这对万事达卡来说是完美的匹配。',
- 'create_time': '00:15',
- 'title': '万事达卡执行副总裁：几年前曾为Ripple提供指导'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\nBTC今日持续于6270美元附近震荡，现报6272.68美元，跌幅0.11%。',
+            '据Bitcoinexchangeguide消息，在SEC宣布关闭加密货币交易1Broker后，网友热议，币安或BitMEX可能是SEC下一个监管对象，理由是币安或BitMEX很触犯到的法律很有可能与1Broker类似。',
+ 'create_time': '00:14',
+ 'title': '美国网友：币安或BitMEX可能是SEC下一个监管对象'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日上午9时BTC出现明显下挫，最低跌至6467.85美元，下午小幅反弹，现于6590美元附近窄幅整理。币安现报6607.15美元，24h跌幅0.98%。',
  'create_time': '00:01',
- 'title': '币世界24小时行情梳理：BTC持续于6270美元附近震荡 主流币涨跌各异'}
-{'content': '\nBTC今日持续于6270美元附近震荡，现报6272.68美元，跌幅0.11%。',
+ 'title': '币世界24小时行情梳理：BTC出现下挫后小幅反弹，现于6590美元附近窄幅整理'}
+{'content': '\n'
+            '今日上午9时BTC出现明显下挫，最低跌至6467.85美元，下午小幅反弹，现于6590美元附近窄幅整理。币安现报6607.15美元，24h跌幅0.98%。',
  'create_time': '00:01',
- 'title': '币世界24小时行情梳理：BTC持续于6270美元附近震荡 主流币涨跌各异'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n近日，财富中文网发起一项评选40位40岁以下商界精英的活动，32岁的比特大陆联合创始人吴忌寒作为加密行业的代表人物入围该名单。',
- 'create_time': '23:24',
- 'title': '吴忌寒入围2018年40位40岁以下商界精英名单'}
-{'content': '\n近日，财富中文网发起一项评选40位40岁以下商界精英的活动，32岁的比特大陆联合创始人吴忌寒作为加密行业的代表人物入围该名单。',
- 'create_time': '23:24',
- 'title': '吴忌寒入围2018年40位40岁以下商界精英名单'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coinspeaker消息，列支敦士登的金融市场管理据Coinspeaker消息局(FMA)表示，他们不会依靠提交给监管机构的法律判决来监管ETERBASE。ETERBASE是一个创新的加密货币交易所，它计划遵守所有的规则和程序，并为客户提供所有的法定金融服务。据悉，ETERBASE正寻求成为一家能提供大量金融服务和无缝交易体验的加密货币交易平台。',
- 'create_time': '22:56',
- 'title': '列支敦士登FMA向加密货币交易所ETERBASE授予监管评估'}
+ 'title': '币世界24小时行情梳理：BTC出现下挫后小幅反弹，现于6590美元附近窄幅整理'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据《币世界》监测，今日以太坊链上交易数为500407，同比昨日减少了3640，跌幅为0.72%。以太坊未确认交易笔数65308笔，网络拥堵情况严重，目前挖矿难度为3239.97TH。ETH现报231.54美元，涨幅2.44%。',
+ 'create_time': '23:27',
+ 'title': '以太坊链上交易同比减少3640 网络拥堵严重'}
 {'content': '\n'
-            '据Coinspeaker消息，列支敦士登的金融市场管理据Coinspeaker消息局(FMA)表示，他们不会依靠提交给监管机构的法律判决来监管ETERBASE。ETERBASE是一个创新的加密货币交易所，它计划遵守所有的规则和程序，并为客户提供所有的法定金融服务。据悉，ETERBASE正寻求成为一家能提供大量金融服务和无缝交易体验的加密货币交易平台。',
- 'create_time': '22:56',
- 'title': '列支敦士登FMA向加密货币交易所ETERBASE授予监管评估'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据澎湃消息，中国（上海）新技术发展与应用论坛上，中国工程院院士、人工智能科学家、同济大学校长陈杰认为：“人工智能、区块链在城市治理方面的研究和应用创新，是政府和科学家共同研究的课题，也是跨自然科学和社会科学的交叉课题，需要科学家、企业家、政府部门携手推进。”',
- 'create_time': '22:48',
- 'title': '同济大学校长：AI和区块链在城市治理方面的研究和应用创新是跨学科课题'}
+            '据《币世界》监测，今日以太坊链上交易数为500407，同比昨日减少了3640，跌幅为0.72%。以太坊未确认交易笔数65308笔，网络拥堵情况严重，目前挖矿难度为3239.97TH。ETH现报231.54美元，涨幅2.44%。',
+ 'create_time': '23:27',
+ 'title': '以太坊链上交易同比减少3640 网络拥堵严重'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据zycrypto报道，PhilippaRyan博士是悉尼科技大学的区块链专家，他表示区块链技术可以为联合国的气候变化问题提供解决方案。Ryan在今年的国际标准化组织（ISO）周举行的联合国听证会期间提到了这一点。会议期间主要就标准对实现联合国可持续目标的贡献作了若干发言。',
+ 'create_time': '22:42',
+ 'title': '悉尼高校区块链专家：区块链可能是气候变化的解决方案'}
 {'content': '\n'
-            '据澎湃消息，中国（上海）新技术发展与应用论坛上，中国工程院院士、人工智能科学家、同济大学校长陈杰认为：“人工智能、区块链在城市治理方面的研究和应用创新，是政府和科学家共同研究的课题，也是跨自然科学和社会科学的交叉课题，需要科学家、企业家、政府部门携手推进。”',
- 'create_time': '22:48',
- 'title': '同济大学校长：AI和区块链在城市治理方面的研究和应用创新是跨学科课题'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Financialexpress消息，金砖国家银行于周三签署了一份关于分布式账簿和区块链在数字经济发展背景下合作研究的谅解备忘录。该谅解备忘录旨在加强对分布式分类帐技术（DLT）的理解，通过银行之间联合研究，在各自业务运营领域提高运营效率。参与的成员银行有中国国家开发银行（CDB）、国家公司发展和对外经济事务银行（Vnesheconombank，俄罗斯）和南部非洲开发银行（DBSA）等。',
- 'create_time': '22:36',
- 'title': '金砖国家银行签署关于区块链的谅解备忘录'}
+            '据zycrypto报道，PhilippaRyan博士是悉尼科技大学的区块链专家，他表示区块链技术可以为联合国的气候变化问题提供解决方案。Ryan在今年的国际标准化组织（ISO）周举行的联合国听证会期间提到了这一点。会议期间主要就标准对实现联合国可持续目标的贡献作了若干发言。',
+ 'create_time': '22:42',
+ 'title': '悉尼高校区块链专家：区块链可能是气候变化的解决方案'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据bitcoinist消息，继美国证券交易委员会之后，美国联邦调查局（FBI）表示，他们没收了1Broker.com的域名。FBI表示该域名是在地区法院发现可能它“被使用，或打算使用”违法洗钱，电汇欺诈和注册不当之后被没收的。据《币世界》此前报道，美国证券交易委员会对一家国际证券交易商1poolLtd.a/k/a1Broker及其驻奥地利首席执行官提起诉讼，指控其涉嫌违反联邦证券法，用比特币融资的基于证券的掉期交易。',
+ 'create_time': '22:27',
+ 'title': '美国联邦调查局没收涉嫌违法的国际证券交易商网络域名'}
 {'content': '\n'
-            '据Financialexpress消息，金砖国家银行于周三签署了一份关于分布式账簿和区块链在数字经济发展背景下合作研究的谅解备忘录。该谅解备忘录旨在加强对分布式分类帐技术（DLT）的理解，通过银行之间联合研究，在各自业务运营领域提高运营效率。参与的成员银行有中国国家开发银行（CDB）、国家公司发展和对外经济事务银行（Vnesheconombank，俄罗斯）和南部非洲开发银行（DBSA）等。',
- 'create_time': '22:36',
- 'title': '金砖国家银行签署关于区块链的谅解备忘录'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coindesk消息，韩国金融监管机构正在联系国内的区块链初创企业，作为对ICO调查的一部分。这项调查令这些公司感到不安，他们担心，如果公司被认为违反了有关象征性销售的规定，调查是否最终会导致某种形式的制裁。目前，ICO在技术上是不被允许的，因为基于标记的融资方法在去年9月被禁止。据金融服务委员会周三获得的调查问卷显示，金融监管局（FSS）已经向几家公司发函，要求他们配合调查。FSS是在FSC期下监督金融机构的监管机构。',
- 'create_time': '22:25',
- 'title': '韩国金融监管机构调查区块链公司的ICO活动'}
-{'content': '\n'
-            '据Coindesk消息，韩国金融监管机构正在联系国内的区块链初创企业，作为对ICO调查的一部分。这项调查令这些公司感到不安，他们担心，如果公司被认为违反了有关象征性销售的规定，调查是否最终会导致某种形式的制裁。目前，ICO在技术上是不被允许的，因为基于标记的融资方法在去年9月被禁止。据金融服务委员会周三获得的调查问卷显示，金融监管局（FSS）已经向几家公司发函，要求他们配合调查。FSS是在FSC期下监督金融机构的监管机构。',
- 'create_time': '22:25',
- 'title': '韩国金融监管机构调查区块链公司的ICO活动'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据businesstoday消息，印度央行(RBI)今天向印度最高法院提交了一份宣誓书，加大了打击数字货币的力度。据悉，印度央行宣誓书中澄清了自己对数字货币的立场，称根据现行法律制度，比特币及其同类货币无法得到认可。印度央行补充说，虚拟货币“既不是货币，也不是钱，他们甚至不能被认为是一个有效的支付系统”。',
- 'create_time': '22:23',
- 'title': '印度央行向最高法院提交宣誓书 加大打击数字货币的力度'}
-{'content': '\n'
-            '据businesstoday消息，印度央行(RBI)今天向印度最高法院提交了一份宣誓书，加大了打击数字货币的力度。据悉，印度央行宣誓书中澄清了自己对数字货币的立场，称根据现行法律制度，比特币及其同类货币无法得到认可。印度央行补充说，虚拟货币“既不是货币，也不是钱，他们甚至不能被认为是一个有效的支付系统”。',
- 'create_time': '22:23',
- 'title': '印度央行向最高法院提交宣誓书 加大打击数字货币的力度'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Eurekalert消息，Springer期刊研究人员BenjaminTrump及其团队通过查看800多个开源的硬分叉、软分叉山寨币的源代码来审查数字货币目前的状态。Trump表示，尽管数字货币的技术前景很广阔，但其稳定性受到“硬分叉”的威胁。以这种方式破坏数字货币和区块链会导致人们失去对它的信任。如果数字货币特别是比特币要在国际范围内成为全球公认的、可靠的、可预测的交易媒介，那么比特币网络中的矿工、钱包开发商、交易所运营商和其他利益相关者需要更好的治理方式以使其具备更大的稳定性。',
- 'create_time': '22:22',
- 'title': '研究报告：数字货币的技术前景很广阔 但其稳定性受到“硬分叉”的威胁'}
-{'content': '\n'
-            '据Eurekalert消息，Springer期刊研究人员BenjaminTrump及其团队通过查看800多个开源的硬分叉、软分叉山寨币的源代码来审查数字货币目前的状态。Trump表示，尽管数字货币的技术前景很广阔，但其稳定性受到“硬分叉”的威胁。以这种方式破坏数字货币和区块链会导致人们失去对它的信任。如果数字货币特别是比特币要在国际范围内成为全球公认的、可靠的、可预测的交易媒介，那么比特币网络中的矿工、钱包开发商、交易所运营商和其他利益相关者需要更好的治理方式以使其具备更大的稳定性。',
- 'create_time': '22:22',
- 'title': '研究报告：数字货币的技术前景很广阔 但其稳定性受到“硬分叉”的威胁'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '币安何一今日微博附图打假，\u200b\u200b\u200b\u200b图片第一张为微信资料截图，名字为馨雨，备注显示：币安张馨雨，一手信息交流；第二张截图信息显示，何一否认认识一名叫何慧子的人；第三张图，何一否认币安是美国爬虫技术支持。',
- 'create_time': '22:21',
- 'title': '何一微博打假 否认张馨雨、何慧子为币安工作人员'}
-{'content': '\n'
-            '币安何一今日微博附图打假，\u200b\u200b\u200b\u200b图片第一张为微信资料截图，名字为馨雨，备注显示：币安张馨雨，一手信息交流；第二张截图信息显示，何一否认认识一名叫何慧子的人；第三张图，何一否认币安是美国爬虫技术支持。',
- 'create_time': '22:21',
- 'title': '何一微博打假 否认张馨雨、何慧子为币安工作人员'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据bitcoin消息，人力资源公司Chronobank调查了来自世界各地的445名数字货币爱好者。调查显示，大多数人愿意以比特币或其它数字货币的形式获得部分或全部工资。66％的受访者希望他们的雇主接受这一变化并表示他们愿意接受数字货币工资。83％的受访者表示他们非常乐意接受数字货币支付奖金。此外，72％的受访者表示，在选择下一个工作地点时，他们更愿意选择有以数字货币支付为选项的雇主。',
+            '据bitcoinist消息，继美国证券交易委员会之后，美国联邦调查局（FBI）表示，他们没收了1Broker.com的域名。FBI表示该域名是在地区法院发现可能它“被使用，或打算使用”违法洗钱，电汇欺诈和注册不当之后被没收的。据《币世界》此前报道，美国证券交易委员会对一家国际证券交易商1poolLtd.a/k/a1Broker及其驻奥地利首席执行官提起诉讼，指控其涉嫌违反联邦证券法，用比特币融资的基于证券的掉期交易。',
+ 'create_time': '22:27',
+ 'title': '美国联邦调查局没收涉嫌违法的国际证券交易商网络域名'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'PLUSTOKEN今日宣布，PLUSTOKEN智能钱包实验室技术团队正式进驻韩国区块链试点特区济州岛，在济州岛成立研发中心，致力于区块链技术在跨境支付、数字货币支付、交易平台、资产安全、游戏等领域的应用。据悉，接下来PLUSTOKEN将联合PLUSTOKEN新加坡基金会、PLUSTOKEN美国基金会，共同推动PLUS在全球跨境支付、数字货币存储、数字资产支付、游戏等领域的发展。',
  'create_time': '22:19',
- 'title': '人力资源公司Chronobank：66％的数字货币爱好者愿意接受数字货币工资'}
+ 'title': 'PLUSTOKEN实验室进驻济州岛'}
 {'content': '\n'
-            '据bitcoin消息，人力资源公司Chronobank调查了来自世界各地的445名数字货币爱好者。调查显示，大多数人愿意以比特币或其它数字货币的形式获得部分或全部工资。66％的受访者希望他们的雇主接受这一变化并表示他们愿意接受数字货币工资。83％的受访者表示他们非常乐意接受数字货币支付奖金。此外，72％的受访者表示，在选择下一个工作地点时，他们更愿意选择有以数字货币支付为选项的雇主。',
+            'PLUSTOKEN今日宣布，PLUSTOKEN智能钱包实验室技术团队正式进驻韩国区块链试点特区济州岛，在济州岛成立研发中心，致力于区块链技术在跨境支付、数字货币支付、交易平台、资产安全、游戏等领域的应用。据悉，接下来PLUSTOKEN将联合PLUSTOKEN新加坡基金会、PLUSTOKEN美国基金会，共同推动PLUS在全球跨境支付、数字货币存储、数字资产支付、游戏等领域的发展。',
  'create_time': '22:19',
- 'title': '人力资源公司Chronobank：66％的数字货币爱好者愿意接受数字货币工资'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据bitcoinmagazine消息，9月12日OKCoin宣布，该公司将在美国20个州提供币币交易。',
- 'create_time': '22:11',
- 'title': 'OKCoin宣布将在美国20个州提供币币交易'}
-{'content': '\n据bitcoinmagazine消息，9月12日OKCoin宣布，该公司将在美国20个州提供币币交易。',
- 'create_time': '22:11',
- 'title': 'OKCoin宣布将在美国20个州提供币币交易'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Insideworldfootball消息，巴西足球俱乐部AvaiFutebolClube计划推出自己的数字货币，其初始硬币发行（ICO）目标筹集到2000万美元的资金。其联合创始人MarkoFilej表示：“通过这次ICO，将开启了足球和体育产业的新篇章。代币持有者将能够通过代币购买商品、门票和独特的体验。“',
- 'create_time': '21:56',
- 'title': '巴西足球俱乐部推出自己的数字货币'}
+ 'title': 'PLUSTOKEN实验室进驻济州岛'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据ethnews消息，近日Ambrosus的首席执行官AngelVersetti表示：区块链提供了一个先例，制药公司可以透明地证明他们制造的阿片类药物的数量，分销的地点，以及是否有足够的需求。将来，作为全部范围的区块链变得更加明白，政府可以要求制药公司与法律当局和公众分享所有这些信息。',
+ 'create_time': '21:48',
+ 'title': 'Ambrosus首席执行官：区块链可加强对管制药品流通监控'}
 {'content': '\n'
-            '据Insideworldfootball消息，巴西足球俱乐部AvaiFutebolClube计划推出自己的数字货币，其初始硬币发行（ICO）目标筹集到2000万美元的资金。其联合创始人MarkoFilej表示：“通过这次ICO，将开启了足球和体育产业的新篇章。代币持有者将能够通过代币购买商品、门票和独特的体验。“',
- 'create_time': '21:56',
- 'title': '巴西足球俱乐部推出自己的数字货币'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '福布斯分析师JosephYoung今日发推特称，本周是加密行业最好的一周，花旗银行、双子星、欧盟委员会、纳斯达克的行动表明加密行业的发展并不只局限于价格涨跌。赵长鹏稍后评论称，数字货币的价格迟早会追上行业发展的脚步，最美妙的是你提前意识到这一点并且看着它发生在你身上。',
- 'create_time': '21:53',
- 'title': '赵长鹏：数字货币的价格会追上行业发展的脚步'}
+            '据ethnews消息，近日Ambrosus的首席执行官AngelVersetti表示：区块链提供了一个先例，制药公司可以透明地证明他们制造的阿片类药物的数量，分销的地点，以及是否有足够的需求。将来，作为全部范围的区块链变得更加明白，政府可以要求制药公司与法律当局和公众分享所有这些信息。',
+ 'create_time': '21:48',
+ 'title': 'Ambrosus首席执行官：区块链可加强对管制药品流通监控'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'GSENetwork（GSE）今日宣布推出GSEWallet公测版，进一步完善其去中心化共享经济全生态平台。GSEWallet支持包括GSEtoken在内的所有ERC-20token的存储和转账。',
+ 'create_time': '21:15',
+ 'title': 'GSENetwork推出GSE Wallet公测版'}
 {'content': '\n'
-            '福布斯分析师JosephYoung今日发推特称，本周是加密行业最好的一周，花旗银行、双子星、欧盟委员会、纳斯达克的行动表明加密行业的发展并不只局限于价格涨跌。赵长鹏稍后评论称，数字货币的价格迟早会追上行业发展的脚步，最美妙的是你提前意识到这一点并且看着它发生在你身上。',
- 'create_time': '21:53',
- 'title': '赵长鹏：数字货币的价格会追上行业发展的脚步'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据经济观察网报道，财政部副部长廖岷表示，如果说云计算、大数据、移动金融等技术带来的是金融上层应用和业务流程的创新，区块链技术却可能对银行商业模式的底层技术基础上产生颠覆性影响。目前金融服务各流程环节存在的效率瓶颈、交易时滞和操作风险等痛点，大多数有望借助区块链技术得到缓解或解决。',
- 'create_time': '21:51',
- 'title': '中国副财长参与著作：区块链技术可能对银行商业模式的底层技术基础产生颠覆性影响'}
+            'GSENetwork（GSE）今日宣布推出GSEWallet公测版，进一步完善其去中心化共享经济全生态平台。GSEWallet支持包括GSEtoken在内的所有ERC-20token的存储和转账。',
+ 'create_time': '21:15',
+ 'title': 'GSENetwork推出GSE Wallet公测版'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n币圈信息繁杂，币世界为您整理了最全的币种利好、利空消息，欢迎阅读9月29日的《利好&利空》。',
+ 'create_time': '21:15',
+ 'title': '利好利空：BTC期货空头减145手 漏洞损失11万EOS'}
+{'content': '\n币圈信息繁杂，币世界为您整理了最全的币种利好、利空消息，欢迎阅读9月29日的《利好&利空》。',
+ 'create_time': '21:15',
+ 'title': '利好利空：BTC期货空头减145手 漏洞损失11万EOS'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据俄罗斯卫星通讯社消息，中俄经济类大学联盟年会举行，期间，中俄高校与会代表将对国际政治和贸易、神经技术、大数据、虚拟现实、网络安全、数字货币等领域相关问题的联合解决方案进行探讨。',
+ 'create_time': '20:40',
+ 'title': '中俄经济类大学联盟年会举行 将商讨数字货币等相关问题'}
 {'content': '\n'
-            '据经济观察网报道，财政部副部长廖岷表示，如果说云计算、大数据、移动金融等技术带来的是金融上层应用和业务流程的创新，区块链技术却可能对银行商业模式的底层技术基础上产生颠覆性影响。目前金融服务各流程环节存在的效率瓶颈、交易时滞和操作风险等痛点，大多数有望借助区块链技术得到缓解或解决。',
- 'create_time': '21:51',
- 'title': '中国副财长参与著作：区块链技术可能对银行商业模式的底层技术基础产生颠覆性影响'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据中国金融杂志报道，中国平安财产保险股份有限公司董事长兼CEO孙建平发文表示，公司项目引入人工智能等高科技手段提升项目管理水平，通过智能认知、人工智能、区块链、云科技这四大核心科技的引入，优化扶贫项目服务水平，保障产业扶贫精准到户，提升扶贫工作效率。',
- 'create_time': '21:43',
- 'title': '中国平安：引入区块链等技术优化扶贫项目服务水平'}
+            '据俄罗斯卫星通讯社消息，中俄经济类大学联盟年会举行，期间，中俄高校与会代表将对国际政治和贸易、神经技术、大数据、虚拟现实、网络安全、数字货币等领域相关问题的联合解决方案进行探讨。',
+ 'create_time': '20:40',
+ 'title': '中俄经济类大学联盟年会举行 将商讨数字货币等相关问题'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据gateio官方公告，继推出wallet.io全币种钱包后，为满足用户多元化交易需求，正式上线杠杆交易理财专区。据介绍，杠杆交易理财专区分为杠杆交易、杠杆借入、理财借出三部分，gate.io平台不作为对手盘参与任何放贷和借贷行为，只为用户提供撮合服务，所有借入和借出行为均在用户之间发生。',
+ 'create_time': '20:09',
+ 'title': 'gate.io上线杠杆交易理财专区'}
 {'content': '\n'
-            '据中国金融杂志报道，中国平安财产保险股份有限公司董事长兼CEO孙建平发文表示，公司项目引入人工智能等高科技手段提升项目管理水平，通过智能认知、人工智能、区块链、云科技这四大核心科技的引入，优化扶贫项目服务水平，保障产业扶贫精准到户，提升扶贫工作效率。',
- 'create_time': '21:43',
- 'title': '中国平安：引入区块链等技术优化扶贫项目服务水平'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据FinanceMagnates消息，JuliusBaer集团正在推出其首款数字货币产品，公司文件表明资产管理人正在使用BlockAssetManagement来协助其产品发布。该公司之前曾贬低数字货币投资。',
- 'create_time': '21:37',
- 'title': 'Julius Baer将推出数字货币产品'}
+            '据gateio官方公告，继推出wallet.io全币种钱包后，为满足用户多元化交易需求，正式上线杠杆交易理财专区。据介绍，杠杆交易理财专区分为杠杆交易、杠杆借入、理财借出三部分，gate.io平台不作为对手盘参与任何放贷和借贷行为，只为用户提供撮合服务，所有借入和借出行为均在用户之间发生。',
+ 'create_time': '20:09',
+ 'title': 'gate.io上线杠杆交易理财专区'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '调研链InsightChain（INB）发布央视首次报道火币国内业务进展的热点调研结果。本次在InsightDApp内共收集有效问卷300份，51%的投资者认为该消息是短暂利好，将会使大盘短期回暖；26.3%的投资者认为会提振大盘行情。另有54%的人表示通过央视扩大知名度后，将促使更多人投身区块链行业。此外，认为此举代表监管政策放宽与否的比例基本持平，分别为35.3%和37.3%。',
+ 'create_time': '19:56',
+ 'title': 'Insight Chain热点调研：央视首次报道火币国内业务进展，近五成投资者认为将会使大盘短期回暖'}
 {'content': '\n'
-            '据FinanceMagnates消息，JuliusBaer集团正在推出其首款数字货币产品，公司文件表明资产管理人正在使用BlockAssetManagement来协助其产品发布。该公司之前曾贬低数字货币投资。',
- 'create_time': '21:37',
- 'title': 'Julius Baer将推出数字货币产品'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据globenewswire消息，美国SeedCX数字货币交易所宣布B轮融资1500万美元，贝恩资本（BainCapitalVentures）领投。SeedCX是首家专为机构投资者而设的持牌数字货币交易所，提供现货交易和美国期货交易委员会监管的衍生品交易。',
- 'create_time': '21:28',
- 'title': 'Seed CX 获1500万美元B轮投资 贝恩资本领投'}
+            '调研链InsightChain（INB）发布央视首次报道火币国内业务进展的热点调研结果。本次在InsightDApp内共收集有效问卷300份，51%的投资者认为该消息是短暂利好，将会使大盘短期回暖；26.3%的投资者认为会提振大盘行情。另有54%的人表示通过央视扩大知名度后，将促使更多人投身区块链行业。此外，认为此举代表监管政策放宽与否的比例基本持平，分别为35.3%和37.3%。',
+ 'create_time': '19:56',
+ 'title': 'Insight Chain热点调研：央视首次报道火币国内业务进展，近五成投资者认为将会使大盘短期回暖'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据火币官方公告，火币全球站支持SMT的主网切换，并建议用户提前将SMT充值到火币。',
+ 'create_time': '19:41',
+ 'title': '火币支持SMT主网切换'}
+{'content': '\n据火币官方公告，火币全球站支持SMT的主网切换，并建议用户提前将SMT充值到火币。',
+ 'create_time': '19:41',
+ 'title': '火币支持SMT主网切换'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据IMEOS报道，BM刚刚在URI电报群发表了几段消息，他表示，URI是志愿社区的和平条约，每个社区都有它自己极力捍卫的价值观。那些不以这些价值观并破坏和平条约的人将没有资格获得URI。如果人们不明白其道德准则，任何和平条约都不成立。不接受和平条约准则的人会拿着不劳而获的钱去资助战争或者其他东西。我们需要记载和明确最低可行道德准则，不容质疑的，落地实行的。区块链的意义在于诚实，正直和智能合约的客观理性。让人们信守他们的加密诺言和明白客观历史。',
+ 'create_time': '19:32',
+ 'title': 'BM：区块链的意义在于诚实 正直和智能合约的客观理性'}
 {'content': '\n'
-            '据globenewswire消息，美国SeedCX数字货币交易所宣布B轮融资1500万美元，贝恩资本（BainCapitalVentures）领投。SeedCX是首家专为机构投资者而设的持牌数字货币交易所，提供现货交易和美国期货交易委员会监管的衍生品交易。',
- 'create_time': '21:28',
- 'title': 'Seed CX 获1500万美元B轮投资 贝恩资本领投'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Coindesk消息，继Paxos和Gemini都发布了与美元挂钩的稳定币之后，数字货币项目Carbon宣布将发布一款基于以太坊的稳定币“CarbonUSD”。从周三开始，将向机构账户、对冲基金、交易员和交易所开放，目前正积极寻求CarbonUSD在交易所上线。在4月份，Carbon曾获得200万美元的种子基金。',
- 'create_time': '21:22',
- 'title': 'Carbon宣布将发布基于以太坊的稳定币“CarbonUSD”'}
+            '据IMEOS报道，BM刚刚在URI电报群发表了几段消息，他表示，URI是志愿社区的和平条约，每个社区都有它自己极力捍卫的价值观。那些不以这些价值观并破坏和平条约的人将没有资格获得URI。如果人们不明白其道德准则，任何和平条约都不成立。不接受和平条约准则的人会拿着不劳而获的钱去资助战争或者其他东西。我们需要记载和明确最低可行道德准则，不容质疑的，落地实行的。区块链的意义在于诚实，正直和智能合约的客观理性。让人们信守他们的加密诺言和明白客观历史。',
+ 'create_time': '19:32',
+ 'title': 'BM：区块链的意义在于诚实 正直和智能合约的客观理性'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '日前，在联合国创新金融署组织的“加密数字货币&区块链”区块链专题讨论会上，金丘区块链创始人及CEO左鹏表示：“区块链新经济应该从政府、金融机构、大型企业、中小企业和个人五个层面出发，重构新的生产关系，提供区块链解决方案和落地实践。在区块链技术的应用上，可以从两个层面去服务中小微企业：一是融资功能；二是赋能中小企业的商业本身。金丘区块链把赋能中小微企业SME区块链化，构建面向SME的新型区块链商业当为重要的战略，未来区块链应该绿色、普惠、高产和可持续发展，让山区的年轻人和中小微企业都能拥有使用区块链获得更好发展的机遇。”',
+ 'create_time': '19:03',
+ 'title': '金丘区块链创始人及CEO左鹏：区块链新经济应该从政府、金融机构、大型企业、中小企业和个人五个层面出发'}
 {'content': '\n'
-            '据Coindesk消息，继Paxos和Gemini都发布了与美元挂钩的稳定币之后，数字货币项目Carbon宣布将发布一款基于以太坊的稳定币“CarbonUSD”。从周三开始，将向机构账户、对冲基金、交易员和交易所开放，目前正积极寻求CarbonUSD在交易所上线。在4月份，Carbon曾获得200万美元的种子基金。',
- 'create_time': '21:22',
- 'title': 'Carbon宣布将发布基于以太坊的稳定币“CarbonUSD”'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'nChain首席科学家CraigWright刚刚发推特称，价值大小并不取决于筹集的资金量多少，而取决于是否创造了新的财富。目前的ICO浪费了大量资金却没有创造任何财富。',
- 'create_time': '21:16',
- 'title': 'nChain首席科学家CSW：ICO浪费资金却没有创造任何财富'}
+            '日前，在联合国创新金融署组织的“加密数字货币&区块链”区块链专题讨论会上，金丘区块链创始人及CEO左鹏表示：“区块链新经济应该从政府、金融机构、大型企业、中小企业和个人五个层面出发，重构新的生产关系，提供区块链解决方案和落地实践。在区块链技术的应用上，可以从两个层面去服务中小微企业：一是融资功能；二是赋能中小企业的商业本身。金丘区块链把赋能中小微企业SME区块链化，构建面向SME的新型区块链商业当为重要的战略，未来区块链应该绿色、普惠、高产和可持续发展，让山区的年轻人和中小微企业都能拥有使用区块链获得更好发展的机遇。”',
+ 'create_time': '19:03',
+ 'title': '金丘区块链创始人及CEO左鹏：区块链新经济应该从政府、金融机构、大型企业、中小企业和个人五个层面出发'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日19:00，龙珠大陆在币世界“币圈”将狂撒第2个糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“龙珠大陆”点击红包即可领到，数量有限，先到先得！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '18:50',
+ 'title': '龙珠大陆在币世界“币圈” 狂撒45万个DVC糖果啦！'}
 {'content': '\n'
-            'nChain首席科学家CraigWright刚刚发推特称，价值大小并不取决于筹集的资金量多少，而取决于是否创造了新的财富。目前的ICO浪费了大量资金却没有创造任何财富。',
- 'create_time': '21:16',
- 'title': 'nChain首席科学家CSW：ICO浪费资金却没有创造任何财富'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据TNW消息，汽车制造商宝马公司已经采取进一步措施，宣布用新的启动加速器来明确其区块链战略。其中两个是从区块链初创公司中挑选出来的。这两个基于区块链的提案中的第一个来自Supermoney，它声称为客户提供了一个使用QR码在线或店内购买的平台。第二个来自Bloom，它使用区块链的加密原则来验证客户身份和信用记录。宝马的区块链战略至少在不久的将来会集中在将技术应用于其财务方面。',
- 'create_time': '20:58',
- 'title': '宝马宣布用新的启动加速器明确其区块链战略'}
-{'content': '\n'
-            '据TNW消息，汽车制造商宝马公司已经采取进一步措施，宣布用新的启动加速器来明确其区块链战略。其中两个是从区块链初创公司中挑选出来的。这两个基于区块链的提案中的第一个来自Supermoney，它声称为客户提供了一个使用QR码在线或店内购买的平台。第二个来自Bloom，它使用区块链的加密原则来验证客户身份和信用记录。宝马的区块链战略至少在不久的将来会集中在将技术应用于其财务方面。',
- 'create_time': '20:58',
- 'title': '宝马宣布用新的启动加速器明确其区块链战略'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cryptovest消息，北欧IT业务提供商TietoOyj宣布与R3合作，加速采用基于Corda\xa0'
-            '(R3的开源区块链平台)的下一代分散式商业网络。Tieto将在金融服务、公共部门、供应链等多个生态系统项目中使用Corda。',
- 'create_time': '20:56',
- 'title': '北欧IT业务提供商Tieto Oyj与R3合作 加速分布式商业网络采用'}
-{'content': '\n'
-            '据Cryptovest消息，北欧IT业务提供商TietoOyj宣布与R3合作，加速采用基于Corda\xa0'
-            '(R3的开源区块链平台)的下一代分散式商业网络。Tieto将在金融服务、公共部门、供应链等多个生态系统项目中使用Corda。',
- 'create_time': '20:56',
- 'title': '北欧IT业务提供商Tieto Oyj与R3合作 加速分布式商业网络采用'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据蜂巢财经消息，今日徐明星在接受媒体采访时表示，杠杆交易不适合普通投资者参与，开了杠杆后，盈亏速度都变快了。因为杠杆交易本身就是为专业交易者设计的量化工具，普通人不要轻易去参与。怎么使用杠杆交易，其中有很多学问，它比普通的交易更难，需要更强的专业知识和风控能力的人来使用。',
- 'create_time': '20:49',
- 'title': '徐明星：不建议没有风控能力和专业知识的普通用户参与杠杆交易'}
-{'content': '\n'
-            '据蜂巢财经消息，今日徐明星在接受媒体采访时表示，杠杆交易不适合普通投资者参与，开了杠杆后，盈亏速度都变快了。因为杠杆交易本身就是为专业交易者设计的量化工具，普通人不要轻易去参与。怎么使用杠杆交易，其中有很多学问，它比普通的交易更难，需要更强的专业知识和风控能力的人来使用。',
- 'create_time': '20:49',
- 'title': '徐明星：不建议没有风控能力和专业知识的普通用户参与杠杆交易'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据CoinDesk消息，加拿大软件开发公司DecentralCEODiIorio今日宣布推出数字货币钱包JaxxLiberty。据悉，JaxxLiberty有点类似应用商店，提供一个单一的界面，用户可不必在单个系统之外汇款。',
- 'create_time': '20:47',
- 'title': '加拿大软件开发公司Decentral宣布推出数字货币钱包Jaxx Liberty'}
-{'content': '\n'
-            '据CoinDesk消息，加拿大软件开发公司DecentralCEODiIorio今日宣布推出数字货币钱包JaxxLiberty。据悉，JaxxLiberty有点类似应用商店，提供一个单一的界面，用户可不必在单个系统之外汇款。',
- 'create_time': '20:47',
- 'title': '加拿大软件开发公司Decentral宣布推出数字货币钱包Jaxx Liberty'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Techcentral消息，TNS的一项调查显示，72％的爱尔兰用户将数字货币作为投资，有17％的人声称将其用于在线支付，只有9％用于向朋友和家人付款。BTC是用户中最受欢迎的货币（73％），其次是ETH（39％）。男性更偏向使用BTC，而女性则比较均衡。另外，对于会影响他们使用或购买比特币的因素，32％的受访者表示从能否从可靠的供应商处购买对他们来说是一个重要影响因素。约22％的人表示，政府对数字货币的立场会对他们产生影响。',
- 'create_time': '20:44',
- 'title': 'TNS调查：72％的爱尔兰用户将数字货币作为投资 可靠的供应商是最重要的影响因素'}
-{'content': '\n'
-            '据Techcentral消息，TNS的一项调查显示，72％的爱尔兰用户将数字货币作为投资，有17％的人声称将其用于在线支付，只有9％用于向朋友和家人付款。BTC是用户中最受欢迎的货币（73％），其次是ETH（39％）。男性更偏向使用BTC，而女性则比较均衡。另外，对于会影响他们使用或购买比特币的因素，32％的受访者表示从能否从可靠的供应商处购买对他们来说是一个重要影响因素。约22％的人表示，政府对数字货币的立场会对他们产生影响。',
- 'create_time': '20:44',
- 'title': 'TNS调查：72％的爱尔兰用户将数字货币作为投资 可靠的供应商是最重要的影响因素'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据globenewswire消息，BlockSafe今天宣布推出CryptoDefender™移动应用程序，这是第一个在移动设备上保护数字货币钱包的应用程序。CryptoDefender™通过主动防止键盘记录恶意软件窃取加密钱包登录凭据来实现此目的。此外，CryptoDefender还包括密码保险库，安全浏览器，强密码生成器和符合OATH标准的双因素身份验证令牌。',
- 'create_time': '20:43',
- 'title': 'BlockSafe推出第一个在移动设备上保护数字货币钱包的应用程序CryptoDefender ™'}
-{'content': '\n'
-            '据globenewswire消息，BlockSafe今天宣布推出CryptoDefender™移动应用程序，这是第一个在移动设备上保护数字货币钱包的应用程序。CryptoDefender™通过主动防止键盘记录恶意软件窃取加密钱包登录凭据来实现此目的。此外，CryptoDefender还包括密码保险库，安全浏览器，强密码生成器和符合OATH标准的双因素身份验证令牌。',
- 'create_time': '20:43',
- 'title': 'BlockSafe推出第一个在移动设备上保护数字货币钱包的应用程序CryptoDefender ™'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Thefintechtimes消息，社交即时视频应用程序SVPER宣布，已进一步多元化其在区块链行业的全球合作伙伴网络，并在预售前获得了数字货币交易所LBank和区块链组织DAEX的战略投资。',
- 'create_time': '20:28',
- 'title': '视频应用程序SVPER与数字货币交易所LBank和区块链组织DAEX合作合作'}
-{'content': '\n'
-            '据Thefintechtimes消息，社交即时视频应用程序SVPER宣布，已进一步多元化其在区块链行业的全球合作伙伴网络，并在预售前获得了数字货币交易所LBank和区块链组织DAEX的战略投资。',
- 'create_time': '20:28',
- 'title': '视频应用程序SVPER与数字货币交易所LBank和区块链组织DAEX合作合作'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Cointelegraph消息，伯克利大学经济学教授BarryEichengreen表示，稳定币并非自身具备货币稳定性，而是由于与法定货币挂钩才相较比特币等更稳定。Eichengreen称：“根据代币抵押品的完整性，这些资产可分为三类：完全抵押、部分抵押无抵押，但每一类都有其弱点。稳定币的价值在美元或其他等价物方面是很稳定的，所以它们不仅仅是金融投机的载体，作为账户单位和价值存储也很具有吸引力。但这并不意味着它们就是可行的，并不意味着它就能解决所有的问题。“',
- 'create_time': '20:24',
- 'title': '伯克利大学经济学教授：稳定币并不能解决所有问题'}
-{'content': '\n'
-            '据Cointelegraph消息，伯克利大学经济学教授BarryEichengreen表示，稳定币并非自身具备货币稳定性，而是由于与法定货币挂钩才相较比特币等更稳定。Eichengreen称：“根据代币抵押品的完整性，这些资产可分为三类：完全抵押、部分抵押无抵押，但每一类都有其弱点。稳定币的价值在美元或其他等价物方面是很稳定的，所以它们不仅仅是金融投机的载体，作为账户单位和价值存储也很具有吸引力。但这并不意味着它们就是可行的，并不意味着它就能解决所有的问题。“',
- 'create_time': '20:24',
- 'title': '伯克利大学经济学教授：稳定币并不能解决所有问题'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '针对目前区块链真正落地应用较少的现象，重庆市渝中区经信委党委副书记罗林今日在北京表示，重庆在应用落地这方面要先行先试。首先让农产品溯源的企业都要上到重庆市区域平台这条链上。另外，在建设知识产权，还有养老产业，中小企业价值贷款试点等领域开放应用场景，让企业去先行先试。对于中小企业融资难，融资贵的问题也会尝试用区块链技术进行改造。',
- 'create_time': '20:04',
- 'title': '重庆罗林：重庆在区块链应用落地方面要先行先试'}
-{'content': '\n'
-            '针对目前区块链真正落地应用较少的现象，重庆市渝中区经信委党委副书记罗林今日在北京表示，重庆在应用落地这方面要先行先试。首先让农产品溯源的企业都要上到重庆市区域平台这条链上。另外，在建设知识产权，还有养老产业，中小企业价值贷款试点等领域开放应用场景，让企业去先行先试。对于中小企业融资难，融资贵的问题也会尝试用区块链技术进行改造。',
- 'create_time': '20:04',
- 'title': '重庆罗林：重庆在区块链应用落地方面要先行先试'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'IEEE区块链协会主席RameshRamadoss与MATRIX中国研究院近日就区块链标准制定达成合作并进行深入交流。双方表示会协同推进MATRIX与IEEE区块链协会双方资源整合。IEEE区块链协会主席表示希望与MATRIX围绕区块链行业标准，在物联网、供应链、金融结算领域展开交流和互动。',
- 'create_time': '19:59',
- 'title': 'IEEE区块链协会与MATRIX中国研究院就区块链标准制定达成合作'}
-{'content': '\n'
-            'IEEE区块链协会主席RameshRamadoss与MATRIX中国研究院近日就区块链标准制定达成合作并进行深入交流。双方表示会协同推进MATRIX与IEEE区块链协会双方资源整合。IEEE区块链协会主席表示希望与MATRIX围绕区块链行业标准，在物联网、供应链、金融结算领域展开交流和互动。',
- 'create_time': '19:59',
- 'title': 'IEEE区块链协会与MATRIX中国研究院就区块链标准制定达成合作'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据DigiFinex交易所官方公告，于今日10:00至9月19日10：00期间开启为期一周的“NEO全球首次交易排行赛，赢1000个NEO”活动。NEO交易排行前20名且总交易量大于1500个NEO的用户，可瓜分590个NEO奖励。',
- 'create_time': '19:54',
- 'title': 'DigiFinex交易所今日开启“NEO全球首次交易排行赛”'}
-{'content': '\n'
-            '据DigiFinex交易所官方公告，于今日10:00至9月19日10：00期间开启为期一周的“NEO全球首次交易排行赛，赢1000个NEO”活动。NEO交易排行前20名且总交易量大于1500个NEO的用户，可瓜分590个NEO奖励。',
- 'create_time': '19:54',
- 'title': 'DigiFinex交易所今日开启“NEO全球首次交易排行赛”'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据newswire消息，瑞波风投(RippleVentures)今天宣布封闭其首支1000万美元的早期技术风投基金，并为投资组合公司开放其多伦多的新孵化空间“Tank”。这支基金将投资OnCallHealth和TreadTechnologies等项目。',
- 'create_time': '19:45',
- 'title': '瑞波风投封闭首支基金 并为投资组合公司开放孵化空间'}
-{'content': '\n'
-            '据newswire消息，瑞波风投(RippleVentures)今天宣布封闭其首支1000万美元的早期技术风投基金，并为投资组合公司开放其多伦多的新孵化空间“Tank”。这支基金将投资OnCallHealth和TreadTechnologies等项目。',
- 'create_time': '19:45',
- 'title': '瑞波风投封闭首支基金 并为投资组合公司开放孵化空间'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据Ambcrypto消息，美国金牌记者Andrew\xa0Ross\xa0'
-            'Sorkin近日接受CNN采访时表示，比特币崛起的背景是人们对央行及精英阶层的信任正在削减。',
- 'create_time': '19:43',
- 'title': '美国金牌记者：比特币崛起的背景是人们对央行及精英阶层的信任削减'}
-{'content': '\n'
-            '据Ambcrypto消息，美国金牌记者Andrew\xa0Ross\xa0'
-            'Sorkin近日接受CNN采访时表示，比特币崛起的背景是人们对央行及精英阶层的信任正在削减。',
- 'create_time': '19:43',
- 'title': '美国金牌记者：比特币崛起的背景是人们对央行及精英阶层的信任削减'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据crypto-news消息，印度最高法院再度推迟听取数字货币禁令的相关请愿，宣布于明日召开听证会。印度最高法院昨日（9月11日）曾宣布延期至今日举行听证会。',
- 'create_time': '19:40',
- 'title': '印度最高法院再度推迟听取数字货币禁令的相关请愿'}
-{'content': '\n'
-            '据crypto-news消息，印度最高法院再度推迟听取数字货币禁令的相关请愿，宣布于明日召开听证会。印度最高法院昨日（9月11日）曾宣布延期至今日举行听证会。',
- 'create_time': '19:40',
- 'title': '印度最高法院再度推迟听取数字货币禁令的相关请愿'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据newsbtc消息，一家名为AliveCasino的公司为玩家提供了使用VR技术进行赌博的区块链平台。AliveEntertainmentCompany总部位于哥斯达黎加，是第一家使用VR技术提供游戏的公司。',
- 'create_time': '19:37',
- 'title': 'Alive Casino将提供区块链VR在线赌博体验'}
-{'content': '\n'
-            '据newsbtc消息，一家名为AliveCasino的公司为玩家提供了使用VR技术进行赌博的区块链平台。AliveEntertainmentCompany总部位于哥斯达黎加，是第一家使用VR技术提供游戏的公司。',
- 'create_time': '19:37',
- 'title': 'Alive Casino将提供区块链VR在线赌博体验'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '加密研究公司Diar指出，数字货币的设计和表现可能使其不适合替代法定货币，尤其是在经济和金融动荡时期。据数据显示，包括莱特币和DASH在内的许多数字货币都受到供应膨胀或购买力大幅下降的影响。TNW也指出，当考虑到Token的年平均值时，大多数Token在对抗通货膨胀方面都相当无用。',
- 'create_time': '19:08',
- 'title': '加密研究公司Diar：经济不稳定期的数字货币并不是法币的合适替代品'}
-{'content': '\n'
-            '加密研究公司Diar指出，数字货币的设计和表现可能使其不适合替代法定货币，尤其是在经济和金融动荡时期。据数据显示，包括莱特币和DASH在内的许多数字货币都受到供应膨胀或购买力大幅下降的影响。TNW也指出，当考虑到Token的年平均值时，大多数Token在对抗通货膨胀方面都相当无用。',
- 'create_time': '19:08',
- 'title': '加密研究公司Diar：经济不稳定期的数字货币并不是法币的合适替代品'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据greentechmedia消息，美国加州地区的太平洋瓦电公司（PG&E）在其后端的计数工具中试点区块链技术。一个是钢卷筒溯源项目，使用区块链来追踪钢卷筒在架空电缆上的保管链。另一个是与宝马合作，利用区块链技术追踪汽车充电时的排放情况，给电动汽车驾驶员计算“碳信用”。',
- 'create_time': '18:58',
- 'title': '太平洋瓦电公司正在其后端的计数工具中试点区块链技术'}
-{'content': '\n'
-            '据greentechmedia消息，美国加州地区的太平洋瓦电公司（PG&E）在其后端的计数工具中试点区块链技术。一个是钢卷筒溯源项目，使用区块链来追踪钢卷筒在架空电缆上的保管链。另一个是与宝马合作，利用区块链技术追踪汽车充电时的排放情况，给电动汽车驾驶员计算“碳信用”。',
- 'create_time': '18:58',
- 'title': '太平洋瓦电公司正在其后端的计数工具中试点区块链技术'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'Ankr项目公众号日前被封停，或与日前宣传、举办北京清华大学、上海同济大学两场MeetUp有关。针对被封事件Ankr官方回应，目前正在申诉中。',
+            '今日19:00，龙珠大陆在币世界“币圈”将狂撒第2个糖果红包，想要领糖果快更新下载最新币世界APP，到币圈关注“龙珠大陆”点击红包即可领到，数量有限，先到先得！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '18:50',
+ 'title': '龙珠大陆在币世界“币圈” 狂撒45万个DVC糖果啦！'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据新京报报道，中华遗嘱库管委会主任陈凯近日表示，“今后，凡在中华遗嘱库进行遗嘱登记以及保管业务，所有电子证据保全及认证证书、数字证书、可信时间戳证书都将实时上传司法电子证据云，将遗嘱保管在遗嘱库将更加安全”。',
  'create_time': '18:42',
- 'title': '项目方AnkrNetwork公众号被封 官方回应正在申诉中'}
+ 'title': '为遗嘱加装“安全锁”，中华遗嘱库用上司法区块链'}
 {'content': '\n'
-            'Ankr项目公众号日前被封停，或与日前宣传、举办北京清华大学、上海同济大学两场MeetUp有关。针对被封事件Ankr官方回应，目前正在申诉中。',
+            '据新京报报道，中华遗嘱库管委会主任陈凯近日表示，“今后，凡在中华遗嘱库进行遗嘱登记以及保管业务，所有电子证据保全及认证证书、数字证书、可信时间戳证书都将实时上传司法电子证据云，将遗嘱保管在遗嘱库将更加安全”。',
  'create_time': '18:42',
- 'title': '项目方AnkrNetwork公众号被封 官方回应正在申诉中'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '美国政府执法辩护律师Jakechervinsky发推文称，9月11美国司法部审判ICO欺诈案、美国证券交易委员会（SEC）及美国金融业监管局（FINRA）对交易所违规行为进行指控，这一系列案件表明政府对加密行业的清整步伐正在加速，清整工作会从市值较小的数字货币开始。',
- 'create_time': '18:38',
- 'title': '美国政府执法辩护律师：美国政府正在加速清整加密行业'}
+ 'title': '为遗嘱加装“安全锁”，中华遗嘱库用上司法区块链'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '金融市场，只要进入到熊市阶段，场内人气涣散是必然的趋势。比特币经历9个月的漫长调整后，波动强度达到一年来最低值，做空和做多投资者都没有足够的交易空间，这就是悲惨之处。',
+ 'create_time': '18:39',
+ 'title': '币行情：打不死的小强比特币 会死在波动减弱上？'}
 {'content': '\n'
-            '美国政府执法辩护律师Jakechervinsky发推文称，9月11美国司法部审判ICO欺诈案、美国证券交易委员会（SEC）及美国金融业监管局（FINRA）对交易所违规行为进行指控，这一系列案件表明政府对加密行业的清整步伐正在加速，清整工作会从市值较小的数字货币开始。',
- 'create_time': '18:38',
- 'title': '美国政府执法辩护律师：美国政府正在加速清整加密行业'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '阿布扎比港口MaqtaGateway的首席执行官NouraAlDhaheri接受媒体采访时称：“当Silsal被提供给进口商、出口商和货运代理商时，我们估计每年进行50,000次运输的进口商将节省约320万迪拉姆。”Silsal目前处于POC（概念验证）阶段，并已与阿布扎比港口的客户进行现场测试。',
- 'create_time': '18:33',
- 'title': '阿布扎比港口CEO ：阿联酋货运代理商每年通过区块链节省320万迪拉姆'}
+            '金融市场，只要进入到熊市阶段，场内人气涣散是必然的趋势。比特币经历9个月的漫长调整后，波动强度达到一年来最低值，做空和做多投资者都没有足够的交易空间，这就是悲惨之处。',
+ 'create_time': '18:39',
+ 'title': '币行情：打不死的小强比特币 会死在波动减弱上？'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '在刚刚结束的核心开发者会议中，开发者决定在十月第二周（大约是10月9号中午），待以太坊测试链Ropsten区块高度达到420万的时候进行升级。本次升级还需要经历大约3周的测试，预计将在11月初正式完成。所有主要的客户端都已经完成君士坦丁堡的部署，只需等待最后一步，即将以太坊发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '18:12',
+ 'title': '更正：以太坊测试链Ropsten将于10月第二周进行升级实验，或在11月初完成'}
 {'content': '\n'
-            '阿布扎比港口MaqtaGateway的首席执行官NouraAlDhaheri接受媒体采访时称：“当Silsal被提供给进口商、出口商和货运代理商时，我们估计每年进行50,000次运输的进口商将节省约320万迪拉姆。”Silsal目前处于POC（概念验证）阶段，并已与阿布扎比港口的客户进行现场测试。',
- 'create_time': '18:33',
- 'title': '阿布扎比港口CEO ：阿联酋货运代理商每年通过区块链节省320万迪拉姆'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n据火币全球专业站，火币现已恢复EOS充提业务，及ADD和IQ提币业务。',
- 'create_time': '18:16',
- 'title': '火币现已恢复EOS充提业务'}
-{'content': '\n据火币全球专业站，火币现已恢复EOS充提业务，及ADD和IQ提币业务。',
- 'create_time': '18:16',
- 'title': '火币现已恢复EOS充提业务'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'MXC抹茶交易所已上线C2C交易业务，旨在满足用户兑换数字资产的需求。此外，其OTC商家全球招募计划仍在进行中，MXC创世OTC商家可享零广告发布费优惠。',
- 'create_time': '18:13',
- 'title': 'MXC上线C2C交易业务'}
+            '在刚刚结束的核心开发者会议中，开发者决定在十月第二周（大约是10月9号中午），待以太坊测试链Ropsten区块高度达到420万的时候进行升级。本次升级还需要经历大约3周的测试，预计将在11月初正式完成。所有主要的客户端都已经完成君士坦丁堡的部署，只需等待最后一步，即将以太坊发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '18:12',
+ 'title': '更正：以太坊测试链Ropsten将于10月第二周进行升级实验，或在11月初完成'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '趣币网Qubi推出首个区块链阅后即焚模式的web聊天工具Qchat，包含世界聊天和公会聊天板块，所有聊天记录阅后即焚，不做任何存储。Qubi官方表示，该工具旨在保护聊天私密性，让用户放心使用。',
+ 'create_time': '18:00',
+ 'title': '趣币网Qubi推出首个区块链阅后即焚模式聊天工具Qchat'}
 {'content': '\n'
-            'MXC抹茶交易所已上线C2C交易业务，旨在满足用户兑换数字资产的需求。此外，其OTC商家全球招募计划仍在进行中，MXC创世OTC商家可享零广告发布费优惠。',
- 'create_time': '18:13',
- 'title': 'MXC上线C2C交易业务'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '调研链InsightChain（INB）发布徐明星疑涉数字货币欺诈被传唤的热点调研结果。本次在InsightDApp内共收集有效问卷100份，65%的投资者认为，此举将引发一轮对数字货币交易所的整顿；36%的投资者认为风波过后，OKEx仍会是一线交易所。对于OKEx在本轮BTC暴跌之际频出故障，51%的人认为OKEx有故意操纵嫌疑；29%的人认为是由于当时用户过多，造成服务器堵塞。',
- 'create_time': '18:03',
- 'title': 'Insight Chain热点调研：徐明星疑涉数字货币欺诈 近七成投资者认为将引发交易所整顿潮'}
+            '趣币网Qubi推出首个区块链阅后即焚模式的web聊天工具Qchat，包含世界聊天和公会聊天板块，所有聊天记录阅后即焚，不做任何存储。Qubi官方表示，该工具旨在保护聊天私密性，让用户放心使用。',
+ 'create_time': '18:00',
+ 'title': '趣币网Qubi推出首个区块链阅后即焚模式聊天工具Qchat'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Fcoin官方公告，Fone交易区目前已开放摩尔MOL(Molecule)充值业务，将于今日20:00开放MOL/ETH、MOL/USDT交易对。摩尔作为DAG公有链，目前已开发出一键发行资产功能，四季度将聚焦海外扩张与生态落地。据其官方数据，自摩尔主网1.0上线以来，已拥有10.6万活跃主网钱包用户及20万摩尔社区。',
+ 'create_time': '17:49',
+ 'title': '摩尔MOL将于今日20:00上线Fcoin'}
 {'content': '\n'
-            '调研链InsightChain（INB）发布徐明星疑涉数字货币欺诈被传唤的热点调研结果。本次在InsightDApp内共收集有效问卷100份，65%的投资者认为，此举将引发一轮对数字货币交易所的整顿；36%的投资者认为风波过后，OKEx仍会是一线交易所。对于OKEx在本轮BTC暴跌之际频出故障，51%的人认为OKEx有故意操纵嫌疑；29%的人认为是由于当时用户过多，造成服务器堵塞。',
- 'create_time': '18:03',
- 'title': 'Insight Chain热点调研：徐明星疑涉数字货币欺诈 近七成投资者认为将引发交易所整顿潮'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据ibsintelligence消息，马耳他的三项区块链法将于2018年11月1日生效。这些法案已得到国家议会的一致批准，但他们将于2018年11月1日正式开始对该行业进行监管。截至11月1日，潜在的许可证持有者和发行人将根据新的“虚拟金融资产法”正式开始运营。在此之前，VFA服务提供商（包括加密货币交易所以及ICO发行人）可能会开始以不受管制的方式提供服务，这不构成违法行为。随后，VFA服务提供商将在此后的一年内遵守MFSA颁布的法律和适用法规。',
- 'create_time': '18:02',
- 'title': '马耳他三项区块链法案将于2018年11月1日生效'}
+            '据Fcoin官方公告，Fone交易区目前已开放摩尔MOL(Molecule)充值业务，将于今日20:00开放MOL/ETH、MOL/USDT交易对。摩尔作为DAG公有链，目前已开发出一键发行资产功能，四季度将聚焦海外扩张与生态落地。据其官方数据，自摩尔主网1.0上线以来，已拥有10.6万活跃主网钱包用户及20万摩尔社区。',
+ 'create_time': '17:49',
+ 'title': '摩尔MOL将于今日20:00上线Fcoin'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今天，在加密与区块链2.0大会(C.A.B)上，MBAex首席市场总监黄明辉（Manfred）与MSOGO业务关系经理JerryHang签署合作备忘录。MSOGO将与MBAex的孵化器项目M.O.B.C.合作，对海内外使用区块链技术的初创企业与传统企业提供技术、人力、资金等资源帮助。黄明辉与JerryHang均表示，区块链技术不仅能帮助到新兴创业界，更能有助于传统业务的发展。',
+ 'create_time': '17:26',
+ 'title': 'MBAex和MSOGO签署合作备忘录'}
 {'content': '\n'
-            '据ibsintelligence消息，马耳他的三项区块链法将于2018年11月1日生效。这些法案已得到国家议会的一致批准，但他们将于2018年11月1日正式开始对该行业进行监管。截至11月1日，潜在的许可证持有者和发行人将根据新的“虚拟金融资产法”正式开始运营。在此之前，VFA服务提供商（包括加密货币交易所以及ICO发行人）可能会开始以不受管制的方式提供服务，这不构成违法行为。随后，VFA服务提供商将在此后的一年内遵守MFSA颁布的法律和适用法规。',
- 'create_time': '18:02',
- 'title': '马耳他三项区块链法案将于2018年11月1日生效'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据ethereumworldnews消息，金融服务应用程序开发公司Humaniq近日在由TechCrunch主办的2018年度最具突破性初创企业竞赛中获得冠军。TechCrunch称该公司获胜的理由是他们生产的基于区块链技术的移动应用程序在新兴经济体内提供新的金融服务形式，为全球无银行账户的用户提供服务。并且目前已有22个非洲国家采用了这款应用程序。',
- 'create_time': '17:59',
- 'title': 'TechCrunch举办加密行业初创公司竞赛 金融服务应用程序公司Humaniq胜出 '}
+            '今天，在加密与区块链2.0大会(C.A.B)上，MBAex首席市场总监黄明辉（Manfred）与MSOGO业务关系经理JerryHang签署合作备忘录。MSOGO将与MBAex的孵化器项目M.O.B.C.合作，对海内外使用区块链技术的初创企业与传统企业提供技术、人力、资金等资源帮助。黄明辉与JerryHang均表示，区块链技术不仅能帮助到新兴创业界，更能有助于传统业务的发展。',
+ 'create_time': '17:26',
+ 'title': 'MBAex和MSOGO签署合作备忘录'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据IMEOS报道，Everipedia官方电报群发布公告称，决定完全取消交易费用，直到收到社区的进一步反馈和通知。费用最初目的是支持资源消耗开销，通过交易所收取，直到目前还没有实行。因此计划暂时搁置收费功能，直到有新的解决方案，或者社区投票支持该功能。去除该功能的合约代码将会在接下来几天完成测试之后实施。从此时开始收取的费用将会被从流通中燃烧掉，并且不会流向公司，团队成员，或者任何其他实体。燃烧之后将会减少IQ总的流通供应，并且也会给IQ通证的持有者带来一定的价值回归。',
+ 'create_time': '17:20',
+ 'title': 'Everipedia 将取消 IQ 交易费用'}
 {'content': '\n'
-            '据ethereumworldnews消息，金融服务应用程序开发公司Humaniq近日在由TechCrunch主办的2018年度最具突破性初创企业竞赛中获得冠军。TechCrunch称该公司获胜的理由是他们生产的基于区块链技术的移动应用程序在新兴经济体内提供新的金融服务形式，为全球无银行账户的用户提供服务。并且目前已有22个非洲国家采用了这款应用程序。',
- 'create_time': '17:59',
- 'title': 'TechCrunch举办加密行业初创公司竞赛 金融服务应用程序公司Humaniq胜出 '}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据中国证券网报道，在9月12日召开的2017年度银行科技发展奖评审领导小组会议上，数字货币研究所的《法定数字货币模型与参考架构设计》项目荣获一等奖。',
- 'create_time': '17:59',
- 'title': '《法定数字货币模型与参考架构设计》荣获2017年度银行科技发展奖一等奖'}
+            '据IMEOS报道，Everipedia官方电报群发布公告称，决定完全取消交易费用，直到收到社区的进一步反馈和通知。费用最初目的是支持资源消耗开销，通过交易所收取，直到目前还没有实行。因此计划暂时搁置收费功能，直到有新的解决方案，或者社区投票支持该功能。去除该功能的合约代码将会在接下来几天完成测试之后实施。从此时开始收取的费用将会被从流通中燃烧掉，并且不会流向公司，团队成员，或者任何其他实体。燃烧之后将会减少IQ总的流通供应，并且也会给IQ通证的持有者带来一定的价值回归。',
+ 'create_time': '17:20',
+ 'title': 'Everipedia 将取消 IQ 交易费用'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '近日，国美金融发布区块链白皮书——《区块链延保服务应用白皮书》。在白皮书中，详尽介绍了利用区块链分布式记账、不可篡改等特性，从横向场景衔接到纵向流程衔接，可实现大幅提升延保服务从产品定制、业务受理到售后维修等各环节的服务效率。目前，国美金融已将区块链技术应用于延保服务场景。',
+ 'create_time': '17:10',
+ 'title': '国美金融发布区块链延保白皮书 落地区块链技术应用'}
 {'content': '\n'
-            '据中国证券网报道，在9月12日召开的2017年度银行科技发展奖评审领导小组会议上，数字货币研究所的《法定数字货币模型与参考架构设计》项目荣获一等奖。',
- 'create_time': '17:59',
- 'title': '《法定数字货币模型与参考架构设计》荣获2017年度银行科技发展奖一等奖'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '今日人民创投发文称，一度充斥着“造富神话”的数字货币市场趋凉，以区块链技术为噱头的泡沫渐渐消逝，安全的问题也一步步凸显出来。安全是技术发展的根基，一行代码葬送一个项目的事情频频发生，向我们敲响了警钟。只有在安全问题上防微杜渐慎之又慎，被寄予厚望的区块链技术才能越走越远。',
- 'create_time': '17:40',
- 'title': '人民创投：区块链安全问题不容小觑'}
+            '近日，国美金融发布区块链白皮书——《区块链延保服务应用白皮书》。在白皮书中，详尽介绍了利用区块链分布式记账、不可篡改等特性，从横向场景衔接到纵向流程衔接，可实现大幅提升延保服务从产品定制、业务受理到售后维修等各环节的服务效率。目前，国美金融已将区块链技术应用于延保服务场景。',
+ 'create_time': '17:10',
+ 'title': '国美金融发布区块链延保白皮书 落地区块链技术应用'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据《币世界》最新行情，ETH持续拉升，短时站上230美元关口，最高涨至233.50美元。ETH现报233.00美元，涨幅3.07%。据此前《币世界》报道，以太坊协议升级敲定，发行量减产进入倒计时，发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '17:06',
+ 'title': 'ETH持续拉升 短时站上230美元'}
 {'content': '\n'
-            '今日人民创投发文称，一度充斥着“造富神话”的数字货币市场趋凉，以区块链技术为噱头的泡沫渐渐消逝，安全的问题也一步步凸显出来。安全是技术发展的根基，一行代码葬送一个项目的事情频频发生，向我们敲响了警钟。只有在安全问题上防微杜渐慎之又慎，被寄予厚望的区块链技术才能越走越远。',
- 'create_time': '17:40',
- 'title': '人民创投：区块链安全问题不容小觑'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '9月12日，香港国际新经济研究院联合多家机构共同发布了《链能经济白皮书》，提出将实体经济与客户有机结合，依托区块链赋能实体经济所演化的应用场景，实现价值共创，从而构建出传统商业模式以外的新型商业生态体系。这是“链能经济”概念在国内首次提出。',
- 'create_time': '17:31',
- 'title': '香港国际新经济研究院联合多家机构共同发布《链能经济白皮书》'}
+            '据《币世界》最新行情，ETH持续拉升，短时站上230美元关口，最高涨至233.50美元。ETH现报233.00美元，涨幅3.07%。据此前《币世界》报道，以太坊协议升级敲定，发行量减产进入倒计时，发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '17:06',
+ 'title': 'ETH持续拉升 短时站上230美元'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据链塔智库数据分析报告，从已经落地的EOSDApp来看，截止2018年9月25日，EOS平台共收录了59个DApp。竞猜类DApp的总交易额处于龙头地位，占93%，无论从数量上还是交易额上都有着明显的优势。自今年5月以来，对EOS合约漏洞的攻击行为频发，项目方累计损失超过11万个EOS。',
+ 'create_time': '16:59',
+ 'title': '报告：EOS DApp中，竞猜类贡献93%交易额；合约漏洞致损失超11万EOS'}
 {'content': '\n'
-            '9月12日，香港国际新经济研究院联合多家机构共同发布了《链能经济白皮书》，提出将实体经济与客户有机结合，依托区块链赋能实体经济所演化的应用场景，实现价值共创，从而构建出传统商业模式以外的新型商业生态体系。这是“链能经济”概念在国内首次提出。',
- 'create_time': '17:31',
- 'title': '香港国际新经济研究院联合多家机构共同发布《链能经济白皮书》'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'ONEROOT今日宣布正式启动“火箭计划”。官方表示，将借此计划进军全球市场，促进生态扩张，一系列重要合作方及重大事项将陆续公布。目前，ONEROOT旗下DDEX、R1、Rootrex、公链、钱包等各项产品正陆续落地，“火箭计划”将推进项目进入ONEROOT2.0阶段。',
- 'create_time': '17:23',
- 'title': 'ONEROOT宣布启动“火箭计划” 进军全球市场'}
+            '据链塔智库数据分析报告，从已经落地的EOSDApp来看，截止2018年9月25日，EOS平台共收录了59个DApp。竞猜类DApp的总交易额处于龙头地位，占93%，无论从数量上还是交易额上都有着明显的优势。自今年5月以来，对EOS合约漏洞的攻击行为频发，项目方累计损失超过11万个EOS。',
+ 'create_time': '16:59',
+ 'title': '报告：EOS DApp中，竞猜类贡献93%交易额；合约漏洞致损失超11万EOS'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据火币官方公告，HB10将于9月30日起开始三季度调仓，届时将暂停换入换出功能，USDT区的交易不受限制，具体恢复时间将以公告形式另行通知。调仓期间HB10的净值为产品预估净值，从暂停换入换出时点起，HB10预估净值将实时追踪指数的变动直至调仓结束。重新开放换入换出功能后预估净值将更新为HB10的实时净值。',
+ 'create_time': '16:30',
+ 'title': 'HB10将于9月30日12:00暂停换入换出'}
 {'content': '\n'
-            'ONEROOT今日宣布正式启动“火箭计划”。官方表示，将借此计划进军全球市场，促进生态扩张，一系列重要合作方及重大事项将陆续公布。目前，ONEROOT旗下DDEX、R1、Rootrex、公链、钱包等各项产品正陆续落地，“火箭计划”将推进项目进入ONEROOT2.0阶段。',
- 'create_time': '17:23',
- 'title': 'ONEROOT宣布启动“火箭计划” 进军全球市场'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '中国银行法学研究会理事肖飒表示，为参与传销币项目进行宣传的媒体和提供技术支持的软件外包公司，主观上明知或应当知道是犯罪活动，仍为其提供帮助，或者特定技术开发只用于犯罪行为的，将构成帮助犯。应定的具体罪名与刑罚当依据传销币发行、运作的本质逻辑、侵害的法益重大性等，依正犯的罪名及刑罚从轻或减轻处罚，或者以单独的罪名进行刑事处罚。',
- 'create_time': '17:17',
- 'title': '肖飒：为传销币站台将依正犯或单独的罪名进行刑事处罚'}
+            '据火币官方公告，HB10将于9月30日起开始三季度调仓，届时将暂停换入换出功能，USDT区的交易不受限制，具体恢复时间将以公告形式另行通知。调仓期间HB10的净值为产品预估净值，从暂停换入换出时点起，HB10预估净值将实时追踪指数的变动直至调仓结束。重新开放换入换出功能后预估净值将更新为HB10的实时净值。',
+ 'create_time': '16:30',
+ 'title': 'HB10将于9月30日12:00暂停换入换出'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据《卫报》报道，尼日利亚中央银行副主任MusaJimoh在会上表示，尼日利亚央行正准备撰写一份数字货币主题的白皮书。Jimoh指出，中央银行“不能阻止区块链技术及其衍生产品所制造的浪潮”。其他与会者对于该技术在尼日利亚的进展基本持积极态度。',
+ 'create_time': '16:27',
+ 'title': '尼日利亚央行副主任：央行正仔细研究区块链和数字货币'}
 {'content': '\n'
-            '中国银行法学研究会理事肖飒表示，为参与传销币项目进行宣传的媒体和提供技术支持的软件外包公司，主观上明知或应当知道是犯罪活动，仍为其提供帮助，或者特定技术开发只用于犯罪行为的，将构成帮助犯。应定的具体罪名与刑罚当依据传销币发行、运作的本质逻辑、侵害的法益重大性等，依正犯的罪名及刑罚从轻或减轻处罚，或者以单独的罪名进行刑事处罚。',
- 'create_time': '17:17',
- 'title': '肖飒：为传销币站台将依正犯或单独的罪名进行刑事处罚'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            'SunnyKing提出的全新共识机制SPoS的技术细节于近日被VEE硅谷团队正式公布。不同于DPoS和Casper，SPoS从数学角度重构底层，采用固定块间隔设计，可保证高TPS的同时保证出块稳定性。此外，SPoS引入的冷铸币及平均算法MAB避免了币权中心化，可让节点铸币权的竞争更公平。据悉，完整版SPoS共识机制技术黄皮书将于近日面向全球发布。SunnyKing是PoS的发明者、质数币（Primecoin）和点点币（Peeroin）创始人，被称为币圈神级人物。',
- 'create_time': '17:14',
- 'title': 'PoS发明者Sunny King提出的SPoS共识机制技术细节正式公布'}
+            '据《卫报》报道，尼日利亚中央银行副主任MusaJimoh在会上表示，尼日利亚央行正准备撰写一份数字货币主题的白皮书。Jimoh指出，中央银行“不能阻止区块链技术及其衍生产品所制造的浪潮”。其他与会者对于该技术在尼日利亚的进展基本持积极态度。',
+ 'create_time': '16:27',
+ 'title': '尼日利亚央行副主任：央行正仔细研究区块链和数字货币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据星球日报消息，此前有报道，百度内部员工称，百度已成立专门负责区块链业务的新公司。但该公司是否负责“燃料”的具体运营，暂未有确切消息。对此，百度官方回应称，在近期媒体报道的度链公司之外，百度没有成立一个独立公司运营区块链业务，百度会按照国家监管要求运营业务。关于超级燃料，它是区块链领域的专业术语，就是云计算服务费。超级链是超级联盟链，就是联盟链网络。',
+ 'create_time': '16:25',
+ 'title': '百度：没有成立独立公司运营“超级燃料” 将按照国家监管要求运营'}
 {'content': '\n'
-            'SunnyKing提出的全新共识机制SPoS的技术细节于近日被VEE硅谷团队正式公布。不同于DPoS和Casper，SPoS从数学角度重构底层，采用固定块间隔设计，可保证高TPS的同时保证出块稳定性。此外，SPoS引入的冷铸币及平均算法MAB避免了币权中心化，可让节点铸币权的竞争更公平。据悉，完整版SPoS共识机制技术黄皮书将于近日面向全球发布。SunnyKing是PoS的发明者、质数币（Primecoin）和点点币（Peeroin）创始人，被称为币圈神级人物。',
- 'create_time': '17:14',
- 'title': 'PoS发明者Sunny King提出的SPoS共识机制技术细节正式公布'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '在今日举办的2018区块链全球峰会上，DRC基金会主席SelinaLin表示，完备的生态建设可以让区块链技术更为大众接受。Digicash创始人DavidChaum则表示，区块链的普及取决于社群的搭建和维护，让社群发声，进而带动更多的人尝试区块链技术。Bytom比原链创始人段新星认为区块链能否广泛的普及，取决于政府的监管。特别是在金融方面的应用，在于政府政策监管和相关的法律法规。',
- 'create_time': '17:12',
- 'title': 'DRC基金会主席：完备的生态建设可以让区块链技术更为大众接受'}
+            '据星球日报消息，此前有报道，百度内部员工称，百度已成立专门负责区块链业务的新公司。但该公司是否负责“燃料”的具体运营，暂未有确切消息。对此，百度官方回应称，在近期媒体报道的度链公司之外，百度没有成立一个独立公司运营区块链业务，百度会按照国家监管要求运营业务。关于超级燃料，它是区块链领域的专业术语，就是云计算服务费。超级链是超级联盟链，就是联盟链网络。',
+ 'create_time': '16:25',
+ 'title': '百度：没有成立独立公司运营“超级燃料” 将按照国家监管要求运营'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据MBAex交易所官方公告，MBAex正式授权MILLETIQUEOTODISTRIBUTIONSDNBHD（米勒科研）为“MBAEXONLINEPTE.LTD”官方所指定的第三方区块链教育与培训战略合作伙伴，提升客户在区块链和自加密数值资产中的认知。',
+ 'create_time': '16:12',
+ 'title': 'MBAex交易所与区块链教育信息机构米勒科研达成合作'}
 {'content': '\n'
-            '在今日举办的2018区块链全球峰会上，DRC基金会主席SelinaLin表示，完备的生态建设可以让区块链技术更为大众接受。Digicash创始人DavidChaum则表示，区块链的普及取决于社群的搭建和维护，让社群发声，进而带动更多的人尝试区块链技术。Bytom比原链创始人段新星认为区块链能否广泛的普及，取决于政府的监管。特别是在金融方面的应用，在于政府政策监管和相关的法律法规。',
- 'create_time': '17:12',
- 'title': 'DRC基金会主席：完备的生态建设可以让区块链技术更为大众接受'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '《币世界》行情显示，LTC于下午16：00左右跌破50美元大关，最低价跌至47.26美元，创2017年10月10日以来新低。LTC现报48.16美元，涨幅0.46%。',
- 'create_time': '17:11',
- 'title': 'LTC跌破50美元大关 创2017年10月以来新低'}
+            '据MBAex交易所官方公告，MBAex正式授权MILLETIQUEOTODISTRIBUTIONSDNBHD（米勒科研）为“MBAEXONLINEPTE.LTD”官方所指定的第三方区块链教育与培训战略合作伙伴，提升客户在区块链和自加密数值资产中的认知。',
+ 'create_time': '16:12',
+ 'title': 'MBAex交易所与区块链教育信息机构米勒科研达成合作'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币矿池目前已经在“锁仓即挖矿”业务中增加了对CMT（CyberMiles项目通证）的支持，用户在火币矿池锁仓CMT以后即可获得HPT收益。目前，火币矿池“锁仓即挖矿”机制已支持EOS、TRX、ONG、CMT四个币种。',
+ 'create_time': '16:07',
+ 'title': '火币矿池开放CMT锁仓挖矿'}
 {'content': '\n'
-            '《币世界》行情显示，LTC于下午16：00左右跌破50美元大关，最低价跌至47.26美元，创2017年10月10日以来新低。LTC现报48.16美元，涨幅0.46%。',
- 'create_time': '17:11',
- 'title': 'LTC跌破50美元大关 创2017年10月以来新低'}
-2018-09-13 09:27:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
-            '据人民网消息，日前，红星美凯龙推出了IMP全球家居智慧营销平台，平台应用了社交裂变的模式，以及正在尝试利用的区块链技术，形成社交裂变的传播矩阵。',
- 'create_time': '17:07',
- 'title': '红星美凯龙尝试在IMP家居智慧营销平台利用区块链'}
+            '火币矿池目前已经在“锁仓即挖矿”业务中增加了对CMT（CyberMiles项目通证）的支持，用户在火币矿池锁仓CMT以后即可获得HPT收益。目前，火币矿池“锁仓即挖矿”机制已支持EOS、TRX、ONG、CMT四个币种。',
+ 'create_time': '16:07',
+ 'title': '火币矿池开放CMT锁仓挖矿'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '在刚刚结束的核心开发者会议中，开发者决定在区块高度420万的时候进行升级，大约是10月9号中午。所有主要的客户端都已经完成君士坦丁堡的部署，只需等待最后一步，即将以太坊发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '15:54',
+ 'title': '以太坊协议升级敲定，10月9号开始减产'}
 {'content': '\n'
-            '据人民网消息，日前，红星美凯龙推出了IMP全球家居智慧营销平台，平台应用了社交裂变的模式，以及正在尝试利用的区块链技术，形成社交裂变的传播矩阵。',
- 'create_time': '17:07',
- 'title': '红星美凯龙尝试在IMP家居智慧营销平台利用区块链'}
-2018-09-13 09:27:03 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-09-13 09:27:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+            '在刚刚结束的核心开发者会议中，开发者决定在区块高度420万的时候进行升级，大约是10月9号中午。所有主要的客户端都已经完成君士坦丁堡的部署，只需等待最后一步，即将以太坊发行率降低33%，从每个区块3ETH减少到2ETH。',
+ 'create_time': '15:54',
+ 'title': '以太坊协议升级敲定，10月9号开始减产'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '9月27日，胡润研究院发布了《2018胡润30×30创业领袖》名单，旨在寻找中国30岁以下创业领袖。区块链企业中，Ruff首席营销官荆天为，APEXNetwork、APEX科技创始人兼首席执行官JimmyHu，量子链创始人及CEO帅初等入选。',
+ 'create_time': '15:34',
+ 'title': '2018胡润30×30创业领袖名单公布，Ruff、APEX、量子链等企业高管及创始人入选'}
+{'content': '\n'
+            '9月27日，胡润研究院发布了《2018胡润30×30创业领袖》名单，旨在寻找中国30岁以下创业领袖。区块链企业中，Ruff首席营销官荆天为，APEXNetwork、APEX科技创始人兼首席执行官JimmyHu，量子链创始人及CEO帅初等入选。',
+ 'create_time': '15:34',
+ 'title': '2018胡润30×30创业领袖名单公布，Ruff、APEX、量子链等企业高管及创始人入选'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '伦敦加密货币交易所LondonBlock推出一种与英镑1:1挂钩的数字货币LBXPeg。LBX的首席执行官BenjaminDives表示，LBXPeg将定期接受一家顶级会计师事务所的审计。他补充称，他相信LBXPeg将是首个与英镑挂钩的所谓“稳定货币”。',
+ 'create_time': '15:23',
+ 'title': '伦敦一加密货币交易所计划推出与英镑挂钩的稳定币'}
+{'content': '\n'
+            '伦敦加密货币交易所LondonBlock推出一种与英镑1:1挂钩的数字货币LBXPeg。LBX的首席执行官BenjaminDives表示，LBXPeg将定期接受一家顶级会计师事务所的审计。他补充称，他相信LBXPeg将是首个与英镑挂钩的所谓“稳定货币”。',
+ 'create_time': '15:23',
+ 'title': '伦敦一加密货币交易所计划推出与英镑挂钩的稳定币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据赛迪网报道，中国信通院云大所智慧健康部主任闵栋透露，中国信息通信研究院将在国家相关部委的指导下，积极推进“互联网+医疗健康”工作。其中，区块链技术可以应用于医疗敏感信息加密、药品回溯与防伪、医疗从业人员身份认证等领域，大大提高医疗健康相关数据的安全性和可靠性。',
+ 'create_time': '15:12',
+ 'title': '中国信通院闵栋：区块链将推动“互联网+医疗健康”发展'}
+{'content': '\n'
+            '据赛迪网报道，中国信通院云大所智慧健康部主任闵栋透露，中国信息通信研究院将在国家相关部委的指导下，积极推进“互联网+医疗健康”工作。其中，区块链技术可以应用于医疗敏感信息加密、药品回溯与防伪、医疗从业人员身份认证等领域，大大提高医疗健康相关数据的安全性和可靠性。',
+ 'create_time': '15:12',
+ 'title': '中国信通院闵栋：区块链将推动“互联网+医疗健康”发展'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '火币中国CEO袁煜明表示，目前火币亦处于区块链2.0阶段，即现在推各种应用的阶段。火币有很大的生态体系，也在做各种服务的平台。在2020年前，区块链行业的基础设施已成熟，而2020年至2023年，则是应用不断推网落地的状态。',
+ 'create_time': '15:11',
+ 'title': '袁煜明：2020年前区块链基础设施将成熟'}
+{'content': '\n'
+            '火币中国CEO袁煜明表示，目前火币亦处于区块链2.0阶段，即现在推各种应用的阶段。火币有很大的生态体系，也在做各种服务的平台。在2020年前，区块链行业的基础设施已成熟，而2020年至2023年，则是应用不断推网落地的状态。',
+ 'create_time': '15:11',
+ 'title': '袁煜明：2020年前区块链基础设施将成熟'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '币安CEO赵长鹏刚刚发推特称，币安正在筹备去中心化交易平台，该平台将以BNB为平台gas，并且不会控制用户的资金，拟于今年末或明年初推出公测版本。',
+ 'create_time': '15:10',
+ 'title': '赵长鹏：以BNB为平台gas的交易平台正在筹备中'}
+{'content': '\n'
+            '币安CEO赵长鹏刚刚发推特称，币安正在筹备去中心化交易平台，该平台将以BNB为平台gas，并且不会控制用户的资金，拟于今年末或明年初推出公测版本。',
+ 'create_time': '15:10',
+ 'title': '赵长鹏：以BNB为平台gas的交易平台正在筹备中'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '调研链InsightChain（INB）发布莱特币行情调研结果。本次共在InsightDApp内收集有效问卷693份，其中仅有10.9%的投资者看多莱特币，看空投资者比例约57.5%。在53美元的价格水平下，79.4%的投资者为亏损状态，而19.9%的投资者的亏损在50%以上，这意味着在今年6月份或之前买入莱特币被套牢的投资者仍然为数不少。在止损位的选择上，31.9%的投资者选择在跌破45美元时卖出止损，占比最大，而坚持长期持有的投资者比例约为19.5%。',
+ 'create_time': '14:31',
+ 'title': 'Insight Chain行情调研：仅一成投资者选择看多莱特币'}
+{'content': '\n'
+            '调研链InsightChain（INB）发布莱特币行情调研结果。本次共在InsightDApp内收集有效问卷693份，其中仅有10.9%的投资者看多莱特币，看空投资者比例约57.5%。在53美元的价格水平下，79.4%的投资者为亏损状态，而19.9%的投资者的亏损在50%以上，这意味着在今年6月份或之前买入莱特币被套牢的投资者仍然为数不少。在止损位的选择上，31.9%的投资者选择在跌破45美元时卖出止损，占比最大，而坚持长期持有的投资者比例约为19.5%。',
+ 'create_time': '14:31',
+ 'title': 'Insight Chain行情调研：仅一成投资者选择看多莱特币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据AMBCrypto消息，Ripple宣布与泰国暹罗商业银行共同为RippleNet推出一项名为多重跳接式支付的新功能。这意味着RippleNet的客户将不再需要一对一进行结算付款。该功能可以缓解全球流动性的低效管理。',
+ 'create_time': '14:19',
+ 'title': 'RippleNet与泰国暹罗商业银行共同推出多重跳接式支付功能'}
+{'content': '\n'
+            '据AMBCrypto消息，Ripple宣布与泰国暹罗商业银行共同为RippleNet推出一项名为多重跳接式支付的新功能。这意味着RippleNet的客户将不再需要一对一进行结算付款。该功能可以缓解全球流动性的低效管理。',
+ 'create_time': '14:19',
+ 'title': 'RippleNet与泰国暹罗商业银行共同推出多重跳接式支付功能'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日，币安旗下生态基金BinanceLabs与内容公链COS共同宣布，BinanceLabs将战略投资内容公链COS。作为数字内容公链，COS（Contentos）致力于打造全球范围最广的数字内容公有链，让全球内容价值统一。区块链评测机构Ratingtoken曾把COS评为全球最有潜力区块链项目之一，并获得评级机构近乎满分的评级。BinanceLabs作为全球最早布局区块链产业生态的专业投资机构之一，旨在通过项目投资和合作的方式，连接区块链产业生态上的节点，构建产业生态圈，推动区块链产业健康稳定发展。',
+ 'create_time': '14:17',
+ 'title': '币安旗下生态基金Binance Labs宣布投资内容公链COS'}
+{'content': '\n'
+            '今日，币安旗下生态基金BinanceLabs与内容公链COS共同宣布，BinanceLabs将战略投资内容公链COS。作为数字内容公链，COS（Contentos）致力于打造全球范围最广的数字内容公有链，让全球内容价值统一。区块链评测机构Ratingtoken曾把COS评为全球最有潜力区块链项目之一，并获得评级机构近乎满分的评级。BinanceLabs作为全球最早布局区块链产业生态的专业投资机构之一，旨在通过项目投资和合作的方式，连接区块链产业生态上的节点，构建产业生态圈，推动区块链产业健康稳定发展。',
+ 'create_time': '14:17',
+ 'title': '币安旗下生态基金Binance Labs宣布投资内容公链COS'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '广州聚猎人力资源服务有限公司今日与Delink达成战略合作，成为睿和集团之后，第二家开通DELC结算猎头服务费的企业。聚猎CEO王亚楠表示，已经与部分客户就DELC支付服务费展开沟通。聚猎作为新锐猎头品牌，服务于滴滴、美团、今日头条等公司。',
+ 'create_time': '13:45',
+ 'title': 'Delink与第二家人力资源招聘服务商广州聚猎达成合作'}
+{'content': '\n'
+            '广州聚猎人力资源服务有限公司今日与Delink达成战略合作，成为睿和集团之后，第二家开通DELC结算猎头服务费的企业。聚猎CEO王亚楠表示，已经与部分客户就DELC支付服务费展开沟通。聚猎作为新锐猎头品牌，服务于滴滴、美团、今日头条等公司。',
+ 'create_time': '13:45',
+ 'title': 'Delink与第二家人力资源招聘服务商广州聚猎达成合作'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据AMBCrypto消息，印度一家加密货币交易所Bitbns表示，Zebpay的用户可以加入他们的交易所，它将退还Zebpay对特定代币收取的提款费。此外，Bitbns表示，由于昨日Zebpay宣布关停，这对整个印度加密货币行业和交易商来说都是“糟糕的一天”。',
+ 'create_time': '13:15',
+ 'title': '印度交易所Bitbns呼吁Zebpay用户加入，并称将退还Zebpay提款费'}
+{'content': '\n'
+            '据AMBCrypto消息，印度一家加密货币交易所Bitbns表示，Zebpay的用户可以加入他们的交易所，它将退还Zebpay对特定代币收取的提款费。此外，Bitbns表示，由于昨日Zebpay宣布关停，这对整个印度加密货币行业和交易商来说都是“糟糕的一天”。',
+ 'create_time': '13:15',
+ 'title': '印度交易所Bitbns呼吁Zebpay用户加入，并称将退还Zebpay提款费'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Searchain.io数据显示，昨日ETH全量新增地址为39735个,活跃地址数为247914个,总ETH交易数量为1706394个,PPI变化率为1.79%。昨日ETH流入交易所数量为338485.85,ETH流出交易所数量为451593,流入流出交易所净值为-113107.15,交易所整体ETH余额数量约2772.2385万个,交易所范围ETH换手率为33.52%。',
+ 'create_time': '13:05',
+ 'title': '昨日ETH总交易量1706394个 换手率33.52%'}
+{'content': '\n'
+            '据Searchain.io数据显示，昨日ETH全量新增地址为39735个,活跃地址数为247914个,总ETH交易数量为1706394个,PPI变化率为1.79%。昨日ETH流入交易所数量为338485.85,ETH流出交易所数量为451593,流入流出交易所净值为-113107.15,交易所整体ETH余额数量约2772.2385万个,交易所范围ETH换手率为33.52%。',
+ 'create_time': '13:05',
+ 'title': '昨日ETH总交易量1706394个 换手率33.52%'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据Searchain.io数据显示，昨日BTC大额转账转账数量在100到200BTC(包含200)之间的转账笔数占总大额转账笔数的62.17%;转账数量在200到600BTC(包含600)之间的转账笔数占总大额转账笔数的33.83%;转账数量超过600BTC的转账笔数有86笔，占总大额转账笔数的4.00%。昨日大额转出共计2149笔，总数量为527472.38个BTC。',
+ 'create_time': '13:04',
+ 'title': '昨日BTC大额转出2149笔 共计527472.38个'}
+{'content': '\n'
+            '据Searchain.io数据显示，昨日BTC大额转账转账数量在100到200BTC(包含200)之间的转账笔数占总大额转账笔数的62.17%;转账数量在200到600BTC(包含600)之间的转账笔数占总大额转账笔数的33.83%;转账数量超过600BTC的转账笔数有86笔，占总大额转账笔数的4.00%。昨日大额转出共计2149笔，总数量为527472.38个BTC。',
+ 'create_time': '13:04',
+ 'title': '昨日BTC大额转出2149笔 共计527472.38个'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '龙珠在币世界“币圈”将狂撒今日第1波糖果红包，想要领糖果快到币圈搜索并关注“龙珠大陆”点击红包即可领到，数量有限，先到先得！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '12:50',
+ 'title': '今日13:00，龙珠在币世界“币圈” 狂撒30万个DVC糖果！'}
+{'content': '\n'
+            '龙珠在币世界“币圈”将狂撒今日第1波糖果红包，想要领糖果快到币圈搜索并关注“龙珠大陆”点击红包即可领到，数量有限，先到先得！更多红包预告，随时关注币圈动态哦。',
+ 'create_time': '12:50',
+ 'title': '今日13:00，龙珠在币世界“币圈” 狂撒30万个DVC糖果！'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '今日上午，BTC于9:00左右放量下跌，一度跌破6500美元，现于6500美元附近横盘整理，市场整体跟随下行。BTC现报6503.64美元，跌幅2.54%，主流币跌多涨少。',
+ 'create_time': '12:00',
+ 'title': '币世界午行情：BTC于6500美元附近横盘整理 主流币跌多涨少'}
+{'content': '\n'
+            '今日上午，BTC于9:00左右放量下跌，一度跌破6500美元，现于6500美元附近横盘整理，市场整体跟随下行。BTC现报6503.64美元，跌幅2.54%，主流币跌多涨少。',
+ 'create_time': '12:00',
+ 'title': '币世界午行情：BTC于6500美元附近横盘整理 主流币跌多涨少'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据globenewswire消息，近日Nebulas（NAS）和新加坡电子竞技区块链锦标赛及游戏平台WeOne（CKR）宣布达成合作关系，以进行电子竞技和游戏产业的革命，促进Nebulas系统进一步成熟。',
+ 'create_time': '11:43',
+ 'title': 'Nebulas与电子竞技公司WeOne宣布合作关系'}
+{'content': '\n'
+            '据globenewswire消息，近日Nebulas（NAS）和新加坡电子竞技区块链锦标赛及游戏平台WeOne（CKR）宣布达成合作关系，以进行电子竞技和游戏产业的革命，促进Nebulas系统进一步成熟。',
+ 'create_time': '11:43',
+ 'title': 'Nebulas与电子竞技公司WeOne宣布合作关系'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'Block.oneCEOBrendanBlumer在其推特上表示，区块链可以作为一款具革命性的沟通工具，成为监管意图和公共行动之间的沟通桥梁。',
+ 'create_time': '11:27',
+ 'title': 'Block.one CEO：区块链可作为具革命性的沟通工具'}
+{'content': '\n'
+            'Block.oneCEOBrendanBlumer在其推特上表示，区块链可以作为一款具革命性的沟通工具，成为监管意图和公共行动之间的沟通桥梁。',
+ 'create_time': '11:27',
+ 'title': 'Block.one CEO：区块链可作为具革命性的沟通工具'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            "Bitfinex'ed在推特上@Bitfinexed称，希望加密货币不仅仅是一个由单个交易所凭空印钞来操纵价格的流动渠道。比特币等加密货币应该是真实的，而不应该是由一群骗子来策划的骗局。",
+ 'create_time': '11:17',
+ 'title': "Bitfinex'ed发推称Bitfinex操纵币价"}
+{'content': '\n'
+            "Bitfinex'ed在推特上@Bitfinexed称，希望加密货币不仅仅是一个由单个交易所凭空印钞来操纵价格的流动渠道。比特币等加密货币应该是真实的，而不应该是由一群骗子来策划的骗局。",
+ 'create_time': '11:17',
+ 'title': "Bitfinex'ed发推称Bitfinex操纵币价"}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据dailyhodl消息，在财富杂志发布的新视频中，Coinbase首席执行官BrianArmstrong表示，互联网2.0时代关注在互联网上的互动以及进行消息传递和数据共享，谷歌真正起飞也是在2.0时代。他认为互联网3.0将涉及互联网上的价值转移，Coinbase在互联网3.0时代可以成为加密行业的谷歌，成为世界领先的公司。',
+ 'create_time': '11:08',
+ 'title': 'Coinbase首席执行官：Coinbase将在互联网3.0时代成为加密行业的谷歌'}
+{'content': '\n'
+            '据dailyhodl消息，在财富杂志发布的新视频中，Coinbase首席执行官BrianArmstrong表示，互联网2.0时代关注在互联网上的互动以及进行消息传递和数据共享，谷歌真正起飞也是在2.0时代。他认为互联网3.0将涉及互联网上的价值转移，Coinbase在互联网3.0时代可以成为加密行业的谷歌，成为世界领先的公司。',
+ 'create_time': '11:08',
+ 'title': 'Coinbase首席执行官：Coinbase将在互联网3.0时代成为加密行业的谷歌'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '维基百科加密货币页面浏览量TOP10显示，比特币遥遥领先；瑞波币位列第二，其浏览量几乎是排第三的以太坊的两倍。狗狗币位列第四，其浏览量十分接近以太坊。',
+ 'create_time': '11:03',
+ 'title': '维基百科加密货币页面浏览量TOP10：比特币遥遥领先，狗狗币跻身前五'}
+{'content': '\n'
+            '维基百科加密货币页面浏览量TOP10显示，比特币遥遥领先；瑞波币位列第二，其浏览量几乎是排第三的以太坊的两倍。狗狗币位列第四，其浏览量十分接近以太坊。',
+ 'create_time': '11:03',
+ 'title': '维基百科加密货币页面浏览量TOP10：比特币遥遥领先，狗狗币跻身前五'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '数字货币交易所ShapeShift首席执行官ErikVoorhees在推特上评论了华尔街日报报道犯罪分子通过数字货币交易所进行近9000万美元的洗钱活动的文章，称其具有暗示性和误导性，文中引用的数据违背事实。他还指出，全球洗钱总量的2%-5%是通过银行完成的。福布斯分析师JosephYoung转发ErikVoorhees的推特，并评论，丹麦一家银行的洗钱金额为2300亿，远超于数字货币，华尔街日报的文章根本不是在说洗钱，而是暗示数字货币是犯罪分子的货币。',
+ 'create_time': '10:47',
+ 'title': 'ShapeShift CEO和福布斯分析师Joseph Young发推质疑华尔街日报抹黑数字货币'}
+{'content': '\n'
+            '数字货币交易所ShapeShift首席执行官ErikVoorhees在推特上评论了华尔街日报报道犯罪分子通过数字货币交易所进行近9000万美元的洗钱活动的文章，称其具有暗示性和误导性，文中引用的数据违背事实。他还指出，全球洗钱总量的2%-5%是通过银行完成的。福布斯分析师JosephYoung转发ErikVoorhees的推特，并评论，丹麦一家银行的洗钱金额为2300亿，远超于数字货币，华尔街日报的文章根本不是在说洗钱，而是暗示数字货币是犯罪分子的货币。',
+ 'create_time': '10:47',
+ 'title': 'ShapeShift CEO和福布斯分析师Joseph Young发推质疑华尔街日报抹黑数字货币'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据BitNovosti消息，俄国家杜马地区政策、北方和远东地区事务委员会副主席OksanaBondar呼吁，俄罗斯要在远东地区技术集群开放之前在此发展区块链技术。OksanaBondar认为，区块链技术将为偏远地区居民提供更容易获得国家服务的机会，这是开放支持创业公司的技术集群吸引投资到该地区的主要原因。',
+ 'create_time': '10:42',
+ 'title': '俄罗斯议员呼吁在俄远东地区发展区块链'}
+{'content': '\n'
+            '据BitNovosti消息，俄国家杜马地区政策、北方和远东地区事务委员会副主席OksanaBondar呼吁，俄罗斯要在远东地区技术集群开放之前在此发展区块链技术。OksanaBondar认为，区块链技术将为偏远地区居民提供更容易获得国家服务的机会，这是开放支持创业公司的技术集群吸引投资到该地区的主要原因。',
+ 'create_time': '10:42',
+ 'title': '俄罗斯议员呼吁在俄远东地区发展区块链'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据新京报消息，9月28日，首届中国数字经济投融资论坛在北京召开。中央网信办副主任杨小伟表示，下一步，中央网信办还将加大网信领域投融资体制建设的力度，加强与相关部门的工作协调，完善激励约束机制，优化数字经济的政策环境，搭建专业的投融资服务平台，促进资本和项目高效对接，推动形成有利于数字经济发展的环境。',
+ 'create_time': '10:38',
+ 'title': '中央网信办：完善激励约束机制 优化数字经济政策环境'}
+{'content': '\n'
+            '据新京报消息，9月28日，首届中国数字经济投融资论坛在北京召开。中央网信办副主任杨小伟表示，下一步，中央网信办还将加大网信领域投融资体制建设的力度，加强与相关部门的工作协调，完善激励约束机制，优化数字经济的政策环境，搭建专业的投融资服务平台，促进资本和项目高效对接，推动形成有利于数字经济发展的环境。',
+ 'create_time': '10:38',
+ 'title': '中央网信办：完善激励约束机制 优化数字经济政策环境'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据ZG.COM官网消息，ZG交易平台移动端App已于9月28日20：00正式上线，同步支持Android系统和iOS系统，提供行情、币币交易、C2C交易等功能，用户可通过其官网进行下载。',
+ 'create_time': '10:30',
+ 'title': 'ZG交易平台移动端App已正式上线'}
+{'content': '\n'
+            '据ZG.COM官网消息，ZG交易平台移动端App已于9月28日20：00正式上线，同步支持Android系统和iOS系统，提供行情、币币交易、C2C交易等功能，用户可通过其官网进行下载。',
+ 'create_time': '10:30',
+ 'title': 'ZG交易平台移动端App已正式上线'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据cointelegraph消息，奥地利研究中心国际经济研究中心(FIW)在其新政策简报中分析了包括区块链技术在内的数字化可能对出口经济的影响。这份报告是由奥地利理工学院的BernhardDachs代表奥地利联邦数字和经济事务部编写的，它为区块链技术和人工智能(AI)描绘了一个积极的形象。Dachs指出，区块链技术可以使出口交易更加安全，从而减少不确定性。此外，分散化技术有助于“大幅度降低加工出口保证的成本”。',
+ 'create_time': '10:25',
+ 'title': '报告：区块链技术可以降低对外贸易的不确定性'}
+{'content': '\n'
+            '据cointelegraph消息，奥地利研究中心国际经济研究中心(FIW)在其新政策简报中分析了包括区块链技术在内的数字化可能对出口经济的影响。这份报告是由奥地利理工学院的BernhardDachs代表奥地利联邦数字和经济事务部编写的，它为区块链技术和人工智能(AI)描绘了一个积极的形象。Dachs指出，区块链技术可以使出口交易更加安全，从而减少不确定性。此外，分散化技术有助于“大幅度降低加工出口保证的成本”。',
+ 'create_time': '10:25',
+ 'title': '报告：区块链技术可以降低对外贸易的不确定性'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据菩提官方消息，在即将到来的NBA全新常规赛赛季中，首场揭幕战凯尔特人vs76人、10月19日詹姆斯在湖人首秀对阵开拓者、及东西部强队常规赛赛事预测，均已登录菩提预测市场。NBA赛事主题预测活动随着展开，用户下载安装菩提预测市场DApp，即可参与到NBA赛事预测中。',
+ 'create_time': '10:14',
+ 'title': 'NBA全新常规赛赛事登录菩提预测市场'}
+{'content': '\n'
+            '据菩提官方消息，在即将到来的NBA全新常规赛赛季中，首场揭幕战凯尔特人vs76人、10月19日詹姆斯在湖人首秀对阵开拓者、及东西部强队常规赛赛事预测，均已登录菩提预测市场。NBA赛事主题预测活动随着展开，用户下载安装菩提预测市场DApp，即可参与到NBA赛事预测中。',
+ 'create_time': '10:14',
+ 'title': 'NBA全新常规赛赛事登录菩提预测市场'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '纳斯达克上市公司Opera近日与区块链咨询和金融服务公司LedgerCapital合作，探索可能的区块链应用。根据声明，这两家公司正在调查区块链的应用和用例，以及如何将该技术部署到Opera产品及其生态系统中。此前曾报道，Opera成为第一个包含内置加密货币钱包的主要web浏览器。Operacryptowallet的产品负责人查尔斯•哈默尔(CharlesHamel)在评论这项举措时说:“用crypto钱包付款就像直接从手机发送数字现金一样。这为商家和内容创造者带来了新的可能性。”',
+ 'create_time': '10:03',
+ 'title': 'Opera浏览器与Ledger Capital合作探索区块链应用'}
+{'content': '\n'
+            '纳斯达克上市公司Opera近日与区块链咨询和金融服务公司LedgerCapital合作，探索可能的区块链应用。根据声明，这两家公司正在调查区块链的应用和用例，以及如何将该技术部署到Opera产品及其生态系统中。此前曾报道，Opera成为第一个包含内置加密货币钱包的主要web浏览器。Operacryptowallet的产品负责人查尔斯•哈默尔(CharlesHamel)在评论这项举措时说:“用crypto钱包付款就像直接从手机发送数字现金一样。这为商家和内容创造者带来了新的可能性。”',
+ 'create_time': '10:03',
+ 'title': 'Opera浏览器与Ledger Capital合作探索区块链应用'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            '据中新网消息，近期，中信银行太原分行成功落地首笔区块链国内信用证业务，成为了山西省内首家在国内信用证结算领域应用区块链技术的银行。',
+ 'create_time': '09:43',
+ 'title': '中新网：中信银行成功落地首笔区块链国内信用证业务'}
+{'content': '\n'
+            '据中新网消息，近期，中信银行太原分行成功落地首笔区块链国内信用证业务，成为了山西省内首家在国内信用证结算领域应用区块链技术的银行。',
+ 'create_time': '09:43',
+ 'title': '中新网：中信银行成功落地首笔区块链国内信用证业务'}
+2018-09-30 14:09:03 [scrapy.core.scraper] WARNING: Dropped: Duplicate item found: {'content': '\n'
+            'BTC五分钟内下跌1.0%，下跌金额为65.85美元，其中火币PRO上现价为$6490.57，请密切关注行情走向，注意控制风险。',
+ 'create_time': '09:38',
+ 'title': 'BTC五分钟内下跌1.0%'}
+{'content': '\n'
+            'BTC五分钟内下跌1.0%，下跌金额为65.85美元，其中火币PRO上现价为$6490.57，请密切关注行情走向，注意控制风险。',
+ 'create_time': '09:38',
+ 'title': 'BTC五分钟内下跌1.0%'}
+2018-09-30 14:09:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-09-30 14:09:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
 {'downloader/request_bytes': 223,
  'downloader/request_count': 1,
  'downloader/request_method_count/GET': 1,
- 'downloader/response_bytes': 41584,
+ 'downloader/response_bytes': 42772,
  'downloader/response_count': 1,
  'downloader/response_status_count/200': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 9, 13, 1, 27, 3, 287074),
+ 'finish_time': datetime.datetime(2018, 9, 30, 6, 9, 3, 830468),
  'item_dropped_count': 100,
  'item_dropped_reasons_count/DropItem': 100,
  'log_count/DEBUG': 2,
  'log_count/INFO': 7,
  'log_count/WARNING': 100,
- 'memusage/max': 47681536,
- 'memusage/startup': 47681536,
+ 'memusage/max': 47751168,
+ 'memusage/startup': 47751168,
  'response_received_count': 1,
  'scheduler/dequeued': 1,
  'scheduler/dequeued/memory': 1,
  'scheduler/enqueued': 1,
  'scheduler/enqueued/memory': 1,
- 'start_time': datetime.datetime(2018, 9, 13, 1, 27, 2, 870564)}
-2018-09-13 09:27:03 [scrapy.core.engine] INFO: Spider closed (finished)
+ 'start_time': datetime.datetime(2018, 9, 30, 6, 9, 3, 358271)}
+2018-09-30 14:09:03 [scrapy.core.engine] INFO: Spider closed (finished)

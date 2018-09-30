@@ -8,6 +8,16 @@ class BsjSpider(scrapy.Spider):
     name = 'bsj'
     allowed_domains = ['www.bishijie.com']
     start_urls = ['http://www.bishijie.com/kuaixun/']
+    
+    custom_settings = {
+        'ITEM_PIPELINES': {
+               'bishijie.pipelines.DuplicatesPipeline': 200,
+               'bishijie.pipelines.BishijiePipeline': 300,
+
+        },
+
+ 
+    }
 
     def parse(self, response):
         Bsj = BishijieItem()

@@ -50,18 +50,19 @@ ROBOTSTXT_OBEY = False
 #    'bishijie.middlewares.BishijieSpiderMiddleware': 543,
 #}
 
-
+RETRY_ENABLED = True
 RETRY_TIMES = 10
-RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 404, 408]
-
+RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 403, 404, 408]
+REMOVE_FAILED_PROXY = True
 
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
 #    'bishijie.middlewares.BishijieDownloaderMiddleware': 543,
-    'bishijie.middlewares.ProxyMiddleware': 100,
-#     'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
+#    'bishijie.middlewares.ProxyMiddleware': 100,
+     'scrapy.downloadermiddlewares.retry.RetryMiddleware': None,
+     'bishijie.middlewares.RetryMiddleware': 500,
 #     'scrapy_proxies.RandomProxy': 100,
 #     'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 110,
 }
@@ -82,7 +83,7 @@ PROXY_MODE = 0
 #}
 ITEM_PIPELINES = {
      'bishijie.pipelines.DuplicatesPipeline': 200,
-     'bishijie.pipelines.BishijiePipeline': 300,
+     #'bishijie.pipelines.BishijiePipeline': 300,
    }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
