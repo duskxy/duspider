@@ -21,8 +21,8 @@ class FbfSpider(scrapy.Spider):
             'Referer': 'http://www.freebuf.com/',
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0'
          }
-        #for url in range(1,849):
-        for url in range(1,2):
+        for url in range(1,853):
+        #for url in range(1,2):
             yield scrapy.Request("http://www.freebuf.com/page/{}".format(url),headers=headers,callback=self.parse)
     def parse(self, response):
         all_url = response.xpath('//div[@class="news-img"]/a/@href').extract()
