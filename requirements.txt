@@ -19,7 +19,7 @@ idna-ssl==1.1.0
 incremental==17.5.0
 itchat==1.2.32
 jsbeautifier==1.8.1
-lxml==4.2.4
+lxml==4.6.2
 multidict==4.3.1
 parsel==1.4.0
 Pillow==5.1.0
